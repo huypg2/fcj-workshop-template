@@ -5,6 +5,10 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
+{{% notice warning %}}  
+⚠️ **Lưu ý:**Toàn bộ nội dung bên dưới chỉ mang tính chất định hướng và tham khảo. Bạn vui lòng tự diễn đạt lại bằng văn phong của mình, tuyệt đối không sao chép y nguyên bất kỳ đoạn nào (bao gồm cả dòng nhắc nhở này) vào bài báo cáo chính thức. 
+{{% /notice %}}
+
 <div class="workshop-big-title">
 TỰ ĐỘNG HÓA QUY TRÌNH TRIỂN KHAI ỨNG DỤNG CONTAINER LÊN AMAZON ECS EXPRESS MODE BẰNG GITHUB ACTIONS
 </div>
