@@ -13,11 +13,11 @@ chapter: false
 
 &emsp; **Email:** huypg113@gmail.com
 
-&emsp; **Trường:** Đại học Công nghệ TP.HCM (Hutech)
+&emsp; **Trường:** Đại học Công nghệ TP.HCM
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** 22DTHE5
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
