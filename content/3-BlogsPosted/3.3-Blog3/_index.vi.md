@@ -1,31 +1,97 @@
 ---
-title: "Blog 3"
-date: 2024-01-01
-weight: 1
+title: "Các bài blogs đã đăng"
+weight: 3
 chapter: false
-pre: " <b> 3.3. </b> "
+pre: " <b> 3.3 </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice warning %}}  
+⚠️ **Lưu ý:**Toàn bộ nội dung bên dưới chỉ mang tính chất định hướng và tham khảo. Bạn vui lòng tự diễn đạt lại bằng văn phong của mình, tuyệt đối không sao chép y nguyên bất kỳ đoạn nào (bao gồm cả dòng nhắc nhở này) vào bài báo cáo chính thức. 
 {{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+<div class="workshop-big-title">
+BỨT PHÁ GIỚI HẠN 90 NGÀY CỦA EC2 CAPACITY MANAGER VỚI AMAZON ATHENA
+</div>
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Trong quản trị hạ tầng AWS quy mô lớn, việc kiểm soát và dự phóng chi phí máy chủ luôn là bài toán hóc búa đối với các doanh nghiệp. Để hỗ trợ các kỹ sư theo dõi tài nguyên, Amazon EC2 Capacity Manager mang lại cái nhìn tập trung về tình hình sử dụng dung lượng On-Demand, Spot, ODCR xuyên suốt các tài khoản và Region trong toàn bộ tổ chức.
 
-Các điểm chính cần nắm:
+Tuy nhiên, một điểm nghẽn lớn khi vận hành thực tế là hệ thống chỉ lưu trữ tối đa 90 ngày dữ liệu lịch sử trên AWS Management Console. Điều này gây nhiều khó khăn khi đội ngũ FinOps cần phân tích xu hướng dài hạn theo năm, lập kế hoạch ngân sách hoặc đánh giá hiệu quả của các gói đặt trước dung lượng đã mua từ trước. Bài viết này tổng hợp chi tiết kiến trúc, quy trình tự động hóa phân vùng và các kịch bản SQL thực tế nhằm làm chủ dữ liệu hạ tầng dài hạn.
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+## 1. Các ưu điểm cốt lõi của giải pháp
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Kiến trúc triển khai tập trung tối ưu hóa hệ thống dựa trên hai khía cạnh quan trọng: khả năng lưu trữ dài hạn và năng lực truy vấn dữ liệu thông minh trên quy mô lớn.
 
-...Hình ảnh...
+- **Vượt qua giới hạn lưu trữ dữ liệu:** Giải pháp cho phép tự động đóng gói toàn bộ dữ liệu hạ tầng On-Demand, Spot, ODCR hàng giờ thành file nén tối ưu định dạng Parquet, giúp doanh nghiệp lưu trữ vĩnh viễn trên Amazon S3 phục vụ phân tích xu hướng theo năm.
+- **Tự động hóa với Partition Projection:** Loại bỏ việc vận hành các công cụ quét dữ liệu như AWS Glue Crawler thủ công hằng ngày để cập nhật metadata. Bằng cách thiết lập thuộc tính `TBLPROPERTIES` trong Athena, hệ thống tự động tính toán và nhận diện các phân vùng thư mục ngày/giờ mới ngay tại thời điểm truy vấn.
+- **Bảo mật phân tách tài nguyên qua Bucket Policy:** Áp dụng các mệnh đề điều kiện như `aws:SourceAccount` và `ArnLike` gắn với đường dẫn export cụ thể, đảm bảo chỉ cấp quyền ghi dữ liệu tự động cho duy nhất service của EC2 Capacity Manager theo nguyên tắc đặc quyền tối thiểu.
 
-...Link...
+## 2. Quy trình hoạt động của hệ thống
 
-...Hướng dẫn...
+Luồng xử lý dữ liệu của giải pháp được chia tách rõ ràng thành hai giai đoạn độc lập thông qua cấu hình dịch vụ AWS:
+
+- **Khi xuất dữ liệu:** EC2 Capacity Manager tiếp nhận cấu hình, định kỳ hàng giờ tiến hành quét, tổng hợp số liệu sử dụng tài nguyên của toàn bộ các tài khoản và Region rồi nén và đẩy trực tiếp về S3 Bucket theo cấu trúc phân vùng thư mục ngày/giờ.
+- **Khi truy vấn:** Kỹ sư FinOps thực thi câu lệnh SQL trên Amazon Athena. Athena không quét toàn bộ bucket mà dựa trên các tham số cấu hình Partition Projection để tính toán chính xác đường dẫn thư mục cần đọc, giúp trả về kết quả phân tích nhanh với lượng dữ liệu quét tối thiểu.
+
+<div class="image-holder large">
+EC2 Capacity Manager
+</div>
+
+## 3. Lựa chọn công nghệ và phạm vi lưu trữ
+
+<table class="work-table">
+  <thead>
+    <tr>
+      <th>Thành phần hệ thống</th>
+      <th>Công nghệ sử dụng</th>
+      <th>Vai trò trong kiến trúc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Collection</td>
+      <td>EC2 Capacity Manager</td>
+      <td>Thu thập dữ liệu sử dụng hạ tầng On-Demand, Spot, ODCR tập trung.</td>
+    </tr>
+    <tr>
+      <td>Data Storage</td>
+      <td>Amazon S3</td>
+      <td>Kho lưu trữ dữ liệu lịch sử dài hạn dưới định dạng nén Parquet.</td>
+    </tr>
+    <tr>
+      <td>Metadata Store</td>
+      <td>AWS Glue Data Catalog</td>
+      <td>Lưu trữ định nghĩa cấu trúc bảng để Amazon Athena tham chiếu.</td>
+    </tr>
+    <tr>
+      <td>Data Analytics</td>
+      <td>Amazon Athena</td>
+      <td>Thực thi các câu lệnh SQL nâng cao để lọc và trích xuất báo cáo FinOps.</td>
+    </tr>
+  </tbody>
+</table>
+
+## 4. Các kịch bản tối ưu chi phí khi triển khai thực tế
+
+Giải pháp mở ra năng lực tối ưu hóa chi phí hạ tầng chuyên sâu thông qua 3 kịch bản truy vấn SQL thực tế được áp dụng trực tiếp trên hệ thống.
+
+### Săn tìm các gói ODCR lãng phí
+
+Hệ thống sử dụng các hàm toán học nâng cao như `CAST`, `ROUND` để lọc và định vị chính xác mã `reservationid` của các gói đặt trước dung lượng hoạt động kém hiệu quả, ví dụ hiệu suất sử dụng dưới 50% nhưng vẫn bị tính tiền. Từ đó, doanh nghiệp có thể tính toán số tiền thâm hụt hàng giờ để kịp thời hủy hoặc điều chuyển tài nguyên.
+
+### Nhận diện quy luật tải đỉnh
+
+Khai thác tập dữ liệu thuộc nhóm Instance Usage để tính toán lượng máy chủ chạy thực tế trung bình theo từng khung giờ trong ngày. Quy trình phân tích này giúp xác định chính xác thời điểm hệ thống chạm ngưỡng cao điểm, làm cơ sở để đưa ra chiến lược mua sắm gói tài nguyên hợp lý.
+
+### Chia sẻ tài nguyên nội bộ thông minh
+
+Truy vấn đi sâu vào dữ liệu ở cấp độ khu vực hạ tầng vật lý Availability Zone để tìm ra vùng nào đang thừa công suất. Số liệu này giúp doanh nghiệp chủ động điều phối, chia sẻ dung lượng trống cho các đội ngũ khác dùng chung và tiến hành dọn dẹp toàn bộ tài nguyên thử nghiệm sau khi hoàn tất.
+
+<div class="image-holder medium">
+Athena SQL Query Results
+</div>
+
+## 5. Lời kết
+
+Sự kết hợp giữa EC2 Capacity Manager, Amazon S3 và Amazon Athena mang lại một giải pháp quản trị và tối ưu chi phí hạ tầng toàn diện, vượt qua giới hạn lưu trữ thông thường. Phương án tiếp cận này giúp doanh nghiệp chuyển dịch từ thế bị động giải quyết chi phí phát sinh sang chủ động làm chủ dữ liệu, tối ưu hóa hạ tầng và nâng cao hiệu quả tài chính trên đám mây AWS.
+
+**Bài viết gốc:** https://aws.amazon.com/vi/blogs/compute/maximize-amazon-ec2-capacity-reservations-with-capacity-manager-data-exports/
