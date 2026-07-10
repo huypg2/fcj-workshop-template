@@ -4,6 +4,11 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
+
+{{% notice warning %}}  
+⚠️ **Lưu ý:**Toàn bộ nội dung bên dưới chỉ mang tính chất định hướng và tham khảo. Bạn vui lòng tự diễn đạt lại bằng văn phong của mình, tuyệt đối không sao chép y nguyên bất kỳ đoạn nào (bao gồm cả dòng nhắc nhở này) vào bài báo cáo chính thức. 
+{{% /notice %}}
+
 <div class="workshop-big-title">
 TỐI ƯU QUY TRÌNH DISASTER RECOVERY CHO STATEFUL SERVICES TRÊN AMAZON EKS BẰNG VELERO
 </div>
