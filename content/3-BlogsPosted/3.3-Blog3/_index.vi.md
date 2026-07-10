@@ -1,5 +1,5 @@
 ---
-title: "Các bài blogs đã đăng"
+title: "Blog 3"
 weight: 3
 chapter: false
 pre: " <b> 3.3 </b> "
