@@ -10,13 +10,26 @@ pre: " <b> 3. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+<div class="blog-preview">
+  <h2><a href="./bai-viet-01/">Blog 1 - Getting started with healthcare data lakes: Using microservices</a></h2>
+  <p>
+    Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. 
+    Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng, cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn.
+  </p>
+</div>
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+<div class="blog-preview">
+  <h2><a href="./bai-viet-02/">Blog 2 - Tối ưu quy trình Disaster Recovery cho Stateful Services trên Amazon EKS bằng Velero</a></h2>
+  <p>
+    Blog này trình bày giải pháp sao lưu và phục hồi thảm họa cho các ứng dụng có trạng thái trên Amazon EKS bằng Velero, 
+    kết hợp Amazon S3, Amazon EBS Snapshots và EKS Pod Identity để tăng tính an toàn, linh hoạt và khả năng khôi phục hệ thống.
+  </p>
+</div>
 
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+<div class="blog-preview">
+  <h2><a href="./bai-viet-03/">Blog 3 - Bứt phá giới hạn 90 ngày của EC2 Capacity Manager với Amazon Athena</a></h2>
+  <p>
+    Blog này giới thiệu cách kết hợp EC2 Capacity Manager, Amazon S3, AWS Glue Data Catalog và Amazon Athena để lưu trữ, 
+    truy vấn và phân tích dữ liệu sử dụng hạ tầng AWS dài hạn, hỗ trợ tối ưu chi phí FinOps hiệu quả hơn.
+  </p>
+</div>
