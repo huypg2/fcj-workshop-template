@@ -1,31 +1,104 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
 weight: 1
-chapter: false
-pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+<div class="workshop-big-title">
+TỰ ĐỘNG HÓA QUY TRÌNH TRIỂN KHAI ỨNG DỤNG CONTAINER LÊN AMAZON ECS EXPRESS MODE BẰNG GITHUB ACTIONS
+</div>
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Trong kỷ nguyên DevOps, việc tối ưu hóa pipeline CI/CD để rút ngắn thời gian đưa sản phẩm ra thị trường là ưu tiên hàng đầu. Khi ứng dụng được container hóa, quy trình đóng gói và triển khai thủ công thường dễ phát sinh lỗi và tốn thời gian.
 
-Các điểm chính cần nắm:
+Giải pháp tự động hóa bằng GitHub Actions kết hợp với Amazon ECS Express Mode giúp đơn giản hóa toàn bộ hạ tầng từ mạng, tải cân bằng đến việc cấp phát tài nguyên mà không cần cấu hình thủ công. Bài viết này tổng hợp kiến trúc, quy trình vận hành và kinh nghiệm thực tế khi xây dựng pipeline CI/CD an toàn, tự động hóa hoàn toàn từ mã nguồn đến môi trường chạy live.
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+## 1. Các ưu điểm cốt lõi của giải pháp
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Hệ thống được thiết kế nhằm tối ưu tốc độ triển khai và loại bỏ các rủi ro bảo mật tiềm ẩn nhờ vào các cơ chế hiện đại:
 
-...Hình ảnh...
+- **Xác thực an toàn qua OIDC:** Thay vì lưu trữ các thông tin xác thực tĩnh như AWS Access Key dài hạn trong GitHub Secrets, hệ thống thiết lập cơ chế tin cậy thông qua OpenID Connect. Mỗi khi workflow chạy, GitHub Actions sẽ tự động assume một IAM role ngắn hạn để tương tác với AWS.
+- **Tự động hóa hạ tầng với ECS Express Mode:** Express Mode có khả năng tự động thiết lập và quản lý các thành phần phức tạp bao gồm Application Load Balancer, Target Groups, Security Groups, Auto Scaling dựa trên CPU và cung cấp sẵn URL truy cập có chứng chỉ định danh từ AWS.
+- **Quản lý phiên bản chính xác:** Docker image khi build xong sẽ được gắn tag tự động dựa trên 7 ký tự đầu của Commit SHA. Điều này giúp đội ngũ phát triển dễ dàng truy vết mã nguồn, kiểm soát phiên bản và rollback nhanh chóng khi có sự cố.
 
-...Link...
+## 2. Quy trình hoạt động của hệ thống
 
-...Hướng dẫn...
+Luồng xử lý tự động hóa được kích hoạt ngay khi lập trình viên thực hiện tương tác với kho mã nguồn:
+
+- **Giai đoạn CI:** Khi code được đẩy lên nhánh main, GitHub Actions kích hoạt workflow. Hệ thống sử dụng OIDC để kết nối an toàn với AWS, tiến hành build Docker image từ mã nguồn, gắn tag theo Commit SHA và đẩy image lên Amazon ECR.
+- **Giai đoạn CD:** Sau khi image được đẩy thành công, Action `amazon-ecs-deploy-express-service` sẽ gọi API của AWS để cập nhật dịch vụ. ECS Express Mode tự động khởi tạo hoặc cập nhật cụm máy chủ, điều phối các Task chạy trên AWS Fargate và định tuyến lưu lượng từ Load Balancer đến container mới.
+
+<div class="image-holder large">
+CI/CD Architecture Diagram
+</div>
+
+## 3. Lựa chọn công nghệ và vai trò hệ thống
+
+<table class="work-table">
+  <thead>
+    <tr>
+      <th>Thành phần hệ thống</th>
+      <th>Công nghệ sử dụng</th>
+      <th>Vai trò trong kiến trúc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipeline CI/CD</td>
+      <td>GitHub Actions</td>
+      <td>Tự động hóa toàn bộ quy trình build, tag, push và kích hoạt deploy ứng dụng.</td>
+    </tr>
+    <tr>
+      <td>Container Storage</td>
+      <td>Amazon ECR</td>
+      <td>Lưu trữ tập trung và quản lý bảo mật các phiên bản Docker Image.</td>
+    </tr>
+    <tr>
+      <td>Container Orchestration</td>
+      <td>Amazon ECS Express Mode</td>
+      <td>Tự động quản lý dịch vụ, cấu hình mạng và cân bằng tải cho container.</td>
+    </tr>
+    <tr>
+      <td>Serverless Compute</td>
+      <td>AWS Fargate</td>
+      <td>Cung cấp tài nguyên tính toán để chạy container mà không cần quản lý EC2.</td>
+    </tr>
+    <tr>
+      <td>Identity & Access</td>
+      <td>IAM & OIDC Provider</td>
+      <td>Xác thực không mật khẩu, cấp quyền ngắn hạn theo nguyên tắc Least Privilege.</td>
+    </tr>
+  </tbody>
+</table>
+
+## 4. Lưu ý kỹ thuật khi triển khai thực tế
+
+Qua quá trình thực hành cấu hình và tối ưu pipeline, một số điểm mấu chốt cần lưu ý để đảm bảo hệ thống vận hành ổn định.
+
+### Cấp quyền tối thiểu cho IAM Policy
+
+Để đảm bảo an toàn thông tin, các IAM Policy đính kèm vào `github-actions-ecs-role` cần được siết chặt. Thay vì sử dụng ký tự đại diện `*` cho tất cả tài nguyên, nên giới hạn chính xác ARN của Amazon ECR Repository và Amazon ECS Cluster cụ thể để tránh việc một repository bị hack có thể can thiệp sang các tài nguyên khác.
+
+<div class="image-holder medium">
+IAM OIDC Role
+</div>
+
+### Theo dõi tiến trình tự động hóa trên GitHub Actions
+
+Khi đẩy code lên nhánh chính, toàn bộ tiến trình đóng gói từ build Dockerfile, đăng nhập ECR cho đến khi gọi lệnh deploy lên ECS Express Mode cần được giám sát chặt chẽ qua log realtime để phát hiện sớm các xung đột phụ thuộc hoặc lỗi phân quyền.
+
+<div class="image-holder medium">
+GitHub Actions Workflow
+</div>
+
+### Kiểm tra trạng thái dịch vụ trên Amazon ECS Express Mode
+
+Sau khi workflow báo thành công, Express Mode sẽ tự động tạo cấu hình định tuyến và cân bằng tải. Ứng dụng container chạy trên AWS Fargate lúc này có thể truy cập trực tiếp thông qua endpoint mặc định được AWS cấp sẵn.
+
+<div class="image-holder medium">
+Amazon ECS Express Service
+</div>
+
+## 5. Lời kết
+
+Việc kết hợp giữa GitHub Actions và Amazon ECS Express Mode mang lại một giải pháp CI/CD tinh gọn, mạnh mẽ và có độ an toàn cao cho các ứng dụng container hóa. Nhờ việc giải phóng gánh nặng quản lý hạ tầng mạng và máy chủ, đội ngũ phát triển có thể tập trung hoàn toàn vào việc tối ưu mã nguồn, nâng cao chất lượng sản phẩm và tăng tốc độ phát hành ứng dụng.
+
+**Bài viết gốc:** https://aws.amazon.com/blogs/containers/automated-deployments-with-github-actions-for-amazon-ecs-express-mode/
