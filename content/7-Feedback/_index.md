@@ -10,38 +10,58 @@ pre: " <b> 7. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+Here, I would like to share some personal reflections after participating in the First Cloud Journey program. These comments are intended to contribute to making the program increasingly suitable and more supportive for interns.
 
-### Overall Evaluation
+## General evaluation
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+### 1. Working environment
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The working environment is quite friendly and comfortable. The team members are willing to provide support whenever I encounter difficulties during the work process. The working atmosphere is not overly stressful, which makes it easier for me to communicate and learn.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+However, the program could organize additional meetings or sharing sessions among interns so that everyone has more opportunities to get to know and support one another.
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+### 2. Support from the mentor / team admin
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+The mentor provides enthusiastic support, clearly explains the parts that I do not understand, and guides me on how to research issues independently. This helps me become more proactive during the learning and working process.
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The team admin also provides good support regarding information, documents, and related issues throughout my participation in the program.
 
----
+### 3. Relevance between the work and my field of study
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+The assigned tasks are related to the major that I am currently studying. Therefore, I am able to apply part of the knowledge I have learned to practical situations.
 
----
+In addition, I also have the opportunity to gain more knowledge about cloud computing, AWS, and how to develop content in the form of workshops.
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+### 4. Opportunities for learning and skill development
+
+During the program, I have learned more about working with GitHub, presenting documents, organizing content, and researching AWS services.
+
+Besides professional knowledge, I have also improved my self-learning skills, note-taking skills, presentation skills, and troubleshooting skills while working.
+
+### 5. Culture and teamwork spirit
+
+Everyone in the program has a strong spirit of mutual support. When I encounter an error or do not understand certain content, I can ask questions and receive assistance.
+
+This helps me feel more comfortable integrating into the environment, although I still have many areas that I need to continue learning and improving.
+
+### 6. Policies and support for interns
+
+The program provides appropriate support for interns. I am provided with documents, work guidance, and a mentor during the implementation process.
+
+In my opinion, the program could add more short guidance sessions at each stage so that interns clearly understand what they need to do and which content they need to complete.
+
+## Suggestions for improvement
+
+In my opinion, the program could improve several areas as follows:
+
+- Provide a clearer internship schedule for each week or stage.
+- Add more guidance materials for beginners.
+- Organize more regular review sessions so that interns know whether they are working correctly.
+- Create more experience-sharing sessions led by mentors or participants who have already completed the program.
+- Provide a report-formatting template so that interns can follow it more easily.
+
+## Conclusion
+
+Overall, participating in the First Cloud Journey program has helped me gain more knowledge and better understand a real working environment. I have had the opportunity to improve my self-learning and presentation skills and become familiar with AWS services.
+
+This has been a valuable experience that has given me clearer direction for my studies and skill development in the future.

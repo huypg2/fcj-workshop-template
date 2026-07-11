@@ -1,6 +1,6 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
+date: 2026-06-05
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Containers, CI/CD, and DevOps Workflows.
+* This week focused on application packaging, container orchestration, and continuous deployment pipelines.
+* Learn Docker, Amazon ECS, and ECS infrastructure with CDK.
+* Understand CI/CD workflows with AWS CodePipeline.
+* Become familiar with Storage Gateway, FSx, VPC Flow Logs, Step Functions, and storage performance.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 05/29/2026 | - Learn Docker and application containerization. <br> - Result: Understood packaging applications with dependencies for stable execution across environments. | 05/29/2026 | 05/29/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/30/2026 | - Learn Amazon ECS. <br> - Result: Understood cluster, task definition, service, and ECS container management. | 05/30/2026 | 05/30/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/31/2026 | - Learn CDK for ECS. <br> - Result: Understood how to describe ECS infrastructure as code for consistent deployment. | 05/31/2026 | 05/31/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/01/2026 | - Learn AWS CodePipeline and CI/CD. <br> - Result: Understood automation flow from source code, build, test, to deployment. | 06/01/2026 | 06/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/02/2026 | - Learn AWS Storage Gateway and Amazon FSx. <br> - Result: Understood hybrid storage connection and file storage for Windows environments. | 06/02/2026 | 06/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/03/2026 | - Learn VPC Flow Logs and AWS Step Functions. <br> - Result: Understood network traffic monitoring and multi-step workflow orchestration. | 06/03/2026 | 06/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/04/2026 | - Practice storage performance workshop. <br> - Result: Understood how to choose storage services based on performance and access requirements. | 06/04/2026 | 06/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the benefits of Docker in packaging applications, ensuring consistent runtime environments, and reducing errors caused by configuration differences.
+* Understood key Amazon ECS components such as cluster, task definition, container, service, and how ECS supports containerized application deployment on AWS.
+* Learned how to use AWS CDK to describe ECS infrastructure as code, making cluster, service, and load balancer creation easier to reuse.
+* Understood the role of CI/CD in DevOps and how CodePipeline connects source retrieval, build, test, and deploy steps to reduce manual work.
+* Understood how automated deployment reduces release errors, speeds up updates, and supports more efficient teamwork.
+* Became familiar with Storage Gateway as a solution for connecting on-premises storage with Cloud in hybrid or synchronized data environments.
+* Understood the role of Amazon FSx in managed file storage for Windows systems and applications requiring file systems.
+* Understood how VPC Flow Logs support network traffic monitoring, blocked connection analysis, and abnormal access flow detection.
+* Understood how Step Functions orchestrates multi-step workflows and manages complex processes involving multiple AWS services.

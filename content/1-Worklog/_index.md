@@ -10,30 +10,32 @@ pre: " <b> 1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+**On this page**, the worklog is presented according to the learning, practice, and project completion process throughout the **Workforce Bootcamp – First Cloud AI Journey** program.
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+The program was completed in **12 weeks**, from **April 17, 2026 to July 10, 2026**. The worklog records the tasks completed each week, starting from learning basic AWS services, then expanding to security, operations, DevOps, Serverless, Microservices, and finally deploying the project **High-Performance Payment System on AWS ECS Fargate with Private Subnets, RDS PostgreSQL, and S3 Backup**.
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+The main contents of the 12 weeks are summarized as follows:
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 1:** [Cloud kickoff, getting familiar with AWS, IAM, VPC, EC2, Cloud9, and AWS CLI](tuan-01/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 2:** [Learning AWS storage, databases, cache, auto scaling, monitoring, and DNS](tuan-02/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 3:** [Studying advanced networking, CloudFront, Lambda@Edge, migration, and disaster recovery](tuan-03/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 4:** [Practicing operations management, Systems Manager, Lambda, CloudFormation, and AWS CDK](tuan-04/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 5:** [Learning cloud security, advanced IAM, Security Hub, WAF, KMS, Macie, Secrets Manager, and GuardDuty](tuan-05/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 6:** [Studying reliability, data backup, messaging systems, resource optimization, and AWS cost optimization](tuan-06/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 7:** [Practicing Docker, Amazon ECS, CI/CD with CodePipeline, VPC Flow Logs, and Step Functions](tuan-07/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 8:** [Learning application modernization, Monolith to Microservices migration, Serverless, and event-driven architecture](tuan-08/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 9:** [Practicing the Serverless Book Store project with Lambda, S3, DynamoDB, Cognito, SQS, SNS, and AppSync](tuan-09/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 10:** [Building a Serverless Document Management System with API Gateway, CloudFront, X-Ray, CloudWatch, and Grafana](tuan-10/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 11:** [Integrating microservices, standardizing configuration, designing AWS architecture, and deploying the system on ECS Fargate](tuan-11/)
+
+**Week 12:** [Testing end-to-end flow, idempotency, rate limiting, load testing, configuration optimization, and completing the project report](tuan-12/)

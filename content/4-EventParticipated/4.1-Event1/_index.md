@@ -10,115 +10,59 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+## 1. Event overview
 
-### Event Objectives
+**First Cloud AI Journey - Event 1** is an event that shares knowledge about AI, Cloud, Prompt Engineering, and how AI can be applied in learning, work, and software development. The event helps participants better understand the role of AI in the current era and how to use AI more effectively.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+In addition to technology knowledge, the event also discusses personal development mindset, professional attitude, and how people can adapt as AI becomes increasingly used in learning and work.
 
-### Speakers
+## 2. Program content
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+During the event, the speakers shared many different topics.
 
-### Key Highlights
+**Huỳnh Hoàng Long** shared how social media attracts users' attention through dopamine, instant feedback, and the fear of missing out. From there, the speaker connected these mechanisms to creating more effective learning motivation.
 
-#### Identifying the drawbacks of legacy application architecture
+**Nguyễn Tuấn Thịnh** presented the topic **“Automated Prompt Engineering: Enhancing LLM Output Quality”**. The content focused on how to write clear prompts, optimize tokens, use the Proptimizer tool, and apply AI on AWS.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Khang** shared a personal development mindset in the AI era. This section emphasized a growth mindset, learning attitude, integrity, and how businesses evaluate employees.
 
-#### Transitioning to modern application architecture – Microservices
+**Thảo** presented the topic **“Do Not Just Vibe Code – Build with Proper Software Engineering Practices”**. The content discussed using AI Agents and the BMAD Method to support a more professional software development process.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+## 3. Notable points
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+One topic that I found interesting was how the mechanisms of social media can be applied to learning. Social media often creates enjoyment because it provides instant feedback and short-term rewards. From this, I understood that learning should also be divided into smaller goals to make it easier to maintain motivation.
 
-#### Domain-Driven Design (DDD)
+The Prompt Engineering section was also very useful. I realized that when a question is too general, AI often provides an answer that does not match the intended purpose or lacks depth. A good prompt should include a role, task, context, input data, output format, and specific requirements.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+In addition, the event introduced several AWS services that can be used to build AI applications, such as **API Gateway**, **AWS Lambda**, **Amazon Cognito**, **Amazon Bedrock**, **Amazon DynamoDB**, and **CloudWatch**. As a result, I gained a more general understanding of how an AI system can be deployed in practice.
 
-#### Event-Driven Architecture
+The AI Agent sharing session also helped me understand that AI should not only be used to write code quickly. When developing software, a clear process is still required, including requirement analysis, design, task division, coding, testing, and review.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+## 4. Lessons learned
 
-#### Compute Evolution
+After the event, I learned that AI is a very powerful support tool, but users should not depend entirely on it. When using AI, it is necessary to ask clear questions, provide sufficient context, and verify the results before using them.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+I also understood that Prompt Engineering is an important skill. Writing effective prompts helps AI provide more accurate, applicable, and time-saving answers.
 
-#### Amazon Q Developer
+In addition, I realized that a growth mindset and integrity are also very important in the workplace. AI can help people work faster, but humans still need to take responsibility for the final results.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+## 5. Application after the event
 
-### Key Takeaways
+After the event, I can apply the knowledge I learned to using AI in my studies and projects. When asking AI questions, I will try to write clearer prompts and fully describe the objectives, context, and desired output format.
 
-#### Design Mindset
+In my studies, I will divide goals into smaller tasks, monitor my progress, and build a more consistent learning habit. When working on software projects, I will pay more attention to processes such as requirement analysis, design, testing, and code review.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+In addition, I also want to learn more about AWS services such as Lambda, Bedrock, DynamoDB, Cognito, and CloudWatch to better understand how to deploy a practical AI system.
 
-#### Technical Architecture
+## 6. Personal reflection
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+The **First Cloud AI Journey - Event 1** provided me with a great deal of useful and practical knowledge. I liked how the speakers not only discussed technology but also shared approaches to learning, working, and personal development in the AI era.
 
-#### Modernization Strategy
+What impressed me the most was that AI does not completely replace humans. AI is only a supporting tool, while humans still need critical thinking, result verification, and responsibility for the products they create.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+## 7. Conclusion
 
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+Overall, the event helped me understand more about AI, Cloud, Prompt Engineering, and software development. After the event, I realized that using AI effectively requires knowing how to ask questions, verify results, and apply AI for the right purposes.
 
 #### Some event photos
 *Add your event photos here*  

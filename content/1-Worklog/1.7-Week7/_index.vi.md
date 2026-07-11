@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
+date: 2026-06-05
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -12,48 +12,32 @@ pre: " <b> 1.7. </b> "
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* **Chủ đề:** Container, CI/CD và luồng công việc DevOps.
+* Tuần này tập trung vào đóng gói ứng dụng, điều phối container và xây dựng pipeline triển khai liên tục.
+* Tìm hiểu Docker, Amazon ECS và hạ tầng ECS bằng CDK.
+* Nắm quy trình CI/CD với AWS CodePipeline.
+* Làm quen với Storage Gateway, FSx, VPC Flow Logs, Step Functions và hiệu suất lưu trữ.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 29/05/2026 | - Tìm hiểu Docker và cách container hóa ứng dụng. <br> - Kết quả: Biết cách đóng gói ứng dụng cùng thư viện phụ thuộc để chạy ổn định trên nhiều môi trường. | 29/05/2026 | 29/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 30/05/2026 | - Tìm hiểu Amazon ECS. <br> - Kết quả: Nắm được cluster, task definition, service và cách ECS quản lý container. | 30/05/2026 | 30/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 31/05/2026 | - Tìm hiểu CDK cho ECS. <br> - Kết quả: Biết cách mô tả hạ tầng ECS bằng code để triển khai nhất quán hơn. | 31/05/2026 | 31/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 01/06/2026 | - Tìm hiểu AWS CodePipeline và CI/CD. <br> - Kết quả: Nắm được luồng tự động hóa từ source code, build, test đến deploy. | 01/06/2026 | 01/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 02/06/2026 | - Tìm hiểu AWS Storage Gateway và Amazon FSx. <br> - Kết quả: Hiểu cách kết nối lưu trữ on-premises với Cloud và lưu trữ file cho môi trường Windows. | 02/06/2026 | 02/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 03/06/2026 | - Tìm hiểu VPC Flow Logs và AWS Step Functions. <br> - Kết quả: Biết cách giám sát lưu lượng mạng và điều phối quy trình xử lý nhiều bước. | 03/06/2026 | 03/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/06/2026 | - Thực hiện workshop hiệu suất lưu trữ. <br> - Kết quả: Hiểu thêm cách lựa chọn dịch vụ lưu trữ phù hợp theo nhu cầu hiệu năng và truy cập. | 04/06/2026 | 04/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm được lợi ích của Docker trong việc đóng gói ứng dụng, đảm bảo môi trường chạy nhất quán và giảm lỗi phát sinh do khác biệt cấu hình giữa các máy.
+* Hiểu được các thành phần chính của Amazon ECS như cluster, task definition, container, service và cách ECS hỗ trợ triển khai ứng dụng container trên AWS.
+* Biết cách sử dụng AWS CDK để mô tả hạ tầng ECS bằng code, giúp quá trình tạo cluster, service và load balancer dễ tái sử dụng hơn.
+* Nắm được vai trò của CI/CD trong DevOps, hiểu cách CodePipeline kết nối các bước lấy source code, build, test và deploy để giảm thao tác thủ công.
+* Hiểu cách tự động hóa triển khai giúp giảm lỗi khi release ứng dụng, tăng tốc độ cập nhật và hỗ trợ quy trình làm việc nhóm hiệu quả hơn.
+* Làm quen với Storage Gateway như một giải pháp kết nối lưu trữ tại chỗ với Cloud, phù hợp với môi trường hybrid hoặc hệ thống cần đồng bộ dữ liệu.
+* Nắm được vai trò của Amazon FSx trong lưu trữ file cho hệ thống Windows và các ứng dụng cần file system được quản lý.
+* Biết cách VPC Flow Logs hỗ trợ giám sát lưu lượng mạng, phân tích kết nối bị chặn và phát hiện các luồng truy cập bất thường.
+* Hiểu cách Step Functions điều phối workflow nhiều bước, giúp quản lý các quy trình xử lý phức tạp có sự tham gia của nhiều dịch vụ AWS.

@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-04-24
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Cloud Kickoff and Basic Networking, Compute Foundation.
+* This week focused on core cloud concepts, account management, and basic networking and compute infrastructure setup.
+* Become familiar with cloud computing, the AWS ecosystem, and foundational AWS service groups.
+* Set up the initial hands-on environment, including AWS account, Console, Budgets, and AWS CLI.
+* Understand the basics of IAM, VPC, EC2, IAM Role, Cloud9, and command-line operations.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 04/17/2026 | - Explore AWS services and classify major groups such as Compute, Storage, Networking, Database, Security, and Monitoring. <br> - Result: Built an overall understanding of how AWS provides cloud resources for application systems. | 04/17/2026 | 04/17/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/18/2026 | - Create a new AWS account, check sign-in information, and become familiar with AWS Management Console. <br> - Result: Prepared the initial hands-on environment and learned how to find and access AWS services through the web interface. | 04/18/2026 | 04/18/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/19/2026 | - Learn AWS Budgets and cost alert configuration. <br> - Result: Understood how to create budgets, set alert thresholds, and monitor costs to reduce unexpected spending. | 04/19/2026 | 04/19/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/20/2026 | - Learn AWS Support, technical support options, and documentation lookup when issues occur. <br> - Result: Understood basic support needs, documentation usage, and when a support case may be required. | 04/20/2026 | 04/20/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/21/2026 | - Learn IAM with User, Group, Policy, and Role. <br> - Result: Understood the principle of least privilege and how IAM controls access to AWS resources. | 04/21/2026 | 04/21/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/22/2026 | - Learn Amazon VPC and Amazon EC2, including subnet, route table, internet gateway, security group, AMI, instance type, key pair, and EBS. <br> - Result: Understood basic network setup and virtual server creation for application deployment. | 04/22/2026 | 04/22/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/23/2026 | - Learn IAM Roles for EC2, AWS Cloud9, and AWS CLI. <br> - Result: Understood secure permission assignment for EC2, cloud-based development, and command-line AWS operations. | 04/23/2026 | 04/23/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Built a general picture of AWS, including the role of cloud computing in providing compute, storage, networking, database, security, and monitoring resources for application systems.
+* Completed the initial hands-on environment preparation: created the AWS account, became familiar with AWS Management Console, and configured AWS Budgets to monitor resource usage costs.
+* Understood cost control on AWS, including alert thresholds, estimated costs, and the importance of financial governance when practicing in a cloud environment.
+* Understood IAM access control fundamentals, including users, groups, policies, and roles in controlling AWS resource access based on least privilege.
+* Understood basic AWS networking through VPC, subnet, route table, internet gateway, and security group, and visualized how systems are isolated and network traffic is controlled.
+* Understood how EC2 works, including AMI selection, instance type, key pair, EBS volume, and security configuration when launching virtual servers for application deployment.
+* Learned how to assign secure permissions to EC2 using IAM Role, avoiding direct storage of Access Key and Secret Key on servers or source code.
+* Used AWS CLI for basic operations such as checking configuration, viewing account information, listing regions, querying EC2 information, and managing resources alongside the Console.
+* Established a foundation for learning more advanced services in the following weeks, especially networking, storage, security, automation, and AWS application deployment.

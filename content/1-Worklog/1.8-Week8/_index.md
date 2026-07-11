@@ -1,6 +1,6 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
+date: 2026-06-12
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Application Modernization and Microservices Transformation.
+* This week focused on modernizing legacy systems, microservices transformation, and event-driven architecture.
+* Understand application modernization approaches on AWS.
+* Understand the transition from Monolith to Microservices.
+* Become familiar with Serverless, event-driven architecture, SPA authentication, AI services, and advanced DynamoDB.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 06/05/2026 | - Learn application modernization on AWS. <br> - Result: Understood ways to upgrade legacy systems for cloud environments. | 06/05/2026 | 06/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/06/2026 | - Learn Serverless - DevAx Series. <br> - Result: Understood how to build applications without directly managing servers. | 06/06/2026 | 06/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/07/2026 | - Learn migration from Monolith to Microservices. <br> - Result: Understood why large applications may need to be split into smaller functional services. | 06/07/2026 | 06/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/08/2026 | - Learn Microservices development and CI/CD for application release. <br> - Result: Understood independent service development and automated deployment. | 06/08/2026 | 06/08/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/09/2026 | - Learn data and process refactoring. <br> - Result: Understood that architecture transformation requires changes in data, workflow, and service communication. | 06/09/2026 | 06/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/10/2026 | - Learn event-driven architecture and SPA authentication. <br> - Result: Understood asynchronous event communication and sign-in management for SPA. | 06/10/2026 | 06/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 06/11/2026 | - Learn AWS AI Services and advanced DynamoDB. <br> - Result: Understood extending applications with AI and optimizing NoSQL data design. | 06/11/2026 | 06/11/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood application modernization approaches on AWS, including architecture improvement, deployment optimization, better scalability, and reduced dependency on traditional infrastructure.
+* Understood the Serverless model and the role of services such as Lambda, API Gateway, and DynamoDB in building applications without direct server management.
+* Understood why systems may need to move from Monolith to Microservices, especially when they become larger, harder to maintain, harder to scale, and need independent deployment.
+* Learned how to split an application into business-based services, where each service has its own responsibility, data, and deployment lifecycle.
+* Understood that architecture transformation is not only code splitting but also data restructuring, workflow adjustment, and service communication redesign.
+* Understood the benefits of event-driven architecture in reducing direct service dependency, supporting asynchronous processing, and improving scalability.
+* Understood that single-page application authentication requires token management, login sessions, and authorization to protect APIs.
+* Learned how AI Services can extend application capabilities, automate tasks, or add intelligent features.
+* Understood several advanced DynamoDB topics such as key design, query optimization, and data model selection based on access patterns.

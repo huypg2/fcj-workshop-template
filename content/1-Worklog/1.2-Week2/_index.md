@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 2026-05-01
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Storage, Databases, and Scaling.
+* This week focused on static storage, databases, caching, and automatic scaling.
+* Become familiar with Amazon S3, RDS, DynamoDB, and ElastiCache.
+* Understand simple application deployment using Lightsail and containers.
+* Understand automatic scaling, system monitoring, and DNS management.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 04/24/2026 | - Learn Amazon S3 and static website hosting. <br> - Result: Learned how to create buckets, store static content, and configure basic static website access. | 04/24/2026 | 04/24/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/25/2026 | - Learn Amazon RDS for relational databases. <br> - Result: Understood database engine selection, DB instance creation, backup configuration, and application connection. | 04/25/2026 | 04/25/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/26/2026 | - Learn Amazon DynamoDB for NoSQL data. <br> - Result: Understood the key-value/document model, partition key usage, and DynamoDB scalability. | 04/26/2026 | 04/26/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/27/2026 | - Learn Amazon ElastiCache. <br> - Result: Understood the role of caching in reducing database load and improving application response time. | 04/27/2026 | 04/27/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/28/2026 | - Learn Amazon Lightsail and Lightsail Containers. <br> - Result: Understood small application or simple container deployment with predictable cost. | 04/28/2026 | 04/28/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/29/2026 | - Learn EC2 Auto Scaling and CloudWatch. <br> - Result: Understood automatic capacity scaling and monitoring through metrics, logs, and alarms. | 04/29/2026 | 04/29/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 04/30/2026 | - Learn Amazon Route 53. <br> - Result: Understood how DNS records and routing policies direct users to AWS resources. | 04/30/2026 | 04/30/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the role of Amazon S3 in static data storage, static website hosting, and durable object storage management.
+* Understood bucket configuration, access permissions, and required settings for hosting static websites on S3, including risks of incorrect public access configuration.
+* Understood how Amazon RDS supports managed relational database deployment, including engine selection, instance configuration, backup, security, and application connection.
+* Understood the difference between relational and NoSQL databases through DynamoDB, especially primary key design, key-value data storage, and scalability based on access demand.
+* Understood the role of ElastiCache in improving application performance, reducing repeated database queries, and improving system response time.
+* Became familiar with Lightsail and Lightsail Containers as simple deployment options for small websites, test environments, or projects requiring predictable cost management.
+* Understood EC2 Auto Scaling principles and how systems automatically increase or decrease server capacity based on load to balance performance and cost.
+* Understood how CloudWatch supports metric, log, and alarm monitoring, enabling early detection of abnormal system behavior.
+* Understood the role of Route 53 in DNS, domain management, and traffic routing, forming a foundation for applications with clearer access addresses.

@@ -10,115 +10,59 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+## 1. Tổng quan sự kiện
 
-### Mục Đích Của Sự Kiện
+**First Cloud AI Journey - Event 1** là sự kiện chia sẻ về AI, Cloud, Prompt Engineering và cách ứng dụng AI trong học tập, công việc cũng như phát triển phần mềm. Sự kiện giúp người tham dự hiểu rõ hơn về vai trò của AI trong thời đại hiện nay và cách sử dụng AI hiệu quả hơn.
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+Ngoài kiến thức công nghệ, sự kiện còn nói về tư duy phát triển bản thân, thái độ nghề nghiệp và cách con người thích nghi khi AI ngày càng được sử dụng nhiều trong học tập và công việc.
 
-### Danh Sách Diễn Giả
+## 2. Nội dung chương trình
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+Trong sự kiện, các diễn giả đã chia sẻ nhiều chủ đề khác nhau.
 
-### Nội Dung Nổi Bật
+**Huỳnh Hoàng Long** chia sẻ về cách mạng xã hội thu hút sự chú ý của người dùng thông qua dopamine, phản hồi nhanh và tâm lý sợ mất mát. Từ đó, diễn giả liên hệ đến việc tạo động lực học tập hiệu quả hơn.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+**Nguyễn Tuấn Thịnh** trình bày chủ đề **“Automated Prompt Engineering: Enhancing LLM Output Quality”**. Nội dung tập trung vào cách viết prompt rõ ràng, tối ưu token, công cụ Proptimizer và ứng dụng AI trên AWS.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+**Khang** chia sẻ về tư duy phát triển bản thân trong thời đại AI. Phần này nhấn mạnh growth mindset, thái độ học tập, sự chính trực và cách doanh nghiệp đánh giá nhân sự.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+**Thảo** trình bày chủ đề **“Đừng chỉ Vibe Code – Hãy xây dựng chuẩn Software Engineering”**. Nội dung nói về việc dùng AI Agent và BMAD Method để hỗ trợ quy trình phát triển phần mềm chuyên nghiệp hơn.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+## 3. Những điểm đáng chú ý
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+Một nội dung tôi thấy thú vị là cách áp dụng cơ chế của mạng xã hội vào việc học. Mạng xã hội thường tạo cảm giác thích thú vì có phản hồi nhanh và phần thưởng ngắn hạn. Từ đó, tôi hiểu rằng việc học cũng nên được chia thành các mục tiêu nhỏ để dễ duy trì động lực hơn.
 
-#### Domain-Driven Design (DDD)
+Phần Prompt Engineering cũng rất hữu ích. Tôi nhận ra rằng nếu đặt câu hỏi quá chung chung thì AI thường trả lời không đúng ý hoặc thiếu chiều sâu. Một prompt tốt cần có vai trò, nhiệm vụ, bối cảnh, dữ liệu đầu vào, định dạng kết quả và các yêu cầu cụ thể.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+Ngoài ra, sự kiện còn giới thiệu một số dịch vụ AWS có thể dùng để xây dựng ứng dụng AI như **API Gateway**, **AWS Lambda**, **Amazon Cognito**, **Amazon Bedrock**, **Amazon DynamoDB** và **CloudWatch**. Nhờ đó, tôi có cái nhìn tổng quan hơn về cách một hệ thống AI được triển khai trong thực tế.
 
-#### Event-Driven Architecture
+Phần chia sẻ về AI Agent cũng giúp tôi hiểu rằng không nên chỉ dùng AI để viết code nhanh. Khi phát triển phần mềm, vẫn cần có quy trình rõ ràng như phân tích yêu cầu, thiết kế, chia task, viết code, kiểm thử và review.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+## 4. Những điều học được
 
-#### Compute Evolution
+Sau sự kiện, tôi học được rằng AI là công cụ hỗ trợ rất mạnh, nhưng người dùng không nên phụ thuộc hoàn toàn vào AI. Khi sử dụng AI, cần biết đặt câu hỏi rõ ràng, cung cấp bối cảnh đầy đủ và kiểm tra lại kết quả trước khi dùng.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+Tôi cũng hiểu rằng Prompt Engineering là một kỹ năng quan trọng. Viết prompt tốt giúp AI đưa ra câu trả lời chính xác hơn, dễ áp dụng hơn và tiết kiệm thời gian hơn.
 
-#### Amazon Q Developer
+Bên cạnh đó, tôi nhận ra rằng tư duy phát triển và sự chính trực cũng rất quan trọng trong công việc. AI có thể giúp làm việc nhanh hơn, nhưng con người vẫn cần chịu trách nhiệm với kết quả cuối cùng.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+## 5. Ứng dụng sau sự kiện
 
-### Những Gì Học Được
+Sau sự kiện, tôi có thể áp dụng kiến thức đã học vào việc sử dụng AI trong học tập và làm dự án. Khi đặt câu hỏi cho AI, tôi sẽ cố gắng viết prompt rõ ràng hơn, nêu đầy đủ mục tiêu, bối cảnh và định dạng mong muốn.
 
-#### Tư Duy Thiết Kế
+Trong học tập, tôi sẽ chia nhỏ mục tiêu, theo dõi tiến độ và tạo thói quen học đều đặn hơn. Khi làm dự án phần mềm, tôi sẽ chú ý hơn đến quy trình làm việc như phân tích yêu cầu, thiết kế, kiểm thử và review code.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Ngoài ra, tôi cũng muốn tìm hiểu thêm về các dịch vụ AWS như Lambda, Bedrock, DynamoDB, Cognito và CloudWatch để hiểu rõ hơn cách triển khai một hệ thống AI thực tế.
 
-#### Kiến Trúc Kỹ Thuật
+## 6. Cảm nhận cá nhân
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Sự kiện **First Cloud AI Journey - Event 1** mang lại cho tôi nhiều kiến thức hữu ích và dễ áp dụng. Tôi thích cách các diễn giả không chỉ nói về công nghệ, mà còn chia sẻ về cách học, cách làm việc và cách phát triển bản thân trong thời đại AI.
 
-#### Chiến Lược Hiện Đại Hóa
+Điều tôi ấn tượng nhất là AI không thay thế hoàn toàn con người. AI chỉ là công cụ hỗ trợ, còn con người vẫn cần tư duy phản biện, kiểm tra kết quả và chịu trách nhiệm với sản phẩm mình tạo ra.
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+## 7. Tổng kết
 
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+Tổng thể, sự kiện giúp tôi hiểu thêm về AI, Cloud, Prompt Engineering và phát triển phần mềm. Sau sự kiện, tôi nhận ra rằng để sử dụng AI hiệu quả, cần biết cách đặt câu hỏi, biết kiểm tra kết quả và biết áp dụng AI vào đúng mục đích.
 
 #### Một số hình ảnh khi tham gia sự kiện
 * Thêm các hình ảnh của các bạn tại đây

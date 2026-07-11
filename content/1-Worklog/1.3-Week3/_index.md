@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
+date: 2026-05-08
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Advanced Networking, Content Delivery, and Migration.
+* This week explored network traffic flow, content delivery optimization, and cloud migration strategies.
+* Strengthen networking knowledge through AWS hands-on workshops.
+* Learn CloudFront, Lambda@Edge, and content delivery optimization solutions.
+* Understand migration approaches, virtual machine migration, database migration, and disaster recovery.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 05/01/2026 | - Practice AWS networking workshop. <br> - Result: Understood VPC, subnet, route table, security group, and connection flow design more clearly. | 05/01/2026 | 05/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/02/2026 | - Learn Amazon CloudFront. <br> - Result: Understood how CDN caches content at edge locations to reduce latency and origin load. | 05/02/2026 | 05/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/03/2026 | - Learn Lambda@Edge with CloudFront. <br> - Result: Understood how to process selected request/response logic closer to users. | 05/03/2026 | 05/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/04/2026 | - Learn Windows applications on AWS and AWS Managed Microsoft AD. <br> - Result: Understood AWS support for Windows workloads and directory services in enterprise environments. | 05/04/2026 | 05/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/05/2026 | - Learn AWS migration strategies. <br> - Result: Distinguished rehost, replatform, and refactor approaches and how to choose a suitable migration direction. | 05/05/2026 | 05/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/06/2026 | - Learn AWS VM Import/Export, AWS DMS, and SCT. <br> - Result: Understood virtual machine and database migration to AWS. | 05/06/2026 | 05/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/07/2026 | - Learn AWS Elastic Disaster Recovery. <br> - Result: Understood recovery preparation, downtime reduction, and data protection during incidents. | 05/07/2026 | 05/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Gained more advanced AWS networking knowledge, especially how VPC, subnet, route table, security group, and network ACL work together to control data flow.
+* Understood the role of CloudFront in improving access speed, reducing latency, and reducing origin server load through edge caching.
+* Understood how Lambda@Edge supports logic processing closer to users, especially for simple request, response, or content delivery customization.
+* Became familiar with Windows workloads on AWS, including Windows servers, Microsoft AD directory services, and enterprise integration needs.
+* Understood common migration strategies such as rehost, replatform, and refactor, and recognized the need to evaluate the current application before choosing a solution.
+* Understood how VM Import/Export supports moving existing virtual machines to EC2 and how DMS supports database migration.
+* Understood the role of Schema Conversion Tool when schema conversion is needed during database engine changes.
+* Understood that Elastic Disaster Recovery aims to reduce downtime, support system replication, and improve recovery during serious incidents.
+* Built a clearer view of the relationship between networking, CDN, migration, and disaster recovery when building stable and scalable cloud systems.

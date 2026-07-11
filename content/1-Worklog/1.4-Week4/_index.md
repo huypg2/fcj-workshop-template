@@ -1,6 +1,6 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
+date: 2026-05-15
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.4. </b> "
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Operations Management and Infrastructure as Code.
+* This week focused on resource management automation and infrastructure deployment through code.
+* Learn how to organize resources using Tags and Resource Groups.
+* Understand system operations tools with Systems Manager and Session Manager.
+* Become familiar with serverless automation, CloudFormation, and AWS CDK.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 05/08/2026 | - Learn AWS Toolkit for VS Code. <br> - Result: Learned how to connect the development environment with AWS for easier application development and operations. | 05/08/2026 | 05/08/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/09/2026 | - Learn Tags and Resource Groups. <br> - Result: Understood resource classification by project, environment, cost, and usage purpose. | 05/09/2026 | 05/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/10/2026 | - Learn IAM with Resource Tags. <br> - Result: Understood tag-based access control for stricter resource management. | 05/10/2026 | 05/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/11/2026 | - Learn AWS Systems Manager. <br> - Result: Understood centralized server, configuration, and operation task management. | 05/11/2026 | 05/11/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/12/2026 | - Learn Systems Manager Session Manager. <br> - Result: Understood safer EC2 access without exposing SSH directly to the Internet. | 05/12/2026 | 05/12/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/13/2026 | - Learn AWS Lambda and AWS CloudFormation. <br> - Result: Understood serverless automation and infrastructure description using templates. | 05/13/2026 | 05/13/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/14/2026 | - Learn AWS CDK basics, advanced CDK, and Infrastructure as Code workshop. <br> - Result: Understood defining cloud resources using programming languages. | 05/14/2026 | 05/14/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood how to organize AWS resources using Tags and Resource Groups, making management, searching, classification, and cost tracking clearer.
+* Understood how IAM can work with Resource Tags to control access by environment or resource group, which is useful when many members work on the same system.
+* Understood the role of AWS Toolkit for VS Code in supporting application development and AWS service operations directly from a familiar development environment.
+* Understood key functions of AWS Systems Manager in server management, operation task automation, health checking, and configuration management.
+* Understood the benefits of Session Manager for safer EC2 access, reducing the need to expose public SSH ports and lowering server administration risks.
+* Understood how AWS Lambda supports small task automation, event processing, and code execution without direct server management.
+* Understood Infrastructure as Code through CloudFormation, including how templates help create consistent resources and reduce manual configuration errors.
+* Became familiar with AWS CDK and the benefit of using programming languages to describe infrastructure and reuse deployment structures across environments.
+* Built a stronger operations and automation foundation for later DevOps, CI/CD, and system deployment topics.

@@ -1,6 +1,6 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
+date: 2026-05-29
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -12,46 +12,32 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* **Topic:** Reliability, Performance, and Cost Optimization.
+* This week focused on backup, recovery, networking, asynchronous processing, and operational cost optimization.
+* Learn backup, snapshot, and standardized server image solutions.
+* Understand multi-VPC networking models and messaging systems.
+* Understand AWS resource, quota, and cost optimization.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 05/22/2026 | - Learn AWS Backup, EBS Data Lifecycle Manager, and anomaly detection for EBS Backups. <br> - Result: Understood backup planning, automated snapshots, and backup risk monitoring. | 05/22/2026 | 05/22/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/23/2026 | - Learn EC2 Image Builder. <br> - Result: Understood standardized server image creation, patch integration, and configuration error reduction. | 05/23/2026 | 05/23/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/24/2026 | - Learn VPC Peering and AWS Transit Gateway. <br> - Result: Understood multi-VPC connectivity and centralized network management. | 05/24/2026 | 05/24/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/25/2026 | - Learn Amazon SQS and SNS. <br> - Result: Understood system decoupling and asynchronous message processing. | 05/25/2026 | 05/25/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/26/2026 | - Learn Amazon EBS Multi-Attach and HA database models. <br> - Result: Understood storage requirements for high availability systems. | 05/26/2026 | 05/26/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/27/2026 | - Learn EC2 Resource Optimization and Service Quotas. <br> - Result: Understood instance right-sizing and resource quota tracking. | 05/27/2026 | 05/27/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 05/28/2026 | - Learn Savings Plans, Reserved Instances, AWS Glue, Athena, and Billing Console permissions. <br> - Result: Understood cost saving, cost analysis, and billing access management. | 05/28/2026 | 05/28/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the role of AWS Backup in centralized data backup for multiple resources, supporting system recovery during incidents or data loss.
+* Understood how EBS Data Lifecycle Manager automates snapshots, reduces manual work, and ensures scheduled backups.
+* Understood the role of EC2 Image Builder in creating standardized server images, applying patches, installing required configuration, and deploying consistent environments.
+* Understood how VPC Peering connects two VPCs and how Transit Gateway simplifies network architecture when many VPCs or on-premises systems need to connect.
+* Understood how SQS and SNS support asynchronous processing, reduce direct dependency between services, and improve stability during traffic spikes.
+* Learned more about EBS Multi-Attach and scenarios requiring shared storage for multiple EC2 instances in high availability architectures.
+* Understood how EC2 Resource Optimization evaluates real resource usage and supports right-sizing to reduce waste.
+* Understood the role of Service Quotas in checking resource limits and proactively requesting increases before large deployments.
+* Understood cost optimization methods such as Savings Plans, Reserved Instances, Glue/Athena cost analysis, and Billing Console access control.

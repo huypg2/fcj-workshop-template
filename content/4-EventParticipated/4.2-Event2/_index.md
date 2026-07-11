@@ -10,115 +10,61 @@ pre: " <b> 4.2. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+## 1. Event overview
 
-### Event Objectives
+**First Cloud AI Journey - Event 2** is a knowledge-sharing event about AWS, Cloud, Hackathon, DevOps, GenAI, and personal development mindset. The event helps participants understand how to self-study AWS effectively, how to build practical products, and how to overcome psychological barriers in learning and work.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+## 2. Program content
 
-### Speakers
+During the event, the speakers shared many different topics.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+**Hoàng Thái Linh** introduced a way to learn AWS through **AWS Cloud Quest** and the **Floci** tool. This is a practical learning approach that helps beginners access AWS more easily and reduces the risk of unexpected costs.
 
-### Key Highlights
+**Nguyễn Trần Minh Quân, An Khương Huỳnh, and Quốc Anh Mai** shared their experience participating in **LotusHacks 2026**. The team presented the process of building projects such as **SynthHunter** and **Vortex**, from the initial idea to an MVP product within a short period of time.
 
-#### Identifying the drawbacks of legacy application architecture
+**Nguyễn Thị Quỳnh Như** shared about confidence in learning and work. The content helped participants understand that confidence does not mean having no fear, but being willing to try even when still feeling worried.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Trần Nghĩa** shared about the **Tử Vi Đại Việt** application and the process of migrating the system to AWS. This section helped me understand more about Serverless, Managed Services, and cost optimization for Startups.
 
-#### Transitioning to modern application architecture – Microservices
+**Trần Minh Quân** presented DevOps and hidden issues in projects. The speaker emphasized that DevOps is not only about tools, but also involves people, processes, and teamwork.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+**Phạm Khắc Uy** shared about procrastination. The content showed that procrastination is often not caused only by laziness, but also by fear of failure, fear of being judged, or a lack of confidence.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+## 3. Notable points
 
-#### Domain-Driven Design (DDD)
+One topic that I found useful was learning AWS through a gamified model. Instead of studying only theory, learners can practice through AWS Cloud Quest to understand AWS services more easily.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+The Hackathon sharing session was also very practical. Within a short period of time, the team had to choose an idea, divide tasks, use resources appropriately, and complete an MVP product. This helped me better understand the pressure involved in building a real product.
 
-#### Event-Driven Architecture
+In addition, the topics about confidence and procrastination were also relatable to students. I realized that sometimes I do not start because I am afraid of making mistakes or being judged. The best approach is to begin with small tasks first and then improve gradually.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+From a technical perspective, the event helped me learn more about Serverless, Managed Services, GenAI pipelines, and DevOps. This knowledge gives me more direction when working on Cloud projects in the future.
 
-#### Compute Evolution
+## 4. Lessons learned
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+After the event, I learned that studying AWS should go together with hands-on practice. If I only read theory, it is difficult to gain a deep understanding, while doing labs or building small products makes the knowledge easier to remember.
 
-#### Amazon Q Developer
+I also understood that when building a product, strong technical skills alone are not enough. The team needs a clear way of working, good communication, shared responsibilities, and the ability to solve problems together.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+In addition, I realized that confidence is built through action. I should not wait until everything is perfect before starting, but should try first, correct mistakes when they happen, and gradually learn from experience.
 
-### Key Takeaways
+## 5. Application after the event
 
-#### Design Mindset
+After the event, I can apply the knowledge I learned to self-studying AWS, especially by practicing with Cloud Quest and learning more about services such as Lambda, S3, RDS, ECS, Bedrock, and CloudWatch.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+When working on projects, I will pay more attention to cost optimization, choosing a suitable architecture, and building a clearer teamwork process. I also want to learn more about Serverless and DevOps to apply them to future projects.
 
-#### Technical Architecture
+For personal improvement, I will try to reduce procrastination by starting with small tasks. Instead of waiting until I have enough motivation, I will complete one part first to create momentum and continue.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+## 6. Personal reflection
 
-#### Modernization Strategy
+The **First Cloud AI Journey - Event 2** provided me with a great deal of practical and applicable knowledge. I liked the way the speakers shared real experiences from Hackathons, Startups, and project development.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+The message that impressed me the most was not to be afraid of failure. In learning and work, the important thing is to be willing to start, to try, and to learn from mistakes.
 
-### Applying to Work
+## 7. Conclusion
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+Overall, the event helped me understand more about AWS, DevOps, GenAI, Hackathons, and personal development mindset. After the event, I realized that to progress in the technology field, it is necessary to combine technical knowledge, teamwork skills, and a proactive learning attitude.
 
 #### Some event photos
 *Add your event photos here*  
