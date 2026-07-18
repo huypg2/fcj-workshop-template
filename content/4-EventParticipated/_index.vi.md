@@ -10,37 +10,30 @@ pre: " <b> 4. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
-
 
 Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
 ### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+&emsp;**Tên sự kiện:**  First Cloud AI Journey (Sự kiện 1) 
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** 09:00 ngày 04/05/2026
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Mô tả:** Sự kiện chia sẻ về AI, Cloud, Prompt Engineering và cách ứng dụng AI trong học tập, công việc cũng như phát triển phần mềm. Nội dung giúp hiểu rõ hơn cách sử dụng AI hiệu quả, viết prompt rõ ràng và kết hợp các dịch vụ AWS để xây dựng ứng dụng AI thực tế.
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
 
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+&emsp;**Tên sự kiện:** First Cloud AI Journey (Sự kiện 1) 
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:**  09:00 ngày 30/05/2026
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Mô tả:**  Sự kiện tập trung vào AWS, Cloud, Hackathon, DevOps, GenAI và tư duy phát triển bản thân. Nội dung giúp hiểu cách tự học AWS qua thực hành, xây dựng sản phẩm MVP, tối ưu chi phí với dịch vụ AWS và rèn luyện sự tự tin khi học tập, làm việc.   
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
