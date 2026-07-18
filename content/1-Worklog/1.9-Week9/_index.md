@@ -25,7 +25,7 @@ pre: " <b> 1.9. </b> "
 | Tuesday | - Prepare prerequisites before creating resources<br>&emsp; + Check AWS account and deployment Region<br>&emsp; + Review IAM permissions required for deployment<br>&emsp; + Verify Docker and local tools before building images | 06/16/2026 | 06/16/2026 | https://000002.awsstudygroup.com/ |
 | Wednesday | - Configure AWS CLI on the practice machine<br>&emsp; + Set up AWS CLI access information<br>&emsp; + Verify configuration using account authentication commands<br>&emsp; + Ensure CLI can be used for later ECR and ECS steps | 06/17/2026 | 06/17/2026 | https://000011.awsstudygroup.com/ |
 | Thursday | - Build and standardize Docker images for ECR<br>&emsp; + Build image from the project source<br>&emsp; + Tag the image using the ECR repository format<br>&emsp; + Log Docker in to Amazon ECR using AWS CLI | 06/18/2026 | 06/18/2026 | https://000015.awsstudygroup.com/ |
-| 06/19/2026 | - Push image to Amazon ECR and verify it<br>&emsp; + Push the tagged image to the ECR repository<br>&emsp; + Check image tag, digest, and update time<br>&emsp; + Save the image URI for ECS Task Definition | 06/19/2026 | 06/19/2026 | https://000067.awsstudygroup.com/ |
+| Friday | - Push image to Amazon ECR and verify it<br>&emsp; + Push the tagged image to the ECR repository<br>&emsp; + Check image tag, digest, and update time<br>&emsp; + Save the image URI for ECS Task Definition | 06/19/2026 | 06/19/2026 | https://000067.awsstudygroup.com/ |
 
 ### Week 9 Results:
 

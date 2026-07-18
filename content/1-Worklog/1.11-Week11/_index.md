@@ -24,8 +24,8 @@ pre: " <b> 1.11. </b> "
 | Monday | - Create Target Group for the application<br>&emsp; + Select target type suitable for ECS Fargate<br>&emsp; + Configure request receiving port<br>&emsp; + Configure health check for task status verification | 06/29/2026 | 06/29/2026 | https://000016.awsstudygroup.com/ |
 | Tuesday | - Create Application Load Balancer<br>&emsp; + Select the prepared VPC and subnets<br>&emsp; + Attach Security Group to ALB<br>&emsp; + Verify Load Balancer status after creation | 06/30/2026 | 06/30/2026 | https://000067.awsstudygroup.com/ |
 | Wednesday | - Configure Listener Rules for ALB<br>&emsp; + Create listener to receive requests<br>&emsp; + Configure rule to forward requests to Target Group<br>&emsp; + Verify the relationship between listener, rule, and target group | 07/01/2026 | 07/01/2026 | https://000067.awsstudygroup.com/ |
-| 07/02/2026 | - Prepare Log Group and IAM Role for ECS Fargate<br>&emsp; + Create CloudWatch Log Group for container logs<br>&emsp; + Prepare ECS Task Execution Role<br>&emsp; + Verify permissions to pull images from ECR and write logs to CloudWatch | 07/02/2026 | 07/02/2026 | https://000008.awsstudygroup.com/ |
-| 07/03/2026 | - Register Task Definition and launch ECS Service<br>&emsp; + Declare image URI from Amazon ECR<br>&emsp; + Configure CPU, memory, port mapping, and environment variables<br>&emsp; + Launch service on ECS Fargate and check task status | 07/03/2026 | 07/03/2026 | https://000067.awsstudygroup.com/ |
+| Thursday | - Prepare Log Group and IAM Role for ECS Fargate<br>&emsp; + Create CloudWatch Log Group for container logs<br>&emsp; + Prepare ECS Task Execution Role<br>&emsp; + Verify permissions to pull images from ECR and write logs to CloudWatch | 07/02/2026 | 07/02/2026 | https://000008.awsstudygroup.com/ |
+| Friday | - Register Task Definition and launch ECS Service<br>&emsp; + Declare image URI from Amazon ECR<br>&emsp; + Configure CPU, memory, port mapping, and environment variables<br>&emsp; + Launch service on ECS Fargate and check task status | 07/03/2026 | 07/03/2026 | https://000067.awsstudygroup.com/ |
 
 ### Week 11 Results:
 
