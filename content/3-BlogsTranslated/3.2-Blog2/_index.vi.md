@@ -31,7 +31,7 @@ Luồng xử lý dữ liệu của giải pháp được chia tách rõ ràng th
 - **Khi phục hồi (Restore):** Khi thực hiện khôi phục sang namespace mới, AWS tự động phân tích dữ liệu cấu hình lưu trên S3, đọc thông tin snapshot cũ từ tiến trình backup trước đó để "đúc" thành một ổ đĩa `gp3` mới hoàn toàn. Ổ đĩa mới này tự động được gắn (mount) vào Worker Node để ứng dụng tiếp tục ghi dữ liệu nối tiếp vào tệp lịch sử mà không bị gián đoạn.
 
 ---
-![Backup restore](![CI/CD Architecture Diagram](static/images/3-BlogsTranslated/3-2-1.png)
+![Backup restore](/images/104.png)
 ## 3. Lựa chọn công nghệ và phạm vi lưu trữ
 
 | Thành phần hệ thống | Công nghệ sử dụng | Vai trò trong kiến trúc |
@@ -50,13 +50,13 @@ Trong quá trình thực hành cấu hình giải pháp, hệ thống phát sinh
 ### Đặc thù môi trường Windows CMD
 Do tài liệu hướng dẫn gốc được tối ưu hoàn toàn cho môi trường Linux, khi thực thi các câu lệnh trên Windows CMD cần phải chuyển đổi toàn bộ cú pháp biến môi trường sang định dạng `%VARIABLE%`. Thêm vào đó, quá trình sinh các file manifest cấu hình YAML từ terminal cần được bọc trong cụm câu lệnh đóng mở ngoặc hoặc sử dụng các lệnh PowerShell ngầm để tránh lỗi vỡ ký tự đặc biệt.
 
-![EKS Pod Identity Association](static/images/3-BlogsTranslated/3-2-2.png)
+![EKS Pod Identity Association](/images/101.png)
 ### Lỗi kẹt Pod ở trạng thái Pending (FailedScheduling)
 Lỗi này xuất hiện do file deployment mẫu của AWS mặc định cấu hình thuộc tính kén node (`nodeSelector` ràng buộc với EKS Auto Mode). Nếu hạ tầng thực tế đang vận hành cụm Standard Node Group thông thường, Pod sẽ không thể lập lịch. Việc chủ động lược bỏ dòng cấu hình lọc node này trong file deployment sẽ giúp ứng dụng nhanh chóng chuyển sang trạng thái `Running` và nhận ổ đĩa mượt mà.
 
 ---
 
-![Velero Backup Completed](static/images/3-BlogsTranslated/3-2-3.png)
+![Velero Backup Completed](/images/100.png)
 ## 5. Lời kết
 
 Sự kết hợp giữa Velero và Amazon EKS thông qua cơ chế xác thực Pod Identity mang lại một giải pháp khôi phục thảm họa toàn diện cho các ứng dụng có trạng thái trên môi trường Cloud. Phương án tiếp cận này không chỉ đáp ứng tốt các tiêu chuẩn an toàn bảo mật nghiêm ngặt của doanh nghiệp mà còn giảm thiểu đáng kể gánh nặng vận hành cho đội ngũ Operations khi hệ thống đối mặt với các sự cố lớn.
