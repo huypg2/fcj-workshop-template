@@ -19,13 +19,13 @@ pre: " <b> 1.11. </b> "
 * Đăng ký ECS Task Definition và khởi chạy ECS Service bằng Fargate.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 29/06/2026 | - Tạo Target Group cho ứng dụng<br>&emsp; + Chọn loại target phù hợp với ECS Fargate<br>&emsp; + Cấu hình port nhận request<br>&emsp; + Thiết lập health check để kiểm tra trạng thái task | 29/06/2026 | 29/06/2026 | https://000016.awsstudygroup.com/ |
-| 30/06/2026 | - Tạo Application Load Balancer<br>&emsp; + Chọn VPC và subnet đã chuẩn bị<br>&emsp; + Gắn Security Group cho ALB<br>&emsp; + Kiểm tra trạng thái Load Balancer sau khi tạo | 30/06/2026 | 30/06/2026 | https://000067.awsstudygroup.com/ |
-| 01/07/2026 | - Cấu hình Listener Rules cho ALB<br>&emsp; + Tạo listener để nhận request<br>&emsp; + Thiết lập rule điều hướng request về Target Group<br>&emsp; + Kiểm tra liên kết giữa listener, rule và target group | 01/07/2026 | 01/07/2026 | https://000067.awsstudygroup.com/ |
-| 02/07/2026 | - Chuẩn bị Log Group và IAM Role cho ECS Fargate<br>&emsp; + Tạo CloudWatch Log Group để lưu log container<br>&emsp; + Chuẩn bị ECS Task Execution Role<br>&emsp; + Kiểm tra quyền pull image từ ECR và ghi log lên CloudWatch | 02/07/2026 | 02/07/2026 | https://000008.awsstudygroup.com/ |
-| 03/07/2026 | - Đăng ký Task Definition và khởi chạy ECS Service<br>&emsp; + Khai báo image URI lấy từ Amazon ECR<br>&emsp; + Cấu hình CPU, memory, port mapping và biến môi trường<br>&emsp; + Launch service trên ECS Fargate và kiểm tra trạng thái task | 03/07/2026 | 03/07/2026 | https://000067.awsstudygroup.com/ |
+| Thứ 2 | - Tạo Target Group cho ứng dụng<br>&emsp; + Chọn loại target phù hợp với ECS Fargate<br>&emsp; + Cấu hình port nhận request<br>&emsp; + Thiết lập health check để kiểm tra trạng thái task | 29/06/2026 | 29/06/2026 | https://000016.awsstudygroup.com/ |
+| Thứ 3 | - Tạo Application Load Balancer<br>&emsp; + Chọn VPC và subnet đã chuẩn bị<br>&emsp; + Gắn Security Group cho ALB<br>&emsp; + Kiểm tra trạng thái Load Balancer sau khi tạo | 30/06/2026 | 30/06/2026 | https://000067.awsstudygroup.com/ |
+| Thứ 4 | - Cấu hình Listener Rules cho ALB<br>&emsp; + Tạo listener để nhận request<br>&emsp; + Thiết lập rule điều hướng request về Target Group<br>&emsp; + Kiểm tra liên kết giữa listener, rule và target group | 01/07/2026 | 01/07/2026 | https://000067.awsstudygroup.com/ |
+| Thứ 5 | - Chuẩn bị Log Group và IAM Role cho ECS Fargate<br>&emsp; + Tạo CloudWatch Log Group để lưu log container<br>&emsp; + Chuẩn bị ECS Task Execution Role<br>&emsp; + Kiểm tra quyền pull image từ ECR và ghi log lên CloudWatch | 02/07/2026 | 02/07/2026 | https://000008.awsstudygroup.com/ |
+| Thứ 6 | - Đăng ký Task Definition và khởi chạy ECS Service<br>&emsp; + Khai báo image URI lấy từ Amazon ECR<br>&emsp; + Cấu hình CPU, memory, port mapping và biến môi trường<br>&emsp; + Launch service trên ECS Fargate và kiểm tra trạng thái task | 03/07/2026 | 03/07/2026 | https://000067.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 11:
 

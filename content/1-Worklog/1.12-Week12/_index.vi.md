@@ -18,13 +18,13 @@ pre: " <b> 1.12 </b> "
 * Thực hiện Verification và Cleanup để hoàn tất quá trình triển khai.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 06/07/2026 | - Tạo SNS Topic cho cảnh báo<br>&emsp; + Tạo kênh nhận thông báo từ hệ thống giám sát<br>&emsp; + Cấu hình thông tin nhận thông báo<br>&emsp; + Chuẩn bị SNS Topic để liên kết với CloudWatch Alarm | 06/07/2026 | 06/07/2026 | https://000077.awsstudygroup.com/ |
-| 07/07/2026 | - Tạo CloudWatch Alarm và chạy Load Testing<br>&emsp; + Chọn metric cần theo dõi<br>&emsp; + Gắn alarm với SNS Topic đã tạo<br>&emsp; + Chạy kiểm tra tải để quan sát metric và trạng thái alarm | 07/07/2026 | 07/07/2026 | https://000008.awsstudygroup.com/ |
-| 08/07/2026 | - Cấu hình S3 Bucket và KMS cho backup<br>&emsp; + Tạo bucket dùng để lưu dữ liệu backup/export<br>&emsp; + Cấu hình mã hóa bằng KMS<br>&emsp; + Kiểm tra cấu hình lưu trữ và mã hóa sau khi thiết lập | 08/07/2026 | 08/07/2026 | https://000057.awsstudygroup.com/<br>https://000033.awsstudygroup.com/ |
-| 09/07/2026 | - Tạo IAM Policy/Role và Export Snapshot<br>&emsp; + Tạo quyền cần thiết cho tác vụ backup/export<br>&emsp; + Cấu hình quyền truy cập S3, KMS và RDS<br>&emsp; + Thực hiện export snapshot và kiểm tra dữ liệu trên S3 | 09/07/2026 | 09/07/2026 | https://000005.awsstudygroup.com/<br>https://000013.awsstudygroup.com/ |
-| 10/07/2026 | - Verification và Cleanup tài nguyên<br>&emsp; + Kiểm tra lại các thành phần đã triển khai<br>&emsp; + Xác nhận các bước chính đã hoạt động đúng<br>&emsp; + Xóa hoặc dừng tài nguyên AWS không còn sử dụng | 10/07/2026 | 10/07/2026 | https://000007.awsstudygroup.com/<br>https://cloudjourney.awsstudygroup.com/vi/3-optimize/ |
+| Thứ 2 | - Tạo SNS Topic cho cảnh báo<br>&emsp; + Tạo kênh nhận thông báo từ hệ thống giám sát<br>&emsp; + Cấu hình thông tin nhận thông báo<br>&emsp; + Chuẩn bị SNS Topic để liên kết với CloudWatch Alarm | 06/07/2026 | 06/07/2026 | https://000077.awsstudygroup.com/ |
+| Thứ 3 | - Tạo CloudWatch Alarm và chạy Load Testing<br>&emsp; + Chọn metric cần theo dõi<br>&emsp; + Gắn alarm với SNS Topic đã tạo<br>&emsp; + Chạy kiểm tra tải để quan sát metric và trạng thái alarm | 07/07/2026 | 07/07/2026 | https://000008.awsstudygroup.com/ |
+| Thứ 4 | - Cấu hình S3 Bucket và KMS cho backup<br>&emsp; + Tạo bucket dùng để lưu dữ liệu backup/export<br>&emsp; + Cấu hình mã hóa bằng KMS<br>&emsp; + Kiểm tra cấu hình lưu trữ và mã hóa sau khi thiết lập | 08/07/2026 | 08/07/2026 | https://000057.awsstudygroup.com/<br>https://000033.awsstudygroup.com/ |
+| Thứ 5 | - Tạo IAM Policy/Role và Export Snapshot<br>&emsp; + Tạo quyền cần thiết cho tác vụ backup/export<br>&emsp; + Cấu hình quyền truy cập S3, KMS và RDS<br>&emsp; + Thực hiện export snapshot và kiểm tra dữ liệu trên S3 | 09/07/2026 | 09/07/2026 | https://000005.awsstudygroup.com/<br>https://000013.awsstudygroup.com/ |
+| Thứ 6 | - Verification và Cleanup tài nguyên<br>&emsp; + Kiểm tra lại các thành phần đã triển khai<br>&emsp; + Xác nhận các bước chính đã hoạt động đúng<br>&emsp; + Xóa hoặc dừng tài nguyên AWS không còn sử dụng | 10/07/2026 | 10/07/2026 | https://000007.awsstudygroup.com/<br>https://cloudjourney.awsstudygroup.com/vi/3-optimize/ |
 
 ### Kết quả đạt được tuần 12:
 

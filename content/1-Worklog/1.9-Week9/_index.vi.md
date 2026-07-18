@@ -19,13 +19,13 @@ pre: " <b> 1.9. </b> "
 * Build Docker image và đưa image lên Amazon ECR để phục vụ triển khai ECS Fargate.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 15/06/2026 | - Rà soát kiến trúc triển khai và thứ tự thực hiện<br>&emsp; + Xác định các thành phần cần triển khai trên AWS<br>&emsp; + Chuẩn bị trình tự thao tác từ môi trường, image, network, database đến compute<br>&emsp; + Ghi nhận các thông tin cần dùng như Region, tên repository và tên tài nguyên | 15/06/2026 | 15/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
-| 16/06/2026 | - Chuẩn bị điều kiện thực hành trước khi tạo tài nguyên<br>&emsp; + Kiểm tra tài khoản AWS và Region sử dụng<br>&emsp; + Rà soát quyền IAM cần thiết cho quá trình triển khai<br>&emsp; + Kiểm tra Docker và các công cụ local trước khi build image | 16/06/2026 | 16/06/2026 | https://000002.awsstudygroup.com/ |
-| 17/06/2026 | - Cấu hình AWS CLI trên máy thực hành<br>&emsp; + Thiết lập thông tin truy cập cho AWS CLI<br>&emsp; + Kiểm tra cấu hình bằng lệnh xác thực tài khoản<br>&emsp; + Đảm bảo CLI có thể dùng cho các bước ECR và ECS phía sau | 17/06/2026 | 17/06/2026 | https://000011.awsstudygroup.com/ |
-| 18/06/2026 | - Build và chuẩn hóa Docker image cho ECR<br>&emsp; + Build image từ source dự án<br>&emsp; + Gắn tag image theo định dạng repository ECR<br>&emsp; + Đăng nhập Docker vào Amazon ECR bằng AWS CLI | 18/06/2026 | 18/06/2026 | https://000015.awsstudygroup.com/ |
-| 19/06/2026 | - Push image lên Amazon ECR và kiểm tra image<br>&emsp; + Đẩy image đã tag lên ECR repository<br>&emsp; + Kiểm tra image tag, digest và thời gian cập nhật<br>&emsp; + Lưu lại image URI để sử dụng khi tạo ECS Task Definition | 19/06/2026 | 19/06/2026 | https://000067.awsstudygroup.com/ |
+| Thứ 2 | - Rà soát kiến trúc triển khai và thứ tự thực hiện<br>&emsp; + Xác định các thành phần cần triển khai trên AWS<br>&emsp; + Chuẩn bị trình tự thao tác từ môi trường, image, network, database đến compute<br>&emsp; + Ghi nhận các thông tin cần dùng như Region, tên repository và tên tài nguyên | 15/06/2026 | 15/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
+| Thứ 3 | - Chuẩn bị điều kiện thực hành trước khi tạo tài nguyên<br>&emsp; + Kiểm tra tài khoản AWS và Region sử dụng<br>&emsp; + Rà soát quyền IAM cần thiết cho quá trình triển khai<br>&emsp; + Kiểm tra Docker và các công cụ local trước khi build image | 16/06/2026 | 16/06/2026 | https://000002.awsstudygroup.com/ |
+| Thứ 4 | - Cấu hình AWS CLI trên máy thực hành<br>&emsp; + Thiết lập thông tin truy cập cho AWS CLI<br>&emsp; + Kiểm tra cấu hình bằng lệnh xác thực tài khoản<br>&emsp; + Đảm bảo CLI có thể dùng cho các bước ECR và ECS phía sau | 17/06/2026 | 17/06/2026 | https://000011.awsstudygroup.com/ |
+| Thứ 5 | - Build và chuẩn hóa Docker image cho ECR<br>&emsp; + Build image từ source dự án<br>&emsp; + Gắn tag image theo định dạng repository ECR<br>&emsp; + Đăng nhập Docker vào Amazon ECR bằng AWS CLI | 18/06/2026 | 18/06/2026 | https://000015.awsstudygroup.com/ |
+| Thứ 6 | - Push image lên Amazon ECR và kiểm tra image<br>&emsp; + Đẩy image đã tag lên ECR repository<br>&emsp; + Kiểm tra image tag, digest và thời gian cập nhật<br>&emsp; + Lưu lại image URI để sử dụng khi tạo ECS Task Definition | 19/06/2026 | 19/06/2026 | https://000067.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 9:
 
