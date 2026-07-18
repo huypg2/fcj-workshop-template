@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: 2026-05-01
+date: 2026-05-03
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -10,34 +10,37 @@ pre: " <b> 1.2. </b> "
 {{% /notice %}}
 
 
+### Week 2: Storage, Databases, Cache, DNS, Monitoring, and System Scaling
+
 ### Week 2 Objectives:
 
-* **Topic:** Storage, Databases, and Scaling.
-* This week focused on static storage, databases, caching, and automatic scaling.
-* Become familiar with Amazon S3, RDS, DynamoDB, and ElastiCache.
-* Understand simple application deployment using Lightsail and containers.
-* Understand automatic scaling, system monitoring, and DNS management.
+* Study common AWS storage and database services.
+* Understand the role of cache, DNS, monitoring, and auto scaling in cloud systems.
+* Get familiar with services that support small application deployment and scalable systems.
+* Connect knowledge between storage, database, cache, monitoring, and resource scaling.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 04/24/2026 | - Learn Amazon S3 and static website hosting. <br> - Result: Learned how to create buckets, store static content, and configure basic static website access. | 04/24/2026 | 04/24/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/25/2026 | - Learn Amazon RDS for relational databases. <br> - Result: Understood database engine selection, DB instance creation, backup configuration, and application connection. | 04/25/2026 | 04/25/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/26/2026 | - Learn Amazon DynamoDB for NoSQL data. <br> - Result: Understood the key-value/document model, partition key usage, and DynamoDB scalability. | 04/26/2026 | 04/26/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/27/2026 | - Learn Amazon ElastiCache. <br> - Result: Understood the role of caching in reducing database load and improving application response time. | 04/27/2026 | 04/27/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/28/2026 | - Learn Amazon Lightsail and Lightsail Containers. <br> - Result: Understood small application or simple container deployment with predictable cost. | 04/28/2026 | 04/28/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/29/2026 | - Learn EC2 Auto Scaling and CloudWatch. <br> - Result: Understood automatic capacity scaling and monitoring through metrics, logs, and alarms. | 04/29/2026 | 04/29/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/30/2026 | - Learn Amazon Route 53. <br> - Result: Understood how DNS records and routing policies direct users to AWS resources. | 04/30/2026 | 04/30/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Studied Amazon S3, buckets, objects, storage classes, access control, and static data storage on AWS. | 04/27/2026 | 04/27/2026 | https://docs.aws.amazon.com/s3/ |
+| Tuesday | Practiced static website hosting with Amazon S3, checked bucket policy, static website endpoint, and browser access. | 04/28/2026 | 04/28/2026 | https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html |
+| Wednesday | Studied Amazon RDS, DB instances, engines, backup, Multi-AZ, connection endpoints, and managed relational databases. | 04/29/2026 | 04/29/2026 | https://docs.aws.amazon.com/rds/ |
+| Thursday | Studied Amazon DynamoDB, partition keys, sort keys, NoSQL tables, and the basic comparison between relational and NoSQL databases. | 04/30/2026 | 04/30/2026 | https://docs.aws.amazon.com/dynamodb/ |
+| Friday | Studied Amazon ElastiCache, Redis, Memcached, and the role of cache in reducing database query load and improving response time. | 05/01/2026 | 05/01/2026 | https://docs.aws.amazon.com/elasticache/ |
+| Saturday | Studied Amazon Route 53, DNS records, hosted zones, and Amazon CloudWatch for metrics, logs, and alarms. | 05/02/2026 | 05/02/2026 | https://docs.aws.amazon.com/route53/ |
+| Sunday | Studied EC2 Auto Scaling, Lightsail, and Lightsail Containers to understand small application deployment and scaling based on workload. | 05/03/2026 | 05/03/2026 | https://docs.aws.amazon.com/autoscaling/ |
 
+### Week 2 Results:
 
-### Week 2 Achievements:
-
-* Understood the role of Amazon S3 in static data storage, static website hosting, and durable object storage management.
-* Understood bucket configuration, access permissions, and required settings for hosting static websites on S3, including risks of incorrect public access configuration.
-* Understood how Amazon RDS supports managed relational database deployment, including engine selection, instance configuration, backup, security, and application connection.
-* Understood the difference between relational and NoSQL databases through DynamoDB, especially primary key design, key-value data storage, and scalability based on access demand.
-* Understood the role of ElastiCache in improving application performance, reducing repeated database queries, and improving system response time.
-* Became familiar with Lightsail and Lightsail Containers as simple deployment options for small websites, test environments, or projects requiring predictable cost management.
-* Understood EC2 Auto Scaling principles and how systems automatically increase or decrease server capacity based on load to balance performance and cost.
-* Understood how CloudWatch supports metric, log, and alarm monitoring, enabling early detection of abnormal system behavior.
-* Understood the role of Route 53 in DNS, domain management, and traffic routing, forming a foundation for applications with clearer access addresses.
+* Understood Amazon S3 as a highly scalable object storage service suitable for static data, backup, logs, and website assets.
+* Practiced static website hosting with S3 and understood how bucket policy and website endpoints affect access.
+* Understood the role of Amazon RDS in operating relational databases without managing all database infrastructure manually.
+* Understood important RDS concepts such as DB instance, endpoint, backup, and Multi-AZ, which are useful for later RDS PostgreSQL usage.
+* Distinguished between data suitable for relational databases and data suitable for NoSQL databases such as DynamoDB.
+* Understood DynamoDB's role in systems requiring fast scaling, low latency, and reduced database server management.
+* Understood how ElastiCache/Redis reduces database load, accelerates queries, and supports cache, distributed lock, or rate limiting.
+* Understood how Route 53 supports DNS routing so users can access systems through domain names.
+* Understood CloudWatch's role in system monitoring through logs, metrics, and alarms.
+* Understood Auto Scaling and how systems can automatically increase or reduce resources based on load.
+* Learned about Lightsail and Lightsail Containers as simpler options for small applications or testing environments.
+* Connected S3, RDS, DynamoDB, Redis, Route 53, CloudWatch, and Auto Scaling into a scalable application architecture.

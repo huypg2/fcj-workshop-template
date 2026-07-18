@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Worklog"
-date: 2026-05-08
+date: 2026-05-10
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -10,34 +10,36 @@ pre: " <b> 1.3. </b> "
 {{% /notice %}}
 
 
+### Week 3: Advanced Networking, CloudFront, Lambda@Edge, Windows Workloads, Migration, and Disaster Recovery
+
 ### Week 3 Objectives:
 
-* **Topic:** Advanced Networking, Content Delivery, and Migration.
-* This week explored network traffic flow, content delivery optimization, and cloud migration strategies.
-* Strengthen networking knowledge through AWS hands-on workshops.
-* Learn CloudFront, Lambda@Edge, and content delivery optimization solutions.
-* Understand migration approaches, virtual machine migration, database migration, and disaster recovery.
+* Reinforce AWS networking knowledge and understand system network design.
+* Study CloudFront, CDN, and Lambda@Edge for content delivery optimization.
+* Understand Windows workloads and directory services on AWS.
+* Study migration strategies and disaster recovery planning on the cloud.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 05/01/2026 | - Practice AWS networking workshop. <br> - Result: Understood VPC, subnet, route table, security group, and connection flow design more clearly. | 05/01/2026 | 05/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/02/2026 | - Learn Amazon CloudFront. <br> - Result: Understood how CDN caches content at edge locations to reduce latency and origin load. | 05/02/2026 | 05/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/03/2026 | - Learn Lambda@Edge with CloudFront. <br> - Result: Understood how to process selected request/response logic closer to users. | 05/03/2026 | 05/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/04/2026 | - Learn Windows applications on AWS and AWS Managed Microsoft AD. <br> - Result: Understood AWS support for Windows workloads and directory services in enterprise environments. | 05/04/2026 | 05/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/05/2026 | - Learn AWS migration strategies. <br> - Result: Distinguished rehost, replatform, and refactor approaches and how to choose a suitable migration direction. | 05/05/2026 | 05/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/06/2026 | - Learn AWS VM Import/Export, AWS DMS, and SCT. <br> - Result: Understood virtual machine and database migration to AWS. | 05/06/2026 | 05/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/07/2026 | - Learn AWS Elastic Disaster Recovery. <br> - Result: Understood recovery preparation, downtime reduction, and data protection during incidents. | 05/07/2026 | 05/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Practiced an AWS networking workshop and reviewed VPC, subnets, route tables, security groups, network ACLs, and network layer separation. | 05/04/2026 | 05/04/2026 | https://docs.aws.amazon.com/vpc/ |
+| Tuesday | Studied Amazon CloudFront, CDN, edge locations, origins, cache behavior, and latency reduction for content delivery. | 05/05/2026 | 05/05/2026 | https://docs.aws.amazon.com/cloudfront/ |
+| Wednesday | Studied Lambda@Edge and how to process selected request/response logic closer to users. | 05/06/2026 | 05/06/2026 | https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html |
+| Thursday | Studied Windows applications on AWS, Windows Server environments, and AWS Managed Microsoft AD for enterprise systems. | 05/07/2026 | 05/07/2026 | https://docs.aws.amazon.com/directoryservice/ |
+| Friday | Studied migration strategies such as rehost, replatform, refactor, repurchase, retain, and retire. | 05/08/2026 | 05/08/2026 | https://aws.amazon.com/cloud-migration/ |
+| Saturday | Studied AWS VM Import/Export, AWS Database Migration Service, and Schema Conversion Tool for virtual machine and database migration. | 05/09/2026 | 05/09/2026 | https://docs.aws.amazon.com/dms/ |
+| Sunday | Studied AWS Elastic Disaster Recovery and how to build recovery plans for system incidents. | 05/10/2026 | 05/10/2026 | https://docs.aws.amazon.com/drs/ |
 
+### Week 3 Results:
 
-### Week 3 Achievements:
-
-* Gained more advanced AWS networking knowledge, especially how VPC, subnet, route table, security group, and network ACL work together to control data flow.
-* Understood the role of CloudFront in improving access speed, reducing latency, and reducing origin server load through edge caching.
-* Understood how Lambda@Edge supports logic processing closer to users, especially for simple request, response, or content delivery customization.
-* Became familiar with Windows workloads on AWS, including Windows servers, Microsoft AD directory services, and enterprise integration needs.
-* Understood common migration strategies such as rehost, replatform, and refactor, and recognized the need to evaluate the current application before choosing a solution.
-* Understood how VM Import/Export supports moving existing virtual machines to EC2 and how DMS supports database migration.
-* Understood the role of Schema Conversion Tool when schema conversion is needed during database engine changes.
-* Understood that Elastic Disaster Recovery aims to reduce downtime, support system replication, and improve recovery during serious incidents.
-* Built a clearer view of the relationship between networking, CDN, migration, and disaster recovery when building stable and scalable cloud systems.
+* Reinforced AWS networking knowledge, especially the role of VPC in isolating resources and controlling traffic.
+* Understood how subnets, route tables, security groups, and network ACLs work together to build secure network layers.
+* Understood the role of CloudFront in distributing content through edge locations and reducing latency for users.
+* Understood cache behavior, origin configuration, and CDN benefits in reducing origin server load.
+* Understood how Lambda@Edge supports request and response customization near users.
+* Learned how AWS supports Windows workloads, Windows Server, and Managed Microsoft AD for enterprise environments.
+* Understood migration strategies from simple rehost approaches to deeper refactoring approaches.
+* Understood the role of VM Import/Export for moving existing virtual machines to AWS.
+* Understood how AWS DMS and SCT support database migration and schema conversion.
+* Recognized the importance of disaster recovery for real-world systems that require high availability.
+* Understood how AWS Elastic Disaster Recovery helps reduce recovery time and prepare incident response plans.

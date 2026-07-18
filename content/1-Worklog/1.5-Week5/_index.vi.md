@@ -10,37 +10,44 @@ pre: " <b> 1.5. </b> "
 {{% /notice %}}
 
 
+### Tuần 5: Bảo mật Cloud, sao lưu dữ liệu, độ tin cậy, messaging, quota và tối ưu chi phí
+
 ### Mục tiêu tuần 5:
 
-* **Chủ đề:** Bảo mật đám mây chuyên sâu và quản lý truy cập.
-* Tuần này tập trung vào các cơ chế phòng thủ, bảo vệ dữ liệu, phân quyền và giám sát an ninh trên AWS.
-* Tìm hiểu quản lý danh tính, phân quyền và điều kiện truy cập nâng cao.
-* Nắm các dịch vụ giám sát, phát hiện rủi ro và bảo vệ ứng dụng web.
-* Hiểu cách mã hóa dữ liệu, quản lý secret và xác thực người dùng.
+* Tìm hiểu các dịch vụ bảo mật và kiểm soát truy cập nâng cao trên AWS.
+* Nắm được cách mã hóa dữ liệu, quản lý secret, phát hiện dữ liệu nhạy cảm và giám sát rủi ro.
+* Tìm hiểu các dịch vụ hỗ trợ backup, kết nối mạng, messaging và tăng độ tin cậy hệ thống.
+* Làm quen với Service Quotas, Savings Plans, Reserved Instances và các phương pháp tối ưu chi phí.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 15/05/2026 | - Tìm hiểu AWS Single Sign-On. <br> - Kết quả: Nắm được cách quản lý đăng nhập tập trung cho nhiều tài khoản và ứng dụng. | 15/05/2026 | 15/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 16/05/2026 | - Tìm hiểu IAM Permission Boundaries, Policies và Conditions. <br> - Kết quả: Hiểu cách giới hạn quyền tối đa và đặt điều kiện truy cập chi tiết hơn. | 16/05/2026 | 16/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 17/05/2026 | - Tìm hiểu AWS Security Hub. <br> - Kết quả: Biết cách tổng hợp cảnh báo và đánh giá trạng thái bảo mật của hệ thống. | 17/05/2026 | 17/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 18/05/2026 | - Tìm hiểu VPC Endpoints và bảo mật S3. <br> - Kết quả: Nắm được cách truy cập S3 riêng tư và giảm rủi ro public dữ liệu không cần thiết. | 18/05/2026 | 18/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 19/05/2026 | - Tìm hiểu AWS WAF. <br> - Kết quả: Hiểu cách bảo vệ ứng dụng web khỏi SQL Injection, XSS và bot traffic phổ biến. | 19/05/2026 | 19/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 20/05/2026 | - Tìm hiểu AWS KMS, Amazon Macie và Secrets Manager. <br> - Kết quả: Biết cách mã hóa dữ liệu, phát hiện dữ liệu nhạy cảm và quản lý secret an toàn. | 20/05/2026 | 20/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 21/05/2026 | - Tìm hiểu AWS Firewall Manager, GuardDuty và Amazon Cognito. <br> - Kết quả: Nắm được cách quản trị bảo mật tập trung, phát hiện mối đe dọa và xác thực người dùng. | 21/05/2026 | 21/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ 2 | Tìm hiểu AWS Single Sign-On, IAM Permission Boundaries, IAM Policies và IAM Conditions để quản lý truy cập nâng cao. | 18/05/2026 | 18/05/2026 | https://docs.aws.amazon.com/iam/ |
+| Thứ 3 | Tìm hiểu AWS Security Hub, GuardDuty, VPC Endpoints và các phương pháp bảo mật tốt nhất cho Amazon S3. | 19/05/2026 | 19/05/2026 | https://docs.aws.amazon.com/securityhub/ |
+| Thứ 4 | Tìm hiểu AWS WAF, AWS KMS, Amazon Macie và AWS Secrets Manager trong bảo vệ ứng dụng, mã hóa dữ liệu và quản lý thông tin xác thực. | 20/05/2026 | 20/05/2026 | https://docs.aws.amazon.com/kms/ |
+| Thứ 5 | Tìm hiểu Amazon Cognito, cơ chế xác thực người dùng và cách quản lý đăng nhập cho ứng dụng web hoặc mobile. | 21/05/2026 | 21/05/2026 | https://docs.aws.amazon.com/cognito/ |
+| Thứ 6 | Tìm hiểu AWS Backup, EBS Data Lifecycle Manager và EC2 Image Builder để chuẩn bị phương án sao lưu và chuẩn hóa image máy chủ. | 22/05/2026 | 22/05/2026 | https://docs.aws.amazon.com/aws-backup/ |
+| Thứ 7 | Tìm hiểu VPC Peering, AWS Transit Gateway, Amazon SQS và Amazon SNS để tăng khả năng kết nối mạng và xử lý bất đồng bộ. | 23/05/2026 | 23/05/2026 | https://docs.aws.amazon.com/sns/ |
+| Chủ nhật | Tìm hiểu Service Quotas, Savings Plans, Reserved Instances và các nguyên tắc tối ưu chi phí khi vận hành tài nguyên AWS. | 24/05/2026 | 24/05/2026 | https://docs.aws.amazon.com/servicequotas/ |
 
 ### Kết quả đạt được tuần 5:
 
-* Nắm được bức tranh tổng quan về bảo mật trên AWS, bao gồm quản lý danh tính, phân quyền, mã hóa dữ liệu, bảo vệ ứng dụng và giám sát nguy cơ an ninh.
-* Hiểu vai trò của AWS Single Sign-On trong việc quản lý đăng nhập tập trung, giúp đơn giản hóa truy cập khi hệ thống có nhiều tài khoản hoặc nhiều nhóm người dùng.
-* Nắm được cách IAM Permission Boundaries, Policies và Conditions hỗ trợ kiểm soát quyền truy cập chi tiết hơn, hạn chế tình trạng cấp quyền quá rộng cho user hoặc role.
-* Hiểu vai trò của Security Hub trong việc tổng hợp phát hiện bảo mật từ nhiều dịch vụ, hỗ trợ đánh giá mức độ tuân thủ và phát hiện cấu hình rủi ro.
-* Biết cách VPC Endpoints hỗ trợ truy cập S3 qua mạng riêng, giúp giảm phụ thuộc vào Internet và tăng tính bảo mật cho dữ liệu lưu trữ.
-* Nắm được các thực hành bảo mật tốt cho Amazon S3 như chặn public access, cấu hình bucket policy, mã hóa dữ liệu và theo dõi hoạt động truy cập.
-* Hiểu cách AWS WAF bảo vệ tầng ứng dụng trước các kiểu tấn công phổ biến như SQL Injection, Cross-Site Scripting và bot request.
-* Biết vai trò của KMS, Macie và Secrets Manager trong việc bảo vệ dữ liệu, quản lý khóa mã hóa, phát hiện dữ liệu nhạy cảm và lưu trữ thông tin xác thực an toàn.
-* Nắm được cách GuardDuty hỗ trợ phát hiện hành vi bất thường và cách Cognito hỗ trợ xác thực người dùng cho ứng dụng web hoặc mobile.
+* Hiểu được bảo mật trên AWS không chỉ nằm ở mật khẩu tài khoản mà còn liên quan đến IAM, network, encryption, logging và quản lý dữ liệu nhạy cảm.
+* Nắm được AWS Single Sign-On hỗ trợ quản lý đăng nhập tập trung, phù hợp với môi trường có nhiều người dùng hoặc nhiều tài khoản.
+* Hiểu được Permission Boundaries, IAM Policies và IAM Conditions giúp giới hạn quyền chi tiết hơn trong các tình huống thực tế.
+* Biết Security Hub có thể tổng hợp trạng thái bảo mật từ nhiều dịch vụ, hỗ trợ đánh giá rủi ro tập trung hơn.
+* Nắm được GuardDuty giúp phát hiện hành vi bất thường, hỗ trợ cảnh báo khi có dấu hiệu rủi ro trong tài khoản hoặc workload.
+* Hiểu được VPC Endpoints giúp truy cập một số dịch vụ AWS qua mạng riêng, giảm phụ thuộc vào Internet public.
+* Nắm được các phương pháp bảo mật S3 như kiểm soát quyền public, bucket policy, encryption và nguyên tắc không mở dữ liệu nhạy cảm ra ngoài.
+* Biết AWS WAF giúp bảo vệ ứng dụng web trước một số kiểu tấn công phổ biến như rule-based filtering hoặc chặn request bất thường.
+* Hiểu được KMS hỗ trợ quản lý khóa mã hóa, Secrets Manager hỗ trợ quản lý thông tin xác thực và Macie hỗ trợ phát hiện dữ liệu nhạy cảm.
+* Hiểu được Cognito có thể dùng để xác thực người dùng cho ứng dụng web/mobile mà không phải tự xây toàn bộ hệ thống đăng nhập.
+* Nắm được AWS Backup, EBS Lifecycle Manager và EC2 Image Builder giúp chuẩn hóa việc backup, vòng đời dữ liệu và image hệ thống.
+* Hiểu được VPC Peering và Transit Gateway hỗ trợ kết nối nhiều mạng VPC hoặc hệ thống với nhau trong kiến trúc lớn.
+* Nắm được SQS và SNS hỗ trợ xử lý bất đồng bộ, giúp tách rời các thành phần trong hệ thống và tăng độ tin cậy khi tải tăng.
+* Biết Service Quotas giúp theo dõi giới hạn dịch vụ để tránh lỗi khi hệ thống mở rộng.
+* Hiểu được Savings Plans và Reserved Instances là các hướng tối ưu chi phí quan trọng khi workload chạy ổn định trong thời gian dài.
+* Tổng hợp được kiến thức về bảo mật, độ tin cậy, backup, messaging và chi phí để áp dụng vào thiết kế hệ thống thực tế sau này.
 
 
 

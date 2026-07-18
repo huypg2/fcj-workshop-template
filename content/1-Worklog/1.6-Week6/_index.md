@@ -10,34 +10,38 @@ pre: " <b> 1.6. </b> "
 {{% /notice %}}
 
 
+### Week 6: Docker, Amazon ECS, CI/CD, DevOps Workflow, Hybrid Storage, and Workflow Orchestration
+
 ### Week 6 Objectives:
 
-* **Topic:** Reliability, Performance, and Cost Optimization.
-* This week focused on backup, recovery, networking, asynchronous processing, and operational cost optimization.
-* Learn backup, snapshot, and standardized server image solutions.
-* Understand multi-VPC networking models and messaging systems.
-* Understand AWS resource, quota, and cost optimization.
+* Study Docker and containerized application packaging.
+* Understand Amazon ECS components and container deployment on AWS.
+* Get familiar with CI/CD using AWS CodePipeline and DevOps thinking.
+* Study hybrid storage, network monitoring, and workflow orchestration services.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 05/22/2026 | - Learn AWS Backup, EBS Data Lifecycle Manager, and anomaly detection for EBS Backups. <br> - Result: Understood backup planning, automated snapshots, and backup risk monitoring. | 05/22/2026 | 05/22/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/23/2026 | - Learn EC2 Image Builder. <br> - Result: Understood standardized server image creation, patch integration, and configuration error reduction. | 05/23/2026 | 05/23/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/24/2026 | - Learn VPC Peering and AWS Transit Gateway. <br> - Result: Understood multi-VPC connectivity and centralized network management. | 05/24/2026 | 05/24/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/25/2026 | - Learn Amazon SQS and SNS. <br> - Result: Understood system decoupling and asynchronous message processing. | 05/25/2026 | 05/25/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/26/2026 | - Learn Amazon EBS Multi-Attach and HA database models. <br> - Result: Understood storage requirements for high availability systems. | 05/26/2026 | 05/26/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/27/2026 | - Learn EC2 Resource Optimization and Service Quotas. <br> - Result: Understood instance right-sizing and resource quota tracking. | 05/27/2026 | 05/27/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/28/2026 | - Learn Savings Plans, Reserved Instances, AWS Glue, Athena, and Billing Console permissions. <br> - Result: Understood cost saving, cost analysis, and billing access management. | 05/28/2026 | 05/28/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Studied Docker, images, containers, Dockerfile, and the benefits of containerizing applications. | 05/25/2026 | 05/25/2026 | https://docs.docker.com/ |
+| Tuesday | Practiced containerizing applications so they can run consistently across local, testing, and cloud environments. | 05/26/2026 | 05/26/2026 | https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html |
+| Wednesday | Studied Amazon ECS, cluster, task definition, task, service, and container deployment concepts. | 05/27/2026 | 05/27/2026 | https://docs.aws.amazon.com/ecs/ |
+| Thursday | Studied ECS infrastructure deployment using AWS CDK and infrastructure definition through code. | 05/28/2026 | 05/28/2026 | https://docs.aws.amazon.com/cdk/ |
+| Friday | Studied AWS CodePipeline and CI/CD workflow including source, build, test, deploy, and pipeline status tracking. | 05/29/2026 | 05/29/2026 | https://docs.aws.amazon.com/codepipeline/ |
+| Saturday | Studied AWS Storage Gateway, Amazon FSx, and VPC Flow Logs for hybrid storage, file storage, and network traffic monitoring. | 05/30/2026 | 05/30/2026 | https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html |
+| Sunday | Studied AWS Step Functions and practiced a storage performance workshop to understand multi-step workflow orchestration. | 05/31/2026 | 05/31/2026 | https://docs.aws.amazon.com/step-functions/ |
 
+### Week 6 Results:
 
-### Week 6 Achievements:
-
-* Understood the role of AWS Backup in centralized data backup for multiple resources, supporting system recovery during incidents or data loss.
-* Understood how EBS Data Lifecycle Manager automates snapshots, reduces manual work, and ensures scheduled backups.
-* Understood the role of EC2 Image Builder in creating standardized server images, applying patches, installing required configuration, and deploying consistent environments.
-* Understood how VPC Peering connects two VPCs and how Transit Gateway simplifies network architecture when many VPCs or on-premises systems need to connect.
-* Understood how SQS and SNS support asynchronous processing, reduce direct dependency between services, and improve stability during traffic spikes.
-* Learned more about EBS Multi-Attach and scenarios requiring shared storage for multiple EC2 instances in high availability architectures.
-* Understood how EC2 Resource Optimization evaluates real resource usage and supports right-sizing to reduce waste.
-* Understood the role of Service Quotas in checking resource limits and proactively requesting increases before large deployments.
-* Understood cost optimization methods such as Savings Plans, Reserved Instances, Glue/Athena cost analysis, and Billing Console access control.
+* Understood Docker as a way to package applications with their runtime environment and reduce environment differences.
+* Understood images, containers, and Dockerfile as foundations for packaging backend applications.
+* Practiced basic containerization and understood why containers fit microservice architectures.
+* Understood Amazon ECS components such as cluster, task definition, task, and service.
+* Understood how ECS runs and manages containers on AWS.
+* Understood how AWS CDK can describe ECS infrastructure as code for repeatable deployment.
+* Understood how CodePipeline automates CI/CD from source retrieval to build, test, and deploy.
+* Understood the DevOps role in reducing release time and manual deployment work.
+* Understood Storage Gateway for hybrid storage scenarios.
+* Understood Amazon FSx for file storage in specific workloads, especially Windows-related environments.
+* Understood how VPC Flow Logs help observe network traffic and troubleshoot connectivity.
+* Understood Step Functions for orchestrating multi-step workflows.
+* Connected Docker, ECS, CI/CD, network monitoring, and workflow orchestration for later practical deployment.

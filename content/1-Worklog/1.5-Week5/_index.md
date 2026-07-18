@@ -10,34 +10,41 @@ pre: " <b> 1.5. </b> "
 {{% /notice %}}
 
 
+### Week 5: Cloud Security, Data Backup, Reliability, Messaging, Quotas, and Cost Optimization
+
 ### Week 5 Objectives:
 
-* **Topic:** Cloud Security and Access Management.
-* This week focused on defense mechanisms, data protection, access control, and security monitoring on AWS.
-* Learn identity management, access control, and advanced access conditions.
-* Understand monitoring, risk detection, and web application protection services.
-* Understand data encryption, secret management, and user authentication.
+* Study advanced AWS security services and access control.
+* Understand encryption, secret management, sensitive data discovery, and security monitoring.
+* Study backup, networking, messaging, and system reliability services.
+* Get familiar with Service Quotas, Savings Plans, Reserved Instances, and cost optimization.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 05/15/2026 | - Learn AWS Single Sign-On. <br> - Result: Understood centralized sign-in for multiple accounts and applications. | 05/15/2026 | 05/15/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/16/2026 | - Learn IAM Permission Boundaries, Policies, and Conditions. <br> - Result: Understood maximum permission limits and detailed access conditions. | 05/16/2026 | 05/16/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/17/2026 | - Learn AWS Security Hub. <br> - Result: Understood centralized security findings and security posture assessment. | 05/17/2026 | 05/17/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/18/2026 | - Learn VPC Endpoints and S3 security. <br> - Result: Understood private S3 access and reduced unnecessary public data exposure. | 05/18/2026 | 05/18/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/19/2026 | - Learn AWS WAF. <br> - Result: Understood web application protection against SQL Injection, XSS, and common bot traffic. | 05/19/2026 | 05/19/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/20/2026 | - Learn AWS KMS, Amazon Macie, and Secrets Manager. <br> - Result: Understood data encryption, sensitive data discovery, and secure secret management. | 05/20/2026 | 05/20/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/21/2026 | - Learn AWS Firewall Manager, GuardDuty, and Amazon Cognito. <br> - Result: Understood centralized security governance, threat detection, and user authentication. | 05/21/2026 | 05/21/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Studied AWS Single Sign-On, IAM Permission Boundaries, IAM Policies, and IAM Conditions for advanced access management. | 05/18/2026 | 05/18/2026 | https://docs.aws.amazon.com/iam/ |
+| Tuesday | Studied AWS Security Hub, GuardDuty, VPC Endpoints, and S3 security best practices. | 05/19/2026 | 05/19/2026 | https://docs.aws.amazon.com/securityhub/ |
+| Wednesday | Studied AWS WAF, AWS KMS, Amazon Macie, and AWS Secrets Manager for application protection, encryption, and credential management. | 05/20/2026 | 05/20/2026 | https://docs.aws.amazon.com/kms/ |
+| Thursday | Studied Amazon Cognito, user authentication, and login management for web or mobile applications. | 05/21/2026 | 05/21/2026 | https://docs.aws.amazon.com/cognito/ |
+| Friday | Studied AWS Backup, EBS Data Lifecycle Manager, and EC2 Image Builder for backup and standard server images. | 05/22/2026 | 05/22/2026 | https://docs.aws.amazon.com/aws-backup/ |
+| Saturday | Studied VPC Peering, AWS Transit Gateway, Amazon SQS, and Amazon SNS for connectivity and asynchronous processing. | 05/23/2026 | 05/23/2026 | https://docs.aws.amazon.com/sns/ |
+| Sunday | Studied Service Quotas, Savings Plans, Reserved Instances, and AWS cost optimization principles. | 05/24/2026 | 05/24/2026 | https://docs.aws.amazon.com/servicequotas/ |
 
+### Week 5 Results:
 
-### Week 5 Achievements:
-
-* Built an overall understanding of AWS security, including identity management, access control, data encryption, application protection, and threat monitoring.
-* Understood the role of AWS Single Sign-On in centralized sign-in management, simplifying access for systems with multiple accounts or user groups.
-* Understood how IAM Permission Boundaries, Policies, and Conditions help control access in more detail and reduce overly broad permissions.
-* Understood the role of Security Hub in aggregating findings from multiple services, supporting compliance review and risky configuration detection.
-* Understood how VPC Endpoints support private S3 access, reducing Internet dependency and improving storage data security.
-* Understood S3 security best practices such as blocking public access, configuring bucket policies, encrypting data, and monitoring access activity.
-* Understood how AWS WAF protects the application layer against common attacks such as SQL Injection, Cross-Site Scripting, and bot requests.
-* Understood the roles of KMS, Macie, and Secrets Manager in data protection, encryption key management, sensitive data discovery, and secure credential storage.
-* Understood how GuardDuty supports abnormal behavior detection and how Cognito supports user authentication for web or mobile applications.
+* Understood that AWS security includes IAM, networking, encryption, logging, and sensitive data management.
+* Understood AWS Single Sign-On for centralized login management.
+* Understood Permission Boundaries, IAM Policies, and IAM Conditions for more detailed access control.
+* Understood Security Hub as a service for centralized security posture review.
+* Understood GuardDuty for detecting unusual behavior and possible risks.
+* Understood VPC Endpoints for accessing supported AWS services through private networking.
+* Understood S3 security best practices such as blocking public access, bucket policies, and encryption.
+* Understood AWS WAF for protecting web applications from common request-based attacks.
+* Understood KMS for key management, Secrets Manager for credentials, and Macie for sensitive data discovery.
+* Understood Cognito as a managed authentication service for web and mobile applications.
+* Understood AWS Backup, EBS Lifecycle Manager, and EC2 Image Builder for backup and standard image management.
+* Understood VPC Peering and Transit Gateway for connecting multiple VPCs or networks.
+* Understood SQS and SNS for asynchronous processing and decoupled communication.
+* Understood Service Quotas to avoid scaling failures caused by service limits.
+* Understood Savings Plans and Reserved Instances as important cost optimization options for stable workloads.
+* Summarized security, reliability, backup, messaging, and cost knowledge for later system design.

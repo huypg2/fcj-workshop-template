@@ -10,36 +10,38 @@ pre: " <b> 1.6. </b> "
 {{% /notice %}}
 
 
+### Tuần 6: Docker, Amazon ECS, CI/CD, DevOps workflow, storage hybrid và workflow orchestration
+
 ### Mục tiêu tuần 6:
 
-* **Chủ đề:** Độ tin cậy, hiệu suất và tối ưu chi phí.
-* Tuần này tập trung vào sao lưu, phục hồi, kết nối mạng, xử lý bất đồng bộ và tối ưu chi phí vận hành.
-* Tìm hiểu các giải pháp sao lưu, snapshot và chuẩn hóa image máy chủ.
-* Nắm các mô hình kết nối mạng giữa nhiều VPC và hệ thống nhắn tin.
-* Hiểu cách tối ưu tài nguyên, hạn ngạch và chi phí AWS.
+* Tìm hiểu Docker và cách đóng gói ứng dụng thành container.
+* Nắm được các thành phần chính của Amazon ECS và cách triển khai container trên AWS.
+* Làm quen với CI/CD bằng AWS CodePipeline và tư duy DevOps.
+* Tìm hiểu thêm các dịch vụ hỗ trợ lưu trữ hybrid, giám sát mạng và điều phối workflow.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 22/05/2026 | - Tìm hiểu AWS Backup, EBS Data Lifecycle Manager và phát hiện bất thường cho EBS Backups. <br> - Kết quả: Biết cách lập kế hoạch sao lưu, tự động hóa snapshot và theo dõi rủi ro backup. | 22/05/2026 | 22/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 23/05/2026 | - Tìm hiểu EC2 Image Builder. <br> - Kết quả: Hiểu cách tạo image máy chủ chuẩn, tích hợp bản vá và giảm lỗi cấu hình khi triển khai. | 23/05/2026 | 23/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 24/05/2026 | - Tìm hiểu VPC Peering và AWS Transit Gateway. <br> - Kết quả: Nắm được cách kết nối nhiều VPC và quản lý mạng tập trung. | 24/05/2026 | 24/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 25/05/2026 | - Tìm hiểu Amazon SQS và SNS. <br> - Kết quả: Biết cách tách rời các thành phần hệ thống và xử lý thông điệp bất đồng bộ. | 25/05/2026 | 25/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 26/05/2026 | - Tìm hiểu Amazon EBS Multi-Attach và mô hình HA cho cơ sở dữ liệu. <br> - Kết quả: Hiểu thêm các yêu cầu lưu trữ trong hệ thống cần tính sẵn sàng cao. | 26/05/2026 | 26/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 27/05/2026 | - Tìm hiểu EC2 Resource Optimization và Service Quotas. <br> - Kết quả: Biết cách đánh giá kích thước instance và theo dõi hạn mức tài nguyên. | 27/05/2026 | 27/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 28/05/2026 | - Tìm hiểu Savings Plans, Reserved Instances, AWS Glue, Athena và phân quyền Billing Console. <br> - Kết quả: Nắm được các hướng tiết kiệm, phân tích chi phí và quản lý quyền truy cập billing. | 28/05/2026 | 28/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ 2 | Tìm hiểu Docker, image, container, Dockerfile và lợi ích của việc container hóa ứng dụng. | 25/05/2026 | 25/05/2026 | https://docs.docker.com/ |
+| Thứ 3 | Thực hành container hóa ứng dụng để ứng dụng có thể chạy ổn định giữa môi trường local, test và Cloud. | 26/05/2026 | 26/05/2026 | https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html |
+| Thứ 4 | Tìm hiểu Amazon ECS, cluster, task definition, task, service và các khái niệm liên quan đến triển khai container. | 27/05/2026 | 27/05/2026 | https://docs.aws.amazon.com/ecs/ |
+| Thứ 5 | Tìm hiểu triển khai hạ tầng ECS bằng AWS CDK, cách mô tả cluster, service, task definition bằng mã nguồn. | 28/05/2026 | 28/05/2026 | https://docs.aws.amazon.com/cdk/ |
+| Thứ 6 | Tìm hiểu AWS CodePipeline và quy trình CI/CD gồm lấy source code, build, test, deploy và theo dõi trạng thái pipeline. | 29/05/2026 | 29/05/2026 | https://docs.aws.amazon.com/codepipeline/ |
+| Thứ 7 | Tìm hiểu AWS Storage Gateway, Amazon FSx và VPC Flow Logs trong lưu trữ hybrid, lưu trữ file và giám sát lưu lượng mạng. | 30/05/2026 | 30/05/2026 | https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html |
+| Chủ nhật | Tìm hiểu AWS Step Functions và thực hành workshop hiệu suất lưu trữ để hiểu cách điều phối các workflow nhiều bước. | 31/05/2026 | 31/05/2026 | https://docs.aws.amazon.com/step-functions/ |
 
 ### Kết quả đạt được tuần 6:
 
-* Nắm được vai trò của AWS Backup trong việc sao lưu dữ liệu tập trung cho nhiều tài nguyên, hỗ trợ phục hồi hệ thống khi có sự cố hoặc mất dữ liệu.
-* Hiểu cách EBS Data Lifecycle Manager giúp tự động hóa snapshot, giảm thao tác thủ công và đảm bảo dữ liệu được sao lưu theo lịch định kỳ.
-* Biết vai trò của EC2 Image Builder trong việc tạo image máy chủ chuẩn, hỗ trợ cập nhật bản vá, cài đặt cấu hình cần thiết và triển khai môi trường nhất quán.
-* Nắm được cách VPC Peering kết nối hai VPC và cách Transit Gateway giúp đơn giản hóa kiến trúc mạng khi cần kết nối nhiều VPC hoặc hệ thống on-premises.
-* Hiểu cách SQS và SNS hỗ trợ xử lý bất đồng bộ, giảm phụ thuộc trực tiếp giữa các service và giúp hệ thống ổn định hơn khi lưu lượng tăng.
-* Biết thêm về EBS Multi-Attach và các tình huống yêu cầu chia sẻ lưu trữ cho nhiều EC2 instance trong kiến trúc cần tính sẵn sàng cao.
-* Nắm được cách EC2 Resource Optimization hỗ trợ đánh giá tài nguyên sử dụng thực tế, từ đó điều chỉnh kích thước instance phù hợp để tránh lãng phí.
-* Hiểu vai trò của Service Quotas trong việc kiểm tra hạn mức tài nguyên và chủ động yêu cầu tăng hạn mức trước khi triển khai hệ thống lớn.
-* Nắm được các hướng tối ưu chi phí như Savings Plans, Reserved Instances, phân tích chi phí bằng Glue/Athena và kiểm soát quyền truy cập Billing Console.
-
-
+* Hiểu được Docker giúp đóng gói ứng dụng cùng môi trường chạy, từ đó giảm lỗi khác biệt giữa local, test và production.
+* Nắm được các khái niệm image, container và Dockerfile, làm nền tảng để đóng gói ứng dụng backend cho các hệ thống thực tế.
+* Biết cách container hóa ứng dụng ở mức cơ bản và hiểu vì sao container phù hợp với kiến trúc microservices.
+* Nắm được các thành phần chính của Amazon ECS như cluster, task definition, task và service.
+* Hiểu được ECS giúp chạy và quản lý container trên AWS, phù hợp với các hệ thống cần triển khai nhiều service độc lập.
+* Biết cách AWS CDK có thể hỗ trợ mô tả hạ tầng ECS bằng mã nguồn, giúp triển khai dễ lặp lại và dễ quản lý hơn.
+* Hiểu được CodePipeline hỗ trợ tự động hóa quy trình CI/CD, từ bước lấy source code đến build, test và deploy.
+* Nắm được vai trò của DevOps trong việc rút ngắn thời gian triển khai, giảm thao tác thủ công và tăng tính ổn định khi phát hành ứng dụng.
+* Biết Storage Gateway hỗ trợ mô hình lưu trữ hybrid khi cần kết nối hệ thống tại chỗ với AWS.
+* Hiểu được Amazon FSx phù hợp với nhu cầu lưu trữ file trong một số môi trường đặc thù, đặc biệt liên quan đến Windows workload.
+* Nắm được VPC Flow Logs giúp quan sát lưu lượng mạng, hỗ trợ kiểm tra kết nối và phân tích sự cố trong VPC.
+* Hiểu được Step Functions có thể điều phối các quy trình nhiều bước, giúp mô hình hóa workflow rõ ràng và dễ theo dõi.
+* Kết nối được kiến thức Docker, ECS, CI/CD, monitoring mạng và workflow orchestration để chuẩn bị cho giai đoạn triển khai ứng dụng thực tế.

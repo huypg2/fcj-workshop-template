@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 2"
-date: 2026-05-01
+date: 2026-05-03
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -10,36 +10,39 @@ pre: " <b> 1.2. </b> "
 {{% /notice %}}
 
 
+### Tuần 2: Lưu trữ, cơ sở dữ liệu, cache, DNS, giám sát và mở rộng hệ thống
+
 ### Mục tiêu tuần 2:
 
-* **Chủ đề:** Lưu trữ, cơ sở dữ liệu và mở rộng quy mô.
-* Tuần này tập trung vào các dịch vụ lưu trữ tĩnh, cơ sở dữ liệu, bộ nhớ đệm và cách tự động mở rộng hệ thống.
-* Làm quen với Amazon S3, RDS, DynamoDB và ElastiCache.
-* Hiểu cách triển khai ứng dụng đơn giản bằng Lightsail và container.
-* Nắm cơ chế mở rộng tự động, giám sát hệ thống và quản lý DNS.
+* Tìm hiểu các dịch vụ lưu trữ và cơ sở dữ liệu phổ biến trên AWS.
+* Nắm được vai trò của cache, DNS, monitoring và auto scaling trong hệ thống Cloud.
+* Làm quen với các dịch vụ hỗ trợ triển khai ứng dụng nhỏ và hệ thống có khả năng mở rộng.
+* Kết nối kiến thức giữa lưu trữ, database, cache, giám sát và mở rộng tài nguyên.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 24/04/2026 | - Tìm hiểu Amazon S3 và hosting website tĩnh. <br> - Kết quả: Biết cách tạo bucket, lưu nội dung tĩnh và cấu hình website static phục vụ truy cập cơ bản. | 24/04/2026 | 24/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 25/04/2026 | - Tìm hiểu Amazon RDS cho cơ sở dữ liệu quan hệ. <br> - Kết quả: Nắm được cách chọn database engine, tạo DB instance, cấu hình backup và kết nối ứng dụng. | 25/04/2026 | 25/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 26/04/2026 | - Tìm hiểu Amazon DynamoDB cho dữ liệu NoSQL. <br> - Kết quả: Hiểu mô hình key-value/document, cách dùng partition key và cách DynamoDB hỗ trợ mở rộng. | 26/04/2026 | 26/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 27/04/2026 | - Tìm hiểu Amazon ElastiCache. <br> - Kết quả: Biết vai trò của cache trong việc giảm tải database và tăng tốc độ phản hồi ứng dụng. | 27/04/2026 | 27/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 28/04/2026 | - Tìm hiểu Amazon Lightsail và Lightsail Containers. <br> - Kết quả: Nắm được cách triển khai ứng dụng nhỏ hoặc container đơn giản với chi phí dễ dự đoán. | 28/04/2026 | 28/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 29/04/2026 | - Tìm hiểu EC2 Auto Scaling và CloudWatch. <br> - Kết quả: Hiểu cách tự động tăng giảm tài nguyên theo tải và cách theo dõi metric, log, alarm. | 29/04/2026 | 29/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 30/04/2026 | - Tìm hiểu Amazon Route 53. <br> - Kết quả: Biết cách DNS record và routing policy hỗ trợ định tuyến người dùng đến tài nguyên AWS. | 30/04/2026 | 30/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ 2 | Tìm hiểu Amazon S3, bucket, object, storage class, phân quyền truy cập và cách lưu trữ dữ liệu tĩnh trên AWS. | 27/04/2026 | 27/04/2026 | https://docs.aws.amazon.com/s3/ |
+| Thứ 3 | Thực hành hosting website tĩnh bằng Amazon S3, kiểm tra cấu hình bucket policy, static website endpoint và truy cập nội dung qua trình duyệt. | 28/04/2026 | 28/04/2026 | https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html |
+| Thứ 4 | Tìm hiểu Amazon RDS, DB instance, engine, backup, Multi-AZ, connection endpoint và vai trò của cơ sở dữ liệu quan hệ được quản lý. | 29/04/2026 | 29/04/2026 | https://docs.aws.amazon.com/rds/ |
+| Thứ 5 | Tìm hiểu Amazon DynamoDB, partition key, sort key, bảng NoSQL và so sánh cơ bản giữa database quan hệ với NoSQL. | 30/04/2026 | 30/04/2026 | https://docs.aws.amazon.com/dynamodb/ |
+| Thứ 6 | Tìm hiểu Amazon ElastiCache, Redis, Memcached và vai trò của cache trong giảm tải truy vấn database, tăng tốc độ phản hồi hệ thống. | 01/05/2026 | 01/05/2026 | https://docs.aws.amazon.com/elasticache/ |
+| Thứ 7 | Tìm hiểu Amazon Route 53, DNS record, hosted zone, đồng thời tìm hiểu Amazon CloudWatch để theo dõi metric, log và alarm. | 02/05/2026 | 02/05/2026 | https://docs.aws.amazon.com/route53/ |
+| Chủ nhật | Tìm hiểu EC2 Auto Scaling, Lightsail và Lightsail Containers để nắm được cách triển khai ứng dụng nhỏ và tự mở rộng tài nguyên khi tải thay đổi. | 03/05/2026 | 03/05/2026 | https://docs.aws.amazon.com/autoscaling/ |
 
 ### Kết quả đạt được tuần 2:
 
-* Nắm được vai trò của Amazon S3 trong việc lưu trữ dữ liệu tĩnh, hosting website tĩnh và quản lý dữ liệu đối tượng với độ bền cao.
-* Hiểu cách cấu hình bucket, quyền truy cập và các thiết lập cần thiết khi triển khai website tĩnh trên S3, đồng thời nhận biết rủi ro khi cấu hình public access không đúng cách.
-* Nắm được cách Amazon RDS hỗ trợ triển khai cơ sở dữ liệu quan hệ được quản lý, bao gồm lựa chọn engine, cấu hình instance, backup, bảo mật và kết nối ứng dụng.
-* Hiểu được sự khác nhau giữa cơ sở dữ liệu quan hệ và NoSQL thông qua DynamoDB, đặc biệt là cách thiết kế khóa chính, lưu trữ dữ liệu dạng key-value và mở rộng theo nhu cầu truy cập.
-* Biết được vai trò của ElastiCache trong việc tăng hiệu năng ứng dụng, giảm truy vấn lặp lại vào database và cải thiện tốc độ phản hồi của hệ thống.
-* Làm quen với Lightsail và Lightsail Containers như một phương án triển khai ứng dụng đơn giản, phù hợp cho website nhỏ, môi trường thử nghiệm hoặc dự án cần quản lý chi phí rõ ràng.
-* Nắm được nguyên lý EC2 Auto Scaling, biết cách hệ thống tự động tăng hoặc giảm số lượng máy chủ dựa trên tải để cân bằng giữa hiệu năng và chi phí.
-* Hiểu cách CloudWatch hỗ trợ theo dõi metric, log và alarm, từ đó có khả năng phát hiện sớm tình trạng bất thường trong quá trình vận hành.
-* Nắm được vai trò của Route 53 trong quản lý DNS, domain và định tuyến truy cập, tạo nền tảng để triển khai ứng dụng có địa chỉ truy cập rõ ràng hơn.
+* Hiểu được Amazon S3 là dịch vụ lưu trữ object có khả năng mở rộng cao và phù hợp cho dữ liệu tĩnh, backup, log hoặc tài nguyên website.
+* Thực hành được cách hosting website tĩnh bằng S3, từ đó hiểu rõ hơn cách bucket policy và static website endpoint ảnh hưởng đến khả năng truy cập nội dung.
+* Nắm được vai trò của Amazon RDS trong việc vận hành cơ sở dữ liệu quan hệ mà không cần tự quản lý toàn bộ hạ tầng database.
+* Hiểu được các khái niệm quan trọng trong RDS như DB instance, endpoint, backup và Multi-AZ, làm cơ sở cho việc sử dụng RDS PostgreSQL trong đề tài sau này.
+* Phân biệt được dữ liệu phù hợp với database quan hệ và dữ liệu phù hợp với NoSQL như DynamoDB.
+* Nắm được vai trò của DynamoDB trong các hệ thống cần mở rộng nhanh, độ trễ thấp và không muốn quản lý máy chủ database.
+* Hiểu được ElastiCache/Redis giúp giảm tải database, tăng tốc truy vấn và có thể dùng cho các chức năng như cache, distributed lock hoặc rate limiting.
+* Nắm được Route 53 hỗ trợ định tuyến DNS và giúp người dùng truy cập hệ thống thông qua tên miền thay vì địa chỉ kỹ thuật phức tạp.
+* Hiểu được CloudWatch đóng vai trò quan trọng trong giám sát hệ thống thông qua log, metric và alarm.
+* Nắm được ý nghĩa của Auto Scaling trong việc tự động tăng hoặc giảm tài nguyên theo tải, giúp hệ thống linh hoạt và tối ưu chi phí hơn.
+* Biết thêm Lightsail và Lightsail Containers như lựa chọn đơn giản hơn cho ứng dụng nhỏ hoặc môi trường thử nghiệm.
+* Liên kết được các thành phần S3, RDS, DynamoDB, Redis, Route 53, CloudWatch và Auto Scaling trong một kiến trúc ứng dụng có khả năng mở rộng.
 
 

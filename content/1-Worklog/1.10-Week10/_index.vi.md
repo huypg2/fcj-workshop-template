@@ -10,40 +10,34 @@ pre: " <b> 1.10. </b> "
 {{% /notice %}}
 
 
+### Tuần 10: Thiết lập VPC, Subnet, Security Groups và Amazon RDS PostgreSQL
+
 ### Mục tiêu tuần 10:
 
-* **Chủ đề:** Serverless Document Management và workshop tổng hợp Web Apps, Windows HA.
-* Tuần này gộp nội dung hệ thống quản lý tài liệu Serverless và các workshop tổng hợp về Web Apps, Elastic Beanstalk, WordPress, Windows HA và SQL Server HA.
-* Xây dựng hệ thống quản lý tài liệu Serverless với Lambda, DynamoDB, Amplify, API Gateway, SAM và CloudFront.
-* Tìm hiểu công cụ giám sát phân tán, CloudWatch nâng cao và Grafana.
-* Tổng hợp các workshop về Web App Serverless, Elastic Beanstalk, WordPress, Windows Server HA và SQL Server HA.
+* Thiết lập lớp mạng VPC, subnet, route table và NAT theo thứ tự triển khai.
+* Cấu hình Security Groups để kiểm soát kết nối giữa các thành phần.
+* Tạo DB Subnet Group, RDS Instance và khởi tạo database ban đầu.
 
 ### Các công việc cần triển khai trong tuần này:
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 19/06/2026 | - Tìm hiểu Serverless - Document Management System Series và xây dựng CRUD với Lambda, DynamoDB. <br> - Kết quả: Nắm được cách thêm, xem, sửa, xóa dữ liệu tài liệu bằng kiến trúc Serverless. | 19/06/2026 | 19/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 20/06/2026 | - Tìm hiểu lưu trữ và xác thực Serverless với AWS Amplify. <br> - Kết quả: Biết cách đơn giản hóa kết nối frontend, backend và quản lý người dùng. | 20/06/2026 | 20/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 21/06/2026 | - Tích hợp frontend với API Gateway và triển khai bằng AWS SAM. <br> - Kết quả: Hiểu cách request từ giao diện đi qua API Gateway đến Lambda và cách quản lý tài nguyên bằng template. | 21/06/2026 | 21/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 22/06/2026 | - Tìm hiểu CloudFront, chức năng tìm kiếm và DevOps cho hệ thống quản lý tài liệu. <br> - Kết quả: Biết cách phân phối nội dung nhanh hơn, hỗ trợ tra cứu tài liệu và tự động hóa cập nhật hệ thống. | 22/06/2026 | 22/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 23/06/2026 | - Tìm hiểu X-Ray, CloudWatch, Grafana và workshop CloudWatch nâng cao. <br> - Kết quả: Nắm được cách theo dõi request, log, metric, lỗi hệ thống và xây dựng dashboard giám sát. | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 24/06/2026 | - Thực hành workshop Web App Serverless, API Serverless, ứng dụng chat Serverless, Elastic Beanstalk và Node.js. <br> - Kết quả: Tổng hợp được nhiều cách triển khai ứng dụng web/API trên AWS từ Serverless đến môi trường được quản lý. | 24/06/2026 | 24/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 25/06/2026 | - Tìm hiểu CI/CD với Elastic Beanstalk, CDK Pipelines, WordPress trên AWS, Web App HA, Windows Server HA và SQL Server HA. <br> - Kết quả: Hiểu thêm các kiến trúc yêu cầu tính sẵn sàng cao và quy trình triển khai ứng dụng doanh nghiệp. | 25/06/2026 | 25/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-
+| 22/06/2026 | - Tạo VPC làm mạng riêng cho hệ thống<br>&emsp; + Chọn dải CIDR phù hợp<br>&emsp; + Tạo VPC mới cho môi trường triển khai<br>&emsp; + Kiểm tra VPC ID, trạng thái và thiết lập DNS cần thiết | 22/06/2026 | 22/06/2026 | https://000003.awsstudygroup.com/ |
+| 23/06/2026 | - Tạo subnet, route table và NAT theo cấu trúc mạng<br>&emsp; + Tạo các subnet theo Availability Zone<br>&emsp; + Liên kết subnet với route table phù hợp<br>&emsp; + Cấu hình NAT để hỗ trợ luồng truy cập theo yêu cầu triển khai | 23/06/2026 | 23/06/2026 | https://000092.awsstudygroup.com/ |
+| 24/06/2026 | - Tạo và cấu hình Security Groups<br>&emsp; + Tạo security group cho các lớp tài nguyên cần thiết<br>&emsp; + Cấu hình inbound rule và outbound rule theo đúng luồng truy cập<br>&emsp; + Kiểm tra lại rule trước khi tạo database và compute | 24/06/2026 | 24/06/2026 | https://000003.awsstudygroup.com/ |
+| 25/06/2026 | - Tạo DB Subnet Group cho RDS<br>&emsp; + Chọn các subnet dùng cho tầng database<br>&emsp; + Tạo DB Subnet Group để RDS có thể triển khai trong VPC<br>&emsp; + Kiểm tra subnet group trước khi tạo RDS instance | 25/06/2026 | 25/06/2026 | https://000005.awsstudygroup.com/ |
+| 26/06/2026 | - Tạo RDS PostgreSQL và khởi tạo database<br>&emsp; + Tạo RDS instance theo cấu hình đã chuẩn bị<br>&emsp; + Kiểm tra endpoint, port và trạng thái database<br>&emsp; + Khởi tạo database/schema ban đầu phục vụ ứng dụng | 26/06/2026 | 26/06/2026 | https://000005.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 10:
 
-* Nắm được cách xây dựng hệ thống quản lý tài liệu theo kiến trúc Serverless, kết hợp nhiều thành phần như Lambda, DynamoDB, API Gateway, Amplify và CloudFront.
-* Hiểu cách xây dựng chức năng CRUD bằng Lambda và DynamoDB, giúp hệ thống có thể thêm, xem, sửa và xóa thông tin tài liệu.
-* Biết vai trò của AWS Amplify trong việc hỗ trợ frontend, lưu trữ, xác thực và kết nối với backend Serverless nhanh hơn.
-* Nắm được cách API Gateway tiếp nhận request từ frontend, định tuyến đến Lambda và trả kết quả về cho người dùng.
-* Biết cách sử dụng AWS SAM để triển khai tài nguyên Serverless bằng template, giúp quá trình cập nhật hệ thống rõ ràng và dễ kiểm soát hơn.
-* Hiểu vai trò của CloudFront trong việc phân phối nội dung nhanh hơn, giảm độ trễ và cải thiện trải nghiệm truy cập tài liệu.
-* Nắm được cách bổ sung chức năng tìm kiếm để người dùng dễ tra cứu tài liệu theo tên, nội dung hoặc thông tin liên quan.
-* Hiểu cách X-Ray, CloudWatch và Grafana hỗ trợ theo dõi request, log, metric, lỗi hệ thống và trực quan hóa trạng thái vận hành.
-* Tổng hợp được các hướng xây dựng Web App Serverless, API Serverless và ứng dụng chat Serverless, từ đó nhìn rõ cách các dịch vụ AWS phối hợp để tạo thành ứng dụng hoàn chỉnh.
-* Nắm được vai trò của Elastic Beanstalk trong triển khai ứng dụng nhanh, nơi AWS hỗ trợ nhiều phần như môi trường chạy, load balancing, scaling và monitoring.
-* Biết quy trình triển khai ứng dụng Node.js lên AWS, bao gồm chuẩn bị source code, cấu hình môi trường và kiểm tra ứng dụng sau khi deploy.
-* Hiểu cách CI/CD với Elastic Beanstalk và CDK Pipelines giúp tự động hóa quá trình cập nhật ứng dụng, giảm thao tác thủ công và hạn chế lỗi khi release.
-* Nắm được kiến trúc WordPress trên AWS, bao gồm máy chủ EC2, database, lưu trữ và các cấu hình cần thiết để vận hành website.
-* Hiểu được các nguyên tắc xây dựng ứng dụng web có tính sẵn sàng cao như load balancing, auto scaling, multi-AZ và giám sát hệ thống.
-* Biết thêm về mô hình Windows Server HA và SQL Server HA trên AWS, từ đó hiểu cách các hệ thống doanh nghiệp giảm downtime và tăng khả năng phục hồi khi có sự cố.
+* Tạo được VPC riêng để đặt các tài nguyên triển khai trong một môi trường mạng độc lập.
+* Hiểu được vai trò của CIDR block trong việc quy hoạch địa chỉ IP cho VPC.
+* Tạo được các subnet theo Availability Zone để chuẩn bị nền tảng mạng cho các tài nguyên phía sau.
+* Cấu hình được route table và liên kết subnet đúng theo luồng mạng triển khai.
+* Thiết lập được NAT theo nhóm công việc network của workshop.
+* Tạo được các Security Groups cần thiết cho hệ thống.
+* Cấu hình được inbound rule và outbound rule theo từng lớp tài nguyên.
+* Chuẩn bị được DB Subnet Group để triển khai Amazon RDS trong VPC.
+* Tạo được RDS PostgreSQL theo đúng thứ tự sau khi hoàn tất network và security.
+* Kiểm tra được endpoint, port và trạng thái hoạt động của RDS.
+* Khởi tạo được database/schema ban đầu để ứng dụng có thể sử dụng ở bước triển khai ECS.
+* Hoàn thành đúng nhóm công việc VPC Networking, Security Groups và RDS Database; nguồn tham khảo dùng tài liệu trong Cloud Journey/AWS Study Group.

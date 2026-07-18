@@ -10,34 +10,43 @@ pre: " <b> 1.8. </b> "
 {{% /notice %}}
 
 
+### Week 8: Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web Apps, and HA
+
 ### Week 8 Objectives:
 
-* **Topic:** Application Modernization and Microservices Transformation.
-* This week focused on modernizing legacy systems, microservices transformation, and event-driven architecture.
-* Understand application modernization approaches on AWS.
-* Understand the transition from Monolith to Microservices.
-* Become familiar with Serverless, event-driven architecture, SPA authentication, AI services, and advanced DynamoDB.
+* Practice building a Serverless Document Management system.
+* Integrate frontend with API Gateway, Lambda, DynamoDB, Amplify, CloudFront, and AWS SAM.
+* Study advanced monitoring with X-Ray, CloudWatch, and Grafana.
+* Summarize knowledge about Serverless Web Apps, Elastic Beanstalk, WordPress, and HA models on AWS.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 06/05/2026 | - Learn application modernization on AWS. <br> - Result: Understood ways to upgrade legacy systems for cloud environments. | 06/05/2026 | 06/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/06/2026 | - Learn Serverless - DevAx Series. <br> - Result: Understood how to build applications without directly managing servers. | 06/06/2026 | 06/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/07/2026 | - Learn migration from Monolith to Microservices. <br> - Result: Understood why large applications may need to be split into smaller functional services. | 06/07/2026 | 06/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/08/2026 | - Learn Microservices development and CI/CD for application release. <br> - Result: Understood independent service development and automated deployment. | 06/08/2026 | 06/08/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/09/2026 | - Learn data and process refactoring. <br> - Result: Understood that architecture transformation requires changes in data, workflow, and service communication. | 06/09/2026 | 06/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/10/2026 | - Learn event-driven architecture and SPA authentication. <br> - Result: Understood asynchronous event communication and sign-in management for SPA. | 06/10/2026 | 06/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/11/2026 | - Learn AWS AI Services and advanced DynamoDB. <br> - Result: Understood extending applications with AI and optimizing NoSQL data design. | 06/11/2026 | 06/11/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Studied the Serverless Document Management System and built Serverless CRUD functions with Lambda and DynamoDB. | 06/08/2026 | 06/08/2026 | https://docs.aws.amazon.com/lambda/ |
+| Tuesday | Studied AWS Amplify for storage, user authentication, and frontend integration with API Gateway. | 06/09/2026 | 06/09/2026 | https://docs.aws.amazon.com/amplify/ |
+| Wednesday | Deployed the document management system using AWS SAM and configured CloudFront for content delivery optimization. | 06/10/2026 | 06/10/2026 | https://docs.aws.amazon.com/serverless-application-model/ |
+| Thursday | Added search functionality and studied DevOps practices for the document management system and deployment pipeline organization. | 06/11/2026 | 06/11/2026 | https://docs.aws.amazon.com/cloudfront/ |
+| Friday | Studied AWS X-Ray, CloudWatch, Grafana, and practiced an advanced CloudWatch workshop for logs, metrics, alarms, and tracing. | 06/12/2026 | 06/12/2026 | https://docs.aws.amazon.com/xray/ |
+| Saturday | Summarized Serverless Web App, Serverless API, Serverless chat app, and Node.js deployment with Elastic Beanstalk. | 06/13/2026 | 06/13/2026 | https://docs.aws.amazon.com/elasticbeanstalk/ |
+| Sunday | Studied CI/CD with Elastic Beanstalk, CDK Pipelines, WordPress on AWS, Web App HA, Windows Server HA, and SQL Server HA. | 06/14/2026 | 06/14/2026 | https://docs.aws.amazon.com/ |
 
+### Week 8 Results:
 
-### Week 8 Achievements:
-
-* Understood application modernization approaches on AWS, including architecture improvement, deployment optimization, better scalability, and reduced dependency on traditional infrastructure.
-* Understood the Serverless model and the role of services such as Lambda, API Gateway, and DynamoDB in building applications without direct server management.
-* Understood why systems may need to move from Monolith to Microservices, especially when they become larger, harder to maintain, harder to scale, and need independent deployment.
-* Learned how to split an application into business-based services, where each service has its own responsibility, data, and deployment lifecycle.
-* Understood that architecture transformation is not only code splitting but also data restructuring, workflow adjustment, and service communication redesign.
-* Understood the benefits of event-driven architecture in reducing direct service dependency, supporting asynchronous processing, and improving scalability.
-* Understood that single-page application authentication requires token management, login sessions, and authorization to protect APIs.
-* Learned how AI Services can extend application capabilities, automate tasks, or add intelligent features.
-* Understood several advanced DynamoDB topics such as key design, query optimization, and data model selection based on access patterns.
+* Understood how to build a document management system using the Serverless model with Lambda and DynamoDB.
+* Understood CRUD design for documents through API-based operations.
+* Understood how AWS Amplify supports frontend hosting, user authentication, and AWS service integration.
+* Understood API Gateway as the entry layer that receives frontend requests and forwards them to Lambda functions.
+* Understood how AWS SAM supports organized Serverless packaging, configuration, and deployment.
+* Understood how CloudFront improves content delivery speed and supports frontend/static asset distribution.
+* Learned how to add search functionality to a document management system.
+* Understood how DevOps supports controlled build, test, and deployment workflows for the document system.
+* Understood how AWS X-Ray traces requests across multiple components in a distributed system.
+* Understood how CloudWatch provides logs, metrics, and alarms for deployed applications.
+* Understood how Grafana visualizes monitoring data more clearly than raw logs alone.
+* Practiced advanced CloudWatch monitoring and learned how to read system metrics.
+* Summarized Serverless Web App, Serverless API, and Serverless chat application knowledge.
+* Learned how Elastic Beanstalk supports Node.js application deployment with simplified infrastructure management.
+* Understood CI/CD with Elastic Beanstalk and CDK Pipelines for consistent deployment.
+* Learned about WordPress on AWS and high availability web application deployment models.
+* Understood Windows Server HA and SQL Server HA as important enterprise workload deployment models.
+* Summarized the AWS foundation, Serverless, DevOps, monitoring, and high availability knowledge before moving to the practical project phase.

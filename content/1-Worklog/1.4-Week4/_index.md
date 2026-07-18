@@ -10,34 +10,36 @@ pre: " <b> 1.4. </b> "
 {{% /notice %}}
 
 
+### Week 4: Operations Management, Resource Management, Systems Manager, Lambda, CloudFormation, and AWS CDK
+
 ### Week 4 Objectives:
 
-* **Topic:** Operations Management and Infrastructure as Code.
-* This week focused on resource management automation and infrastructure deployment through code.
-* Learn how to organize resources using Tags and Resource Groups.
-* Understand system operations tools with Systems Manager and Session Manager.
-* Become familiar with serverless automation, CloudFormation, and AWS CDK.
+* Study organized AWS resource management using tags and resource groups.
+* Get familiar with AWS Toolkit, Systems Manager, and Session Manager.
+* Understand task automation with Lambda.
+* Study Infrastructure as Code using CloudFormation and AWS CDK.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 05/08/2026 | - Learn AWS Toolkit for VS Code. <br> - Result: Learned how to connect the development environment with AWS for easier application development and operations. | 05/08/2026 | 05/08/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/09/2026 | - Learn Tags and Resource Groups. <br> - Result: Understood resource classification by project, environment, cost, and usage purpose. | 05/09/2026 | 05/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/10/2026 | - Learn IAM with Resource Tags. <br> - Result: Understood tag-based access control for stricter resource management. | 05/10/2026 | 05/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/11/2026 | - Learn AWS Systems Manager. <br> - Result: Understood centralized server, configuration, and operation task management. | 05/11/2026 | 05/11/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/12/2026 | - Learn Systems Manager Session Manager. <br> - Result: Understood safer EC2 access without exposing SSH directly to the Internet. | 05/12/2026 | 05/12/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/13/2026 | - Learn AWS Lambda and AWS CloudFormation. <br> - Result: Understood serverless automation and infrastructure description using templates. | 05/13/2026 | 05/13/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/14/2026 | - Learn AWS CDK basics, advanced CDK, and Infrastructure as Code workshop. <br> - Result: Understood defining cloud resources using programming languages. | 05/14/2026 | 05/14/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Studied AWS Toolkit for VS Code and how it supports developing, testing, and deploying AWS-integrated applications. | 05/11/2026 | 05/11/2026 | https://docs.aws.amazon.com/toolkit-for-vscode/ |
+| Tuesday | Studied Tags and Resource Groups to classify resources by project, environment, owner, cost, and purpose. | 05/12/2026 | 05/12/2026 | https://docs.aws.amazon.com/resourcegroupstagging/ |
+| Wednesday | Studied access control using IAM together with Resource Tags to limit actions by resource groups. | 05/13/2026 | 05/13/2026 | https://docs.aws.amazon.com/iam/ |
+| Thursday | Studied AWS Systems Manager, Session Manager, and safer server management without opening SSH directly to the Internet. | 05/14/2026 | 05/14/2026 | https://docs.aws.amazon.com/systems-manager/ |
+| Friday | Studied AWS Lambda, event sources, runtimes, and how Lambda can automate operational tasks. | 05/15/2026 | 05/15/2026 | https://docs.aws.amazon.com/lambda/ |
+| Saturday | Studied AWS CloudFormation, templates, stacks, and infrastructure description through code. | 05/16/2026 | 05/16/2026 | https://docs.aws.amazon.com/cloudformation/ |
+| Sunday | Studied basic and advanced AWS CDK and practiced reusable Infrastructure as Code design. | 05/17/2026 | 05/17/2026 | https://docs.aws.amazon.com/cdk/ |
 
+### Week 4 Results:
 
-### Week 4 Achievements:
-
-* Understood how to organize AWS resources using Tags and Resource Groups, making management, searching, classification, and cost tracking clearer.
-* Understood how IAM can work with Resource Tags to control access by environment or resource group, which is useful when many members work on the same system.
-* Understood the role of AWS Toolkit for VS Code in supporting application development and AWS service operations directly from a familiar development environment.
-* Understood key functions of AWS Systems Manager in server management, operation task automation, health checking, and configuration management.
-* Understood the benefits of Session Manager for safer EC2 access, reducing the need to expose public SSH ports and lowering server administration risks.
-* Understood how AWS Lambda supports small task automation, event processing, and code execution without direct server management.
-* Understood Infrastructure as Code through CloudFormation, including how templates help create consistent resources and reduce manual configuration errors.
-* Became familiar with AWS CDK and the benefit of using programming languages to describe infrastructure and reuse deployment structures across environments.
-* Built a stronger operations and automation foundation for later DevOps, CI/CD, and system deployment topics.
+* Understood the importance of organized resource management as the number of AWS services increases.
+* Learned how to use tags to classify resources by environment, project, cost, and operational purpose.
+* Understood how Resource Groups help group related resources for easier management.
+* Understood how IAM can work with Resource Tags for more flexible access control.
+* Got familiar with AWS Toolkit for VS Code for AWS-based application development.
+* Understood the role of Systems Manager in centralized server and configuration management.
+* Understood how Session Manager allows safer EC2 access without opening direct SSH.
+* Understood how Lambda can automate event-based operational tasks.
+* Understood how CloudFormation describes infrastructure using templates for consistent deployment.
+* Understood how AWS CDK allows infrastructure to be written with programming languages and reusable constructs.
+* Developed Infrastructure as Code thinking to reduce manual operations and deployment mistakes.

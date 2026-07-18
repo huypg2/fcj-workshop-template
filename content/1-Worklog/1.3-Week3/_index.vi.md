@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 3"
-date: 2026-05-08
+date: 2026-05-10
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -10,36 +10,38 @@ pre: " <b> 1.3. </b> "
 {{% /notice %}}
 
 
+### Tuần 3: Mạng nâng cao, CloudFront, Lambda@Edge, Windows workload, Migration và Disaster Recovery
+
 ### Mục tiêu tuần 3:
 
-* **Chủ đề:** Mạng nâng cao, phân phối nội dung và dịch chuyển hạ tầng.
-* Tuần này đi sâu vào luồng dữ liệu mạng, tối ưu phân phối nội dung và các chiến lược dịch chuyển hệ thống lên Cloud.
-* Củng cố kiến thức networking thông qua workshop thực hành trên AWS.
-* Tìm hiểu CloudFront, Lambda@Edge và các giải pháp tối ưu phân phối nội dung.
-* Nắm các hướng migration, chuyển máy ảo, chuyển cơ sở dữ liệu và phục hồi sau thảm họa.
+* Củng cố kiến thức networking trên AWS và hiểu rõ hơn cách thiết kế mạng cho hệ thống.
+* Tìm hiểu CloudFront, CDN và Lambda@Edge để tối ưu phân phối nội dung.
+* Nắm được cách triển khai workload Windows và dịch vụ thư mục trên AWS.
+* Tìm hiểu các chiến lược migration và disaster recovery khi đưa hệ thống lên Cloud.
 
 ### Các công việc cần triển khai trong tuần này:
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 01/05/2026 | - Thực hành workshop networking trên AWS. <br> - Kết quả: Hiểu rõ hơn cách thiết kế VPC, subnet, route table, security group và luồng kết nối giữa các thành phần. | 01/05/2026 | 01/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 02/05/2026 | - Tìm hiểu Amazon CloudFront. <br> - Kết quả: Nắm được cách CDN cache nội dung tại edge location để giảm độ trễ và giảm tải cho origin. | 02/05/2026 | 02/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 03/05/2026 | - Tìm hiểu Lambda@Edge kết hợp với CloudFront. <br> - Kết quả: Biết cách xử lý một số logic request/response gần người dùng hơn. | 03/05/2026 | 03/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 04/05/2026 | - Tìm hiểu ứng dụng Windows trên AWS và AWS Managed Microsoft AD. <br> - Kết quả: Hiểu cách AWS hỗ trợ workload Windows và dịch vụ thư mục cho môi trường doanh nghiệp. | 04/05/2026 | 04/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/05/2026 | - Tìm hiểu các chiến lược dịch chuyển lên AWS. <br> - Kết quả: Phân biệt được rehost, replatform, refactor và cách lựa chọn hướng migration phù hợp. | 05/05/2026 | 05/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/05/2026 | - Tìm hiểu AWS VM Import/Export, AWS DMS và SCT. <br> - Kết quả: Nắm được cách di chuyển máy ảo và cơ sở dữ liệu sang AWS. | 06/05/2026 | 06/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 07/05/2026 | - Tìm hiểu AWS Elastic Disaster Recovery. <br> - Kết quả: Hiểu cách chuẩn bị phương án khôi phục hệ thống, giảm downtime và bảo vệ dữ liệu khi có sự cố. | 07/05/2026 | 07/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ 2 | Thực hành workshop về networking trên AWS, ôn lại VPC, subnet, route table, security group, network ACL và cách phân tách tài nguyên theo lớp mạng. | 04/05/2026 | 04/05/2026 | https://docs.aws.amazon.com/vpc/ |
+| Thứ 3 | Tìm hiểu Amazon CloudFront, CDN, edge location, origin, cache behavior và cách giảm độ trễ khi phân phối nội dung đến người dùng. | 05/05/2026 | 05/05/2026 | https://docs.aws.amazon.com/cloudfront/ |
+| Thứ 4 | Tìm hiểu Lambda@Edge và cách xử lý một số logic gần người dùng hơn để tối ưu request, response và trải nghiệm truy cập. | 06/05/2026 | 06/05/2026 | https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html |
+| Thứ 5 | Tìm hiểu ứng dụng Windows trên AWS, môi trường Windows Server và AWS Managed Microsoft AD cho hệ thống doanh nghiệp. | 07/05/2026 | 07/05/2026 | https://docs.aws.amazon.com/directoryservice/ |
+| Thứ 6 | Tìm hiểu các chiến lược migration như rehost, replatform, refactor, repurchase, retain và retire khi dịch chuyển hệ thống lên AWS. | 08/05/2026 | 08/05/2026 | https://aws.amazon.com/cloud-migration/ |
+| Thứ 7 | Tìm hiểu AWS VM Import/Export, AWS Database Migration Service và Schema Conversion Tool trong quá trình di chuyển máy ảo và database. | 09/05/2026 | 09/05/2026 | https://docs.aws.amazon.com/dms/ |
+| Chủ nhật | Tìm hiểu AWS Elastic Disaster Recovery và cách xây dựng phương án phục hồi hệ thống khi xảy ra sự cố. | 10/05/2026 | 10/05/2026 | https://docs.aws.amazon.com/drs/ |
 
 ### Kết quả đạt được tuần 3:
 
-* Nắm được kiến thức mạng nâng cao hơn trên AWS, đặc biệt là cách phối hợp VPC, subnet, route table, security group và network ACL để kiểm soát luồng dữ liệu.
-* Hiểu được vai trò của CloudFront trong tối ưu tốc độ truy cập, giảm độ trễ và giảm tải cho máy chủ gốc thông qua cơ chế cache tại edge location.
-* Nắm được cách Lambda@Edge hỗ trợ xử lý logic gần người dùng hơn, phù hợp với các tình huống cần tùy chỉnh request, response hoặc phân phối nội dung động ở mức đơn giản.
-* Làm quen với các workload Windows trên AWS, bao gồm máy chủ Windows, dịch vụ thư mục Microsoft AD và nhu cầu tích hợp hệ thống doanh nghiệp hiện có lên Cloud.
-* Hiểu được các chiến lược migration phổ biến như rehost, replatform và refactor, từ đó biết rằng việc dịch chuyển lên Cloud cần đánh giá hiện trạng ứng dụng trước khi chọn giải pháp.
-* Nắm được cách VM Import/Export hỗ trợ chuyển máy ảo hiện có sang EC2 và cách DMS hỗ trợ di chuyển dữ liệu giữa các hệ quản trị cơ sở dữ liệu.
-* Biết vai trò của Schema Conversion Tool trong các trường hợp cần chuyển đổi schema khi thay đổi database engine trong quá trình migration.
-* Hiểu được mục tiêu của Elastic Disaster Recovery là giảm thời gian gián đoạn, hỗ trợ sao chép hệ thống và tăng khả năng phục hồi khi xảy ra sự cố nghiêm trọng.
-* Có cái nhìn rõ hơn về mối liên hệ giữa networking, CDN, migration và disaster recovery trong việc xây dựng hệ thống Cloud ổn định và sẵn sàng mở rộng.
+* Ôn lại và củng cố được kiến thức mạng trên AWS, đặc biệt là vai trò của VPC trong việc cô lập tài nguyên và kiểm soát luồng kết nối.
+* Hiểu rõ hơn cách subnet, route table, security group và network ACL phối hợp với nhau để tạo nên mô hình mạng an toàn.
+* Nắm được vai trò của CloudFront trong việc phân phối nội dung qua edge location, giúp giảm độ trễ cho người dùng ở nhiều khu vực khác nhau.
+* Hiểu được cache behavior, origin và CDN có thể giúp giảm tải cho máy chủ gốc, đồng thời cải thiện tốc độ truy cập nội dung.
+* Nắm được Lambda@Edge có thể xử lý logic tại edge location, phù hợp với các tình huống cần tùy biến request hoặc response gần người dùng.
+* Biết thêm cách AWS hỗ trợ Windows workload, Windows Server và Managed Microsoft AD trong môi trường doanh nghiệp.
+* Hiểu được các chiến lược migration khác nhau, từ cách di chuyển đơn giản như rehost đến hướng cải tiến sâu hơn như refactor.
+* Nắm được vai trò của VM Import/Export khi cần đưa máy ảo hiện có lên AWS.
+* Hiểu được AWS DMS và SCT hỗ trợ quá trình di chuyển database và chuyển đổi schema giữa các hệ quản trị khác nhau.
+* Nắm được tầm quan trọng của disaster recovery trong hệ thống thực tế, đặc biệt đối với ứng dụng yêu cầu tính sẵn sàng cao.
+* Biết AWS Elastic Disaster Recovery giúp giảm thời gian khôi phục và hỗ trợ chuẩn bị kế hoạch ứng phó khi hệ thống gặp sự cố.
 
 

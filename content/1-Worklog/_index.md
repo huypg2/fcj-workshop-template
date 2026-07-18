@@ -16,26 +16,26 @@ The program was completed in **12 weeks**, from **April 17, 2026 to July 10, 202
 
 The main contents of the 12 weeks are summarized as follows:
 
-**Week 1:** [Cloud kickoff, getting familiar with AWS, IAM, VPC, EC2, Cloud9, and AWS CLI](tuan-01/)
+**Week 1:** [Cloud kickoff, AWS account, IAM, VPC, EC2, and working tools](tuan-01/)
 
-**Week 2:** [Learning AWS storage, databases, cache, auto scaling, monitoring, and DNS](tuan-02/)
+**Week 2:** [Learning storage, databases, cache, DNS, monitoring, and system scaling](tuan-02/)
 
-**Week 3:** [Studying advanced networking, CloudFront, Lambda@Edge, migration, and disaster recovery](tuan-03/)
+**Week 3:** [Studying advanced networking, CloudFront, Lambda@Edge, Windows workload, migration, and disaster recovery](tuan-03/)
 
-**Week 4:** [Practicing operations management, Systems Manager, Lambda, CloudFormation, and AWS CDK](tuan-04/)
+**Week 4:** [Practicing operations management, Resource Management, Systems Manager, Lambda, CloudFormation, and AWS CDK](tuan-04/)
 
-**Week 5:** [Learning cloud security, advanced IAM, Security Hub, WAF, KMS, Macie, Secrets Manager, and GuardDuty](tuan-05/)
+**Week 5:** [Learning Cloud security, data backup, reliability, messaging, quota, and cost optimization](tuan-05/)
 
-**Week 6:** [Studying reliability, data backup, messaging systems, resource optimization, and AWS cost optimization](tuan-06/)
+**Week 6:** [Practicing Docker, Amazon ECS, CI/CD, DevOps workflow, hybrid storage, and workflow orchestration](tuan-06/)
 
-**Week 7:** [Practicing Docker, Amazon ECS, CI/CD with CodePipeline, VPC Flow Logs, and Step Functions](tuan-07/)
+**Week 7:** [Learning Application Modernization, Microservices, Serverless, Event-driven Architecture, and Serverless Book Store](tuan-07/)
 
-**Week 8:** [Learning application modernization, Monolith to Microservices migration, Serverless, and event-driven architecture](tuan-08/)
+**Week 8:** [Practicing Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App, and HA](tuan-08/)
 
-**Week 9:** [Practicing the Serverless Book Store project with Lambda, S3, DynamoDB, Cognito, SQS, SNS, and AppSync](tuan-09/)
+**Week 9:** [Preparing the deployment environment, AWS CLI, and Amazon ECR](tuan-09/)
 
-**Week 10:** [Building a Serverless Document Management System with API Gateway, CloudFront, X-Ray, CloudWatch, and Grafana](tuan-10/)
+**Week 10:** [Setting up VPC, Subnet, Security Groups, and Amazon RDS PostgreSQL](tuan-10/)
 
-**Week 11:** [Integrating microservices, standardizing configuration, designing AWS architecture, and deploying the system on ECS Fargate](tuan-11/)
+**Week 11:** [Configuring Load Balancer and deploying the application with ECS Fargate](tuan-11/)
 
-**Week 12:** [Testing end-to-end flow, idempotency, rate limiting, load testing, configuration optimization, and completing the project report](tuan-12/)
+**Week 12:** [CloudWatch Alarm, Load Testing, S3 Backup, Verification, and Cleanup](tuan-12/)

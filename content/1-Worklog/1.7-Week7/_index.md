@@ -10,34 +10,39 @@ pre: " <b> 1.7. </b> "
 {{% /notice %}}
 
 
+### Week 7: Application Modernization, Microservices, Serverless, Event-driven Architecture, and Serverless Book Store
+
 ### Week 7 Objectives:
 
-* **Topic:** Containers, CI/CD, and DevOps Workflows.
-* This week focused on application packaging, container orchestration, and continuous deployment pipelines.
-* Learn Docker, Amazon ECS, and ECS infrastructure with CDK.
-* Understand CI/CD workflows with AWS CodePipeline.
-* Become familiar with Storage Gateway, FSx, VPC Flow Logs, Step Functions, and storage performance.
+* Study application modernization and migration from Monolith to Microservices.
+* Understand Serverless architecture and event-driven design.
+* Practice the Serverless Book Store project using Lambda, S3, DynamoDB, and frontend API integration.
+* Get familiar with Cognito, SQS, SNS, AppSync, AWS SAM, and CI/CD for Serverless applications.
 
 ### Tasks to be carried out this week:
-| Date | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 05/29/2026 | - Learn Docker and application containerization. <br> - Result: Understood packaging applications with dependencies for stable execution across environments. | 05/29/2026 | 05/29/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/30/2026 | - Learn Amazon ECS. <br> - Result: Understood cluster, task definition, service, and ECS container management. | 05/30/2026 | 05/30/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 05/31/2026 | - Learn CDK for ECS. <br> - Result: Understood how to describe ECS infrastructure as code for consistent deployment. | 05/31/2026 | 05/31/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/01/2026 | - Learn AWS CodePipeline and CI/CD. <br> - Result: Understood automation flow from source code, build, test, to deployment. | 06/01/2026 | 06/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/02/2026 | - Learn AWS Storage Gateway and Amazon FSx. <br> - Result: Understood hybrid storage connection and file storage for Windows environments. | 06/02/2026 | 06/02/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/03/2026 | - Learn VPC Flow Logs and AWS Step Functions. <br> - Result: Understood network traffic monitoring and multi-step workflow orchestration. | 06/03/2026 | 06/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 06/04/2026 | - Practice storage performance workshop. <br> - Result: Understood how to choose storage services based on performance and access requirements. | 06/04/2026 | 06/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Monday | Studied Application Modernization on AWS and approaches for improving legacy systems. | 06/01/2026 | 06/01/2026 | https://aws.amazon.com/application-modernization/ |
+| Tuesday | Studied migration from Monolith to Microservices, service separation by business function, and data management after service separation. | 06/02/2026 | 06/02/2026 | https://aws.amazon.com/microservices/ |
+| Wednesday | Studied Serverless in the DevAx Series, event-driven architecture, single-page application authentication, and AI service integration. | 06/03/2026 | 06/03/2026 | https://aws.amazon.com/serverless/ |
+| Thursday | Studied advanced DynamoDB, table design, query patterns, and key considerations for Serverless applications. | 06/04/2026 | 06/04/2026 | https://docs.aws.amazon.com/dynamodb/ |
+| Friday | Practiced the Serverless Book Store project and built a Serverless backend with Lambda, S3, and DynamoDB. | 06/05/2026 | 06/05/2026 | https://docs.aws.amazon.com/lambda/ |
+| Saturday | Developed the frontend connected to Serverless APIs and studied AWS SAM for application packaging and deployment automation. | 06/06/2026 | 06/06/2026 | https://docs.aws.amazon.com/serverless-application-model/ |
+| Sunday | Studied Cognito, SQS, SNS, Serverless CI/CD, and AWS AppSync for authentication, asynchronous processing, and GraphQL APIs. | 06/07/2026 | 06/07/2026 | https://docs.aws.amazon.com/appsync/ |
 
+### Week 7 Results:
 
-### Week 7 Achievements:
-
-* Understood the benefits of Docker in packaging applications, ensuring consistent runtime environments, and reducing errors caused by configuration differences.
-* Understood key Amazon ECS components such as cluster, task definition, container, service, and how ECS supports containerized application deployment on AWS.
-* Learned how to use AWS CDK to describe ECS infrastructure as code, making cluster, service, and load balancer creation easier to reuse.
-* Understood the role of CI/CD in DevOps and how CodePipeline connects source retrieval, build, test, and deploy steps to reduce manual work.
-* Understood how automated deployment reduces release errors, speeds up updates, and supports more efficient teamwork.
-* Became familiar with Storage Gateway as a solution for connecting on-premises storage with Cloud in hybrid or synchronized data environments.
-* Understood the role of Amazon FSx in managed file storage for Windows systems and applications requiring file systems.
-* Understood how VPC Flow Logs support network traffic monitoring, blocked connection analysis, and abnormal access flow detection.
-* Understood how Step Functions orchestrates multi-step workflows and manages complex processes involving multiple AWS services.
+* Understood application modernization as improving legacy systems for better cloud scalability and operations.
+* Understood the difference between Monolith and Microservices and the benefit of splitting systems by business functions.
+* Understood that microservice migration requires attention to service communication, data separation, independent deployment, and monitoring.
+* Understood how Serverless reduces server management and fits event-based workloads.
+* Understood event-driven architecture as a way to reduce tight coupling between components.
+* Learned authentication approaches for single-page applications using managed user services.
+* Gained additional knowledge about integrating AWS AI services into practical applications.
+* Deepened knowledge of advanced DynamoDB design, especially key design and query patterns.
+* Practiced the Serverless Book Store project using Lambda, S3, and DynamoDB.
+* Understood how frontend applications connect to Serverless APIs.
+* Understood how AWS SAM helps package, configure, and deploy Serverless applications consistently.
+* Understood Cognito for authentication, SQS for queues, SNS for notifications, and AppSync for GraphQL APIs.
+* Understood the role of CI/CD in stable Serverless application releases.
+* Summarized modernization, microservices, and serverless knowledge for more complex system practice.

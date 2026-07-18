@@ -16,26 +16,26 @@ Chương trình được thực hiện trong **12 tuần**, từ ngày **17/04/2
 
 Các nội dung chính trong 12 tuần được tổng hợp như sau:
 
-**Tuần 1:** [Khởi động Đám mây, làm quen với AWS, IAM, VPC, EC2, Cloud9 và AWS CLI](tuan-01/)
+**Tuần 1:** [Khởi động Cloud, tài khoản AWS, IAM, VPC, EC2 và công cụ làm việc](tuan-01/)
 
-**Tuần 2:** [Tìm hiểu lưu trữ, cơ sở dữ liệu, cache, auto scaling, monitoring và DNS trên AWS](tuan-02/)
+**Tuần 2:** [Tìm hiểu lưu trữ, cơ sở dữ liệu, cache, DNS, giám sát và mở rộng hệ thống](tuan-02/)
 
-**Tuần 3:** [Nghiên cứu mạng nâng cao, CloudFront, Lambda@Edge, migration và disaster recovery](tuan-03/)
+**Tuần 3:** [Nghiên cứu mạng nâng cao, CloudFront, Lambda@Edge, Windows workload, migration và disaster recovery](tuan-03/)
 
-**Tuần 4:** [Thực hành quản lý vận hành, Systems Manager, Lambda, CloudFormation và AWS CDK](tuan-04/)
+**Tuần 4:** [Thực hành quản lý vận hành, Resource Management, Systems Manager, Lambda, CloudFormation và AWS CDK](tuan-04/)
 
-**Tuần 5:** [Tìm hiểu bảo mật đám mây, IAM nâng cao, Security Hub, WAF, KMS, Macie, Secrets Manager và GuardDuty](tuan-05/)
+**Tuần 5:** [Tìm hiểu bảo mật Cloud, sao lưu dữ liệu, độ tin cậy, messaging, quota và tối ưu chi phí](tuan-05/)
 
-**Tuần 6:** [Nghiên cứu độ tin cậy, sao lưu dữ liệu, hệ thống nhắn tin, tối ưu tài nguyên và tối ưu chi phí AWS](tuan-06/)
+**Tuần 6:** [Thực hành Docker, Amazon ECS, CI/CD, DevOps workflow, storage hybrid và workflow orchestration](tuan-06/)
 
-**Tuần 7:** [Thực hành Docker, Amazon ECS, CI/CD với CodePipeline, VPC Flow Logs và Step Functions](tuan-07/)
+**Tuần 7:** [Tìm hiểu Application Modernization, Microservices, Serverless, Event-driven Architecture và Serverless Book Store](tuan-07/)
 
-**Tuần 8:** [Tìm hiểu hiện đại hóa ứng dụng, chuyển đổi từ Monolith sang Microservices, Serverless và kiến trúc hướng sự kiện](tuan-08/)
+**Tuần 8:** [Thực hành Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App và HA](tuan-08/)
 
-**Tuần 9:** [Thực hành dự án Serverless Book Store với Lambda, S3, DynamoDB, Cognito, SQS, SNS và AppSync](tuan-09/)
+**Tuần 9:** [Chuẩn bị môi trường triển khai, AWS CLI và Amazon ECR](tuan-09/)
 
-**Tuần 10:** [Xây dựng hệ thống quản lý tài liệu Serverless, tích hợp API Gateway, CloudFront, X-Ray, CloudWatch và Grafana](tuan-10/)
+**Tuần 10:** [Thiết lập VPC, Subnet, Security Groups và Amazon RDS PostgreSQL](tuan-10/)
 
-**Tuần 11:** [Tích hợp microservices, chuẩn hóa cấu hình, thiết kế kiến trúc AWS và triển khai hệ thống lên ECS Fargate](tuan-11/)
+**Tuần 11:** [Cấu hình Load Balancer và triển khai ứng dụng bằng ECS Fargate](tuan-11/)
 
-**Tuần 12:** [Kiểm thử end-to-end, idempotency, rate limiting, kiểm thử tải, tối ưu cấu hình và hoàn thiện báo cáo dự án](tuan-12/)
+**Tuần 12:** [CloudWatch Alarm, Load Testing, S3 Backup, Verification và Cleanup](tuan-12/)
