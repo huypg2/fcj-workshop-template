@@ -10,7 +10,7 @@ pre: " <b> 3. </b> "
 {{% /notice %}}
 
 <div class="blog-preview">
-  <h2><a href="./bai-viet-01/">Blog 1 - Getting started with healthcare data lakes: Using microservices</a></h2>
+  <h2><a href="./bai-viet-01/">Blog 1 - Tự động hóa quy trình triển khai ứng dụng Container lên Amazon ECS Express Mode bằng GitHub Actions</a></h2>
   <p>
     Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. 
     Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng, cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn.

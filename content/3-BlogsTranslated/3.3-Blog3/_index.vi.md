@@ -33,7 +33,7 @@ Luồng xử lý dữ liệu của giải pháp được chia tách rõ ràng th
 
 ---
 
-![EC2 Capacity Manager](/images/105.png)
+![EC2 Capacity Manager](/images/3-BlogsTranslated/Hình 3.3.1.png)
 ## 3. Lựa chọn công nghệ và phạm vi lưu trữ
 
 | Thành phần hệ thống | Công nghệ sử dụng | Vai trò trong kiến trúc |
@@ -60,7 +60,7 @@ Truy vấn đi sâu vào dữ liệu ở cấp độ khu vực hạ tầng vật
 
 ---
 
-![Athena SQL Query Results](/images/103.png)
+![Athena SQL Query Results](/images/3-BlogsTranslated/Hình 3.3.2.png)
 ## 5. Lời kết
 
 Sự kết hợp giữa EC2 Capacity Manager, S3 và Athena mang lại một giải pháp quản trị và tối ưu chi phí hạ tầng toàn diện vượt qua giới hạn lưu trữ thông thường. Phương án tiếp cận này giúp các doanh nghiệp chuyển dịch từ thế bị động giải quyết chi phí phát sinh sang chủ động làm chủ dữ liệu, tối ưu hóa hạ tầng và nâng cao hiệu quả tài chính trên đám mây AWS.

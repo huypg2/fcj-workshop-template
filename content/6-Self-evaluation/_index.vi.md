@@ -22,113 +22,25 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 
 Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
-<table class="review-table">
-  <thead>
-    <tr>
-      <th>STT</th>
-      <th>Tiêu chí</th>
-      <th>Mô tả</th>
-      <th class="center">Tốt</th>
-      <th class="center">Khá</th>
-      <th class="center">Trung bình</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Kiến thức và kỹ năng chuyên môn</td>
-      <td>Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Khả năng học hỏi</td>
-      <td>Tiếp thu kiến thức mới, học hỏi nhanh</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Chủ động</td>
-      <td>Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn</td>
-      <td class="center">□</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Tinh thần trách nhiệm</td>
-      <td>Hoàn thành công việc đúng hạn, đảm bảo chất lượng</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Kỷ luật</td>
-      <td>Tuân thủ giờ giấc, nội quy, quy trình làm việc</td>
-      <td class="center">□</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Tính cầu tiến</td>
-      <td>Sẵn sàng nhận feedback và cải thiện bản thân</td>
-      <td class="center">□</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Giao tiếp</td>
-      <td>Trình bày ý tưởng, báo cáo công việc rõ ràng</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Hợp tác nhóm</td>
-      <td>Làm việc hiệu quả với đồng nghiệp, tham gia nhóm</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Ứng xử chuyên nghiệp</td>
-      <td>Tôn trọng đồng nghiệp, đối tác, môi trường làm việc</td>
-      <td class="center">□</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Tư duy giải quyết vấn đề</td>
-      <td>Nhận diện vấn đề, đề xuất giải pháp, sáng tạo</td>
-      <td class="center">□</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>Đóng góp vào dự án/tổ chức</td>
-      <td>Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team</td>
-      <td class="center">□</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Tổng thể</td>
-      <td>Đánh giá chung về toàn bộ quá trình thực tập</td>
-      <td class="center">✓</td>
-      <td class="center">□</td>
-      <td class="center">□</td>
-    </tr>
-  </tbody>
-</table>
+| STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅ | □ | □ |
+| 2 | **Khả năng học hỏi** | Tiếp thu kiến thức mới, học hỏi nhanh | ✅ | □ | □ |
+| 3 | **Chủ động** | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn | □ | ✅ | □ |
+| 4 | **Tinh thần trách nhiệm** | Hoàn thành công việc đúng hạn, đảm bảo chất lượng | ✅ | □ | □ |
+| 5 | **Kỷ luật** | Tuân thủ giờ giấc, nội quy, quy trình làm việc | □ | ✅ | □ |
+| 6 | **Tính cầu tiến** | Sẵn sàng nhận feedback và cải thiện bản thân | □ | ✅ | □ |
+| 7 | **Giao tiếp** | Trình bày ý tưởng, báo cáo công việc rõ ràng | ✅ | □ | □ |
+| 8 | **Hợp tác nhóm** | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm | ✅ | □ | □ |
+| 9 | **Ứng xử chuyên nghiệp** | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc | □ | ✅ | □ |
+| 10 | **Tư duy giải quyết vấn đề** | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo | □ | ✅ | □ |
+| 11 | **Đóng góp vào dự án/tổ chức** | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team | □ | ✅ | □ |
+| 12 | **Tổng thể** | Đánh giá chung về toàn bộ quá trình thực tập | ✅ | □ | □ |
+
+### Cần cải thiện
+
+Trong quá trình thực tập, bên cạnh những kết quả đã đạt được, vẫn còn một số điểm cần tiếp tục cải thiện trong thời gian tới. Cần rèn luyện thêm khả năng trình bày vấn đề ngắn gọn, rõ trọng tâm hơn khi báo cáo tiến độ hoặc giải thích lỗi kỹ thuật. Ngoài ra, cần chủ động hơn trong việc lập kế hoạch công việc, phân chia thời gian cho từng nhiệm vụ và ghi nhận kết quả thực hiện một cách đầy đủ hơn.
+
+Về chuyên môn, cần tiếp tục củng cố kiến thức về kiến trúc hệ thống chịu tải cao, triển khai ứng dụng trên AWS, giám sát hệ thống và tối ưu chi phí vận hành. Đồng thời, cần luyện tập thêm kỹ năng kiểm thử tải, phân tích log, đọc metric CloudWatch và xử lý các lỗi phát sinh khi hệ thống chạy trên môi trường cloud.
+
+Trong các giai đoạn tiếp theo, cần nâng cao khả năng tự tin khi trình bày sản phẩm, giải thích kiến trúc hệ thống và bảo vệ các lựa chọn kỹ thuật đã thực hiện. Việc tiếp nhận góp ý từ mentor và điều chỉnh sản phẩm theo phản hồi cũng cần được duy trì thường xuyên để cải thiện chất lượng công việc.
