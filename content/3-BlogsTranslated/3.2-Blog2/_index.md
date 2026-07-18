@@ -5,122 +5,67 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# Optimizing the Disaster Recovery Process for Stateful Services on Amazon EKS Using Velero
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+Ensuring high availability and data safety is always a critical challenge for systems running on Kubernetes. When a namespace is accidentally deleted in a production environment or when a cluster upgrade fails, manually rebuilding all resources consumes a great deal of time and effort from the operations team.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+The disaster recovery backup and restore solution using the open-source Velero tool helps automate the packaging of logical configurations to Amazon S3, while also taking physical disk snapshots of stateful applications in the form of Amazon EBS Snapshots. This article summarizes the architecture, workflow, and important technical notes learned from the practical deployment of this solution on an Amazon EKS system.
 
 ---
 
-## Architecture Guidance
+## 1. Core advantages of the solution
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+The deployment architecture focuses on optimizing the system based on two important aspects: maintaining data integrity and strengthening infrastructure security standards.
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
-
-**The solution architecture is now as follows:**
-
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+- **Security through EKS Pod Identity:** Instead of using static credentials such as long-term AWS Access Keys or overusing the system’s default `cluster-admin` privileges, the solution establishes a short-term authorization mechanism through EKS Pod Identity. Combined with a custom `ClusterRole`, Velero is only allowed to interact minimally with the necessary apiGroups according to the Least Privilege principle.
+- **Synchronized backup of two components:** Unlike common solutions that only store soft configurations, Velero processes both logical configuration files in parallel, such as Deployments, PVCs, and Secrets compressed and pushed to Amazon S3, and actual data stored on gp3 disks, which is frozen and converted into Amazon EBS Snapshots.
+- **Flexible cross-namespace restoration:** The `namespaceMapping` feature allows the entire application to be quickly restored and historical data from an old snapshot to be pulled into a new independent namespace (`myrestore`) without affecting the original environment.
 
 ---
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+## 2. System workflow
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+The data processing flow of the solution is clearly divided into two independent phases through Kubernetes Custom Resources:
+
+- **When backing up:** The Velero controller receives the request, scans the Kubernetes API to collect all resource definitions in the specified namespace, and pushes the compressed file to the S3 Bucket. For persistent physical disk volumes, the system simultaneously calls the AWS API to trigger the physical disk snapshot process (EBS Snapshot) in order to freeze the data state at the time of backup.
+- **When restoring:** When restoring to a new namespace, AWS automatically analyzes the configuration data stored on S3, reads the old snapshot information from the previous backup process, and creates a completely new `gp3` disk. This new disk is automatically mounted to the Worker Node so the application can continue writing data to the historical file without interruption.
 
 ---
 
-## Technology Choices and Communication Scope
+![Backup restore](/images/104.png)
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+## 3. Technology selection and storage scope
 
----
-
-## The Pub/Sub Hub
-
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
-
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+| System component | Technology used | Role in the architecture |
+| :--- | :--- | :--- |
+| **Control Plane Backup** | Amazon S3 | Centrally stores logical resource definition files in `.tar.gz` format |
+| **Data Plane Backup** | Amazon EBS Snapshots | Stores the actual stateful application data using the block storage mechanism |
+| **Identity & Access** | EKS Pod Identity | Manages identity and grants short-term permissions to Pods through IAM Role |
+| **Orchestration** | Velero Server & Helm | Manages the lifecycle of backup and restore processes for resources in the cluster |
 
 ---
 
-## Core Microservice
+## 4. Technical notes for practical deployment
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+During the process of configuring the solution, several environment-specific issues occurred and needed to be adjusted directly on the infrastructure:
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+### Windows CMD environment characteristics
 
----
+Since the original documentation was fully optimized for the Linux environment, when executing commands on Windows CMD, all environment variable syntax must be converted to the `%VARIABLE%` format. In addition, the process of generating YAML manifest configuration files from the terminal needs to be wrapped in opening and closing command blocks or use implicit PowerShell commands to avoid special character formatting errors.
 
-## Front Door Microservice
+![EKS Pod Identity Association](/images/101.png)
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+### Pod stuck in Pending status error (FailedScheduling)
+
+This error occurs because the sample AWS deployment file uses a node selection configuration by default (`nodeSelector` bound to EKS Auto Mode). If the actual infrastructure is running a normal Standard Node Group cluster, the Pod cannot be scheduled. Proactively removing this node filtering configuration line from the deployment file helps the application quickly move to the `Running` state and mount the disk smoothly.
 
 ---
 
-## Staging ER7 Microservice
+![Velero Backup Completed](/images/100.png)
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+## 5. Conclusion
 
----
+The combination of Velero and Amazon EKS through the Pod Identity authentication mechanism provides a comprehensive disaster recovery solution for stateful applications in the cloud environment. This approach not only satisfies strict enterprise security standards but also significantly reduces the operational burden for the Operations team when the system faces major incidents.
 
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Original article: https://aws.amazon.com/blogs/containers/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero/

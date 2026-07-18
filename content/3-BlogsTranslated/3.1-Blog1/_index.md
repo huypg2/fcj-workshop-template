@@ -5,122 +5,74 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# Automating the Deployment Process of Container Applications to Amazon ECS Express Mode with GitHub Actions
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+In the DevOps era, optimizing CI/CD pipelines to shorten the time required to bring products to market is a top priority. When applications are containerized, the manual packaging and deployment process is often prone to errors and time-consuming.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+The automation solution using **GitHub Actions** combined with **Amazon ECS Express Mode** helps simplify the entire infrastructure, from networking and load balancing to resource provisioning, without requiring manual configuration. This article summarizes the architecture, operating process, and practical experience when building a secure and fully automated CI/CD pipeline from source code to the live runtime environment.
 
 ---
 
-## Architecture Guidance
+## 1. Core advantages of the solution
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+The system is designed to optimize deployment speed and eliminate potential security risks through modern mechanisms:
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
-
-**The solution architecture is now as follows:**
-
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+- **Secure authentication through OIDC:** Instead of storing static credentials such as long-term AWS Access Keys in GitHub Secrets, which may cause data leakage risks, the system establishes a trust mechanism through OpenID Connect (OIDC). Each time the workflow runs, GitHub Actions automatically assumes a short-term IAM role to interact with AWS.
+- **Infrastructure automation with ECS Express Mode:** The key advantage of Express Mode is its ability to automatically set up and manage complex components, including Application Load Balancer (ALB), Target Groups, Security Groups, CPU-based Auto Scaling, and a ready-to-use access URL with an AWS-provided identity certificate.
+- **Accurate version management (Traceability):** After the Docker image is built, it is automatically tagged based on the first 7 characters of the Commit SHA. This helps the development team easily trace source code, control versions, and perform rollback quickly when incidents occur.
 
 ---
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+## 2. System workflow
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+The automated workflow is triggered as soon as a developer interacts with the source code repository:
+
+- **CI phase (Continuous Integration):** When code is pushed to the `main` branch, GitHub Actions triggers the workflow. The system uses OIDC to securely connect to AWS, builds a Docker image from the source code, tags it according to the Commit SHA, and pushes the image to the private Amazon ECR repository.
+- **CD phase (Continuous Deployment):** After the image is successfully pushed, the `amazon-ecs-deploy-express-service` action calls the AWS API to update the service. ECS Express Mode automatically creates or updates the cluster, orchestrates tasks running on the serverless AWS Fargate platform, and routes traffic from the Load Balancer to the new container smoothly.
 
 ---
 
-## Technology Choices and Communication Scope
+![CI/CD Architecture Diagram](/images/106.png)
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+## 3. Technology selection and system roles
 
----
-
-## The Pub/Sub Hub
-
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
-
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+| System component | Technology used | Role in the architecture |
+| :--- | :--- | :--- |
+| **CI/CD Pipeline** | GitHub Actions | Automates the entire process of building, tagging, pushing, and triggering application deployment |
+| **Container Storage** | Amazon ECR | Centrally stores and securely manages Docker Image versions |
+| **Container Orchestration** | Amazon ECS Express Mode | Automatically manages services, network configuration, and load balancing for containers |
+| **Serverless Compute** | AWS Fargate | Provides compute resources to run containers without managing EC2 instances |
+| **Identity & Access** | IAM & OIDC Provider | Provides passwordless authentication and short-term permissions based on the Least Privilege principle |
 
 ---
 
-## Core Microservice
+## 4. Technical notes for practical deployment
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+Through the process of configuring and optimizing the pipeline, several key points should be noted to ensure stable system operation:
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+### Grant minimum permissions for IAM Policy
 
----
+To ensure information security, IAM Policies attached to the `github-actions-ecs-role` should be restricted carefully. Instead of using the wildcard character `*` for all resources, the exact ARN of the Amazon ECR Repository and the specific Amazon ECS Cluster should be limited to prevent a compromised repository from affecting other resources.
 
-## Front Door Microservice
+![IAM OIDC Role](/images/78.png)
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+### Monitor the automation process on GitHub Actions
 
----
+When code is pushed to the main branch, the entire packaging process, from building the Dockerfile and logging in to ECR to calling the deployment command to ECS Express Mode, should be closely monitored through real-time logs to detect dependency conflicts or permission errors early.
 
-## Staging ER7 Microservice
+![GitHub Actions Workflow](/images/77.png)
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+### Check the service status on Amazon ECS Express Mode
+
+After the workflow reports success, Express Mode automatically creates routing and load balancing configurations. The containerized application running on AWS Fargate can then be accessed directly through the default endpoint provided by AWS.
+
+![Amazon ECS Express Service](/images/79.png)
 
 ---
 
-## New Features in the Solution
+## 5. Conclusion
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+The combination of GitHub Actions and Amazon ECS Express Mode provides a streamlined, powerful, and highly secure CI/CD solution for containerized applications. By removing the burden of managing network infrastructure and servers, the development team can focus entirely on optimizing source code, improving product quality, and accelerating application release speed.
+
+Original article: https://aws.amazon.com/blogs/containers/automated-deployments-with-github-actions-for-amazon-ecs-express-mode/
