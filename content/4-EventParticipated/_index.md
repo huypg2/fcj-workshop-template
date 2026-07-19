@@ -16,7 +16,7 @@ During my internship, I participated in two events. Each event was a memorable e
 ### [Event 1](4.1-Event1/)  
 &emsp;**Event Name:** First Cloud AI Journey (Event 1)  
 
-&emsp;**Date & Time:** 09:00, May 04, 2026  
+&emsp;**Date & Time:** 09:00, May 09, 2026  
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
