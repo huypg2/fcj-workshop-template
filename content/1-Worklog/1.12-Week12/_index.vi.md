@@ -21,23 +21,25 @@ pre: " <b> 1.12 </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | - Tạo SNS Topic cho cảnh báo<br>&emsp; + Tạo kênh nhận thông báo từ hệ thống giám sát<br>&emsp; + Cấu hình thông tin nhận thông báo<br>&emsp; + Chuẩn bị SNS Topic để liên kết với CloudWatch Alarm | 06/07/2026 | 06/07/2026 | https://000077.awsstudygroup.com/ |
-| Thứ 3 | - Tạo CloudWatch Alarm và chạy Load Testing<br>&emsp; + Chọn metric cần theo dõi<br>&emsp; + Gắn alarm với SNS Topic đã tạo<br>&emsp; + Chạy kiểm tra tải để quan sát metric và trạng thái alarm | 07/07/2026 | 07/07/2026 | https://000008.awsstudygroup.com/ |
-| Thứ 4 | - Cấu hình S3 Bucket và KMS cho backup<br>&emsp; + Tạo bucket dùng để lưu dữ liệu backup/export<br>&emsp; + Cấu hình mã hóa bằng KMS<br>&emsp; + Kiểm tra cấu hình lưu trữ và mã hóa sau khi thiết lập | 08/07/2026 | 08/07/2026 | https://000057.awsstudygroup.com/<br>https://000033.awsstudygroup.com/ |
-| Thứ 5 | - Tạo IAM Policy/Role và Export Snapshot<br>&emsp; + Tạo quyền cần thiết cho tác vụ backup/export<br>&emsp; + Cấu hình quyền truy cập S3, KMS và RDS<br>&emsp; + Thực hiện export snapshot và kiểm tra dữ liệu trên S3 | 09/07/2026 | 09/07/2026 | https://000005.awsstudygroup.com/<br>https://000013.awsstudygroup.com/ |
-| Thứ 6 | - Verification và Cleanup tài nguyên<br>&emsp; + Kiểm tra lại các thành phần đã triển khai<br>&emsp; + Xác nhận các bước chính đã hoạt động đúng<br>&emsp; + Xóa hoặc dừng tài nguyên AWS không còn sử dụng | 10/07/2026 | 10/07/2026 | https://000007.awsstudygroup.com/<br>https://cloudjourney.awsstudygroup.com/vi/3-optimize/ |
-
+| Thứ 3 | - Viết và hoàn thiện nội dung worklog<br>&emsp; + Rà soát lại nội dung worklog từ tuần 9 đến tuần 12<br>&emsp; + Điều chỉnh công việc theo đúng nội dung nhóm đã thực hiện trong file 5-Workshop<br>&emsp; + Kiểm tra lại cột thời gian, kết quả đạt được và nguồn tài liệu | 07/07/2026 | 07/07/2026 |  |
+| Thứ 4 | - Viết và chỉnh sửa các bài blog đã đăng<br>&emsp; + Biên soạn nội dung Blog 1 về GitHub Actions và ECS Express Mode<br>&emsp; + Biên soạn nội dung Blog 2 về Velero Backup và Restore trên Amazon EKS<br>&emsp; + Biên soạn nội dung Blog 3 về EC2 Capacity Manager và Amazon Athena | 08/07/2026 | 08/07/2026 |  |
+| Thứ 5 | - Viết nội dung các sự kiện Event và phần tự đánh giá<br>&emsp; + Hoàn thiện nội dung Event 1 và Event 2 đã tham gia trong quá trình thực tập<br>&emsp; + Tóm tắt nội dung, kiến thức học được và cảm nhận sau mỗi sự kiện<br>&emsp; + Viết phần tự đánh giá dựa trên quá trình học tập, thực hành và làm workshop | 09/07/2026 | 09/07/2026 | |
+| Thứ 6 | - Viết phần chia sẻ góp ý kiến và hoàn thiện website báo cáo<br>&emsp; + Viết nội dung chia sẻ, góp ý và cảm nhận sau quá trình thực tập<br>&emsp; + Kiểm tra lại bố cục, menu, liên kết, hình ảnh và nội dung song ngữ<br>&emsp; + Build Hugo và deploy website báo cáo lên GitHub Pages | 10/07/2026 | 10/07/2026 |  |
 ### Kết quả đạt được tuần 12:
 
-* Tạo được SNS Topic để phục vụ gửi thông báo cảnh báo.
-* Cấu hình được thông tin nhận thông báo từ SNS.
-* Tạo được CloudWatch Alarm theo metric cần theo dõi.
-* Gắn được Alarm với SNS Topic để nhận cảnh báo khi điều kiện được kích hoạt.
-* Chạy được bước Load Testing để quan sát sự thay đổi của metric và trạng thái alarm.
-* Tạo được S3 Bucket phục vụ lưu trữ dữ liệu backup hoặc export.
-* Cấu hình được mã hóa KMS cho dữ liệu lưu trên S3.
-* Tạo được IAM Policy/Role phục vụ tác vụ backup/export.
-* Cấu hình được quyền truy cập cần thiết đến S3, KMS và RDS.
-* Thực hiện được Export Snapshot và kiểm tra dữ liệu xuất ra trong S3.
-* Thực hiện Verification để rà soát lại các thành phần đã triển khai.
-* Thực hiện Cleanup tài nguyên không còn sử dụng để hạn chế phát sinh chi phí.
-* Hoàn thành đúng nhóm công việc CloudWatch Alarm, Load Testing, S3 Backup, Verification và Cleanup; nguồn tham khảo dùng tài liệu trong Cloud Journey/AWS Study Group.
+* Tạo được SNS Topic để phục vụ gửi thông báo cảnh báo trong quá trình theo dõi hệ thống.
+* Cấu hình được thông tin nhận thông báo từ SNS để chuẩn bị liên kết với CloudWatch Alarm.
+* Rà soát và hoàn thiện lại nội dung worklog từ tuần 1 đến tuần 12.
+* Điều chỉnh nội dung công việc trong worklog theo đúng những phần nhóm đã thực hiện trong file 5-Workshop.
+* Kiểm tra lại cột thời gian, ngày bắt đầu, ngày hoàn thành và nguồn tài liệu trong từng bảng worklog.
+* Viết và chỉnh sửa được các bài blog đã đăng trên website báo cáo.
+* Hoàn thiện nội dung Blog 1 về GitHub Actions và Amazon ECS Express Mode.
+* Hoàn thiện nội dung Blog 2 về Velero Backup và Restore trên Amazon EKS.
+* Hoàn thiện nội dung Blog 3 về EC2 Capacity Manager và Amazon Athena.
+* Viết và hoàn thiện nội dung Event 1, Event 2 đã tham gia trong quá trình thực tập.
+* Tóm tắt được nội dung chính, kiến thức học được và cảm nhận sau mỗi sự kiện.
+* Viết được phần tự đánh giá dựa trên quá trình học tập, thực hành và hoàn thiện workshop.
+* Viết được phần chia sẻ góp ý kiến và cảm nhận sau quá trình thực tập.
+* Kiểm tra lại bố cục website, menu, liên kết điều hướng, hình ảnh và nội dung song ngữ.
+* Build Hugo và deploy website báo cáo thực tập lên GitHub Pages.
+* Hoàn thành nhóm công việc cuối cùng gồm chỉnh sửa worklog, blog, event, tự đánh giá, góp ý và hoàn thiện website báo cáo.

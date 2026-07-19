@@ -16,26 +16,26 @@ Chương trình được thực hiện trong **12 tuần**, từ ngày **17/04/2
 
 Các nội dung chính trong 12 tuần được tổng hợp như sau:
 
-**Tuần 1:** [Khởi động Cloud, tài khoản AWS, IAM, VPC, EC2 và công cụ làm việc](tuan-01/)
+**Tuần 1:** [Khởi động Cloud, tài khoản AWS, IAM, VPC, EC2 và công cụ làm việc](1.1-Week1/)
 
-**Tuần 2:** [Tìm hiểu lưu trữ, cơ sở dữ liệu, cache, DNS, giám sát và mở rộng hệ thống](tuan-02/)
+**Tuần 2:** [Tìm hiểu lưu trữ, cơ sở dữ liệu, cache, DNS, giám sát và mở rộng hệ thống](1.2-Week2/)
 
-**Tuần 3:** [Nghiên cứu mạng nâng cao, CloudFront, Lambda@Edge, Windows workload, migration và disaster recovery](tuan-03/)
+**Tuần 3:** [Nghiên cứu mạng nâng cao, CloudFront, Lambda@Edge, Windows workload, migration và disaster recovery](1.3-Week3/)
 
-**Tuần 4:** [Thực hành quản lý vận hành, Resource Management, Systems Manager, Lambda, CloudFormation và AWS CDK](tuan-04/)
+**Tuần 4:** [Thực hành quản lý vận hành, Resource Management, Systems Manager, Lambda, CloudFormation và AWS CDK](1.4-Week4/)
 
-**Tuần 5:** [Tìm hiểu bảo mật Cloud, sao lưu dữ liệu, độ tin cậy, messaging, quota và tối ưu chi phí](tuan-05/)
+**Tuần 5:** [Tìm hiểu bảo mật Cloud, sao lưu dữ liệu, độ tin cậy, messaging, quota và tối ưu chi phí](1.5-Week5/)
 
-**Tuần 6:** [Thực hành Docker, Amazon ECS, CI/CD, DevOps workflow, storage hybrid và workflow orchestration](tuan-06/)
+**Tuần 6:** [Thực hành Docker, Amazon ECS, CI/CD, DevOps workflow, storage hybrid và workflow orchestration](1.6-Week6/)
 
-**Tuần 7:** [Tìm hiểu Application Modernization, Microservices, Serverless, Event-driven Architecture và Serverless Book Store](tuan-07/)
+**Tuần 7:** [Tìm hiểu Application Modernization, Microservices, Serverless, Event-driven Architecture và Serverless Book Store](1.7-Week7/)
 
-**Tuần 8:** [Thực hành Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App và HA](tuan-08/)
+**Tuần 8:** [Thực hành Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App và HA](1.8-Week8/)
 
-**Tuần 9:** [Chuẩn bị môi trường triển khai, AWS CLI và Amazon ECR](tuan-09/)
+**Tuần 9:** [Chuẩn bị nội dung workshop, AWS CLI, Docker và Amazon ECR](1.9-Week9/)
 
-**Tuần 10:** [Thiết lập VPC, Subnet, Security Groups và Amazon RDS PostgreSQL](tuan-10/)
+**Tuần 10:** [Biên soạn nội dung VPC Networking, Security Groups và Amazon RDS PostgreSQL](1.10-Week10/)
 
-**Tuần 11:** [Cấu hình Load Balancer và triển khai ứng dụng bằng ECS Fargate](tuan-11/)
+**Tuần 11:** [Biên soạn nội dung Load Balancer, ECS Fargate và triển khai ứng dụng theo workshop](1.11-Week11/)
 
-**Tuần 12:** [CloudWatch Alarm, Load Testing, S3 Backup, Verification và Cleanup](tuan-12/)
+**Tuần 12:** [Hoàn thiện worklog, blog, event, tự đánh giá, góp ý và deploy website báo cáo](1.12-Week12/)

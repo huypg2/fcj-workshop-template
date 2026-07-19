@@ -22,23 +22,26 @@ pre: " <b> 1.12. </b> "
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | - Create SNS Topic for alerting<br>&emsp; + Create a notification channel for monitoring alerts<br>&emsp; + Configure notification receiver information<br>&emsp; + Prepare SNS Topic for CloudWatch Alarm integration | 07/06/2026 | 07/06/2026 | https://000077.awsstudygroup.com/ |
-| Tuesday | - Create CloudWatch Alarm and run Load Testing<br>&emsp; + Select the metric to monitor<br>&emsp; + Attach alarm to the created SNS Topic<br>&emsp; + Run load testing to observe metric and alarm status | 07/07/2026 | 07/07/2026 | https://000008.awsstudygroup.com/ |
-| Wednesday | - Configure S3 Bucket and KMS for backup<br>&emsp; + Create bucket for backup/export data<br>&emsp; + Configure KMS encryption<br>&emsp; + Verify storage and encryption configuration after setup | 07/08/2026 | 07/08/2026 | https://000057.awsstudygroup.com/<br>https://000033.awsstudygroup.com/ |
-| Thursday | - Create IAM Policy/Role and export snapshot<br>&emsp; + Create permissions required for backup/export tasks<br>&emsp; + Configure access to S3, KMS, and RDS<br>&emsp; + Export snapshot and verify data in S3 | 07/09/2026 | 07/09/2026 | https://000005.awsstudygroup.com/<br>https://000013.awsstudygroup.com/ |
-| Friday | - Verify deployment and clean up resources<br>&emsp; + Recheck deployed components<br>&emsp; + Confirm main steps are working correctly<br>&emsp; + Delete or stop unused AWS resources | 07/10/2026 | 07/10/2026 | https://000007.awsstudygroup.com/<br>https://cloudjourney.awsstudygroup.com/3-optimize/ |
+| Tuesday | - Write and complete the worklog content<br>&emsp; + Review the worklog content from Week 9 to Week 12<br>&emsp; + Adjust the tasks according to what the team completed in the 5-Workshop file<br>&emsp; + Check the timeline, achieved results, and reference sources | 07/07/2026 | 07/07/2026 |  |
+| Wednesday | - Write and revise the published blog posts<br>&emsp; + Prepare Blog 1 about GitHub Actions and ECS Express Mode<br>&emsp; + Prepare Blog 2 about Velero Backup and Restore on Amazon EKS<br>&emsp; + Prepare Blog 3 about EC2 Capacity Manager and Amazon Athena | 08/07/2026 | 08/07/2026 |  |
+| Thursday | - Write the Event content and Self-evaluation section<br>&emsp; + Complete the content for Event 1 and Event 2 attended during the internship<br>&emsp; + Summarize the content, lessons learned, and personal reflection after each event<br>&emsp; + Write the self-evaluation section based on the learning, practice, and workshop process | 09/07/2026 | 09/07/2026 |  |
+| Friday | - Write the feedback section and complete the report website<br>&emsp; + Write the sharing, feedback, and reflection content after the internship process<br>&emsp; + Check the layout, menu, links, images, and bilingual content<br>&emsp; + Build Hugo and deploy the report website to GitHub Pages | 10/07/2026 | 10/07/2026 |  |
 
 ### Week 12 Results:
 
-* Created SNS Topic for alert notifications.
-* Configured notification receiver information from SNS.
-* Created CloudWatch Alarm based on the metric to monitor.
-* Attached Alarm to SNS Topic for alert delivery.
-* Ran Load Testing to observe metric changes and alarm status.
-* Created S3 Bucket for backup or export data.
-* Configured KMS encryption for data stored in S3.
-* Created IAM Policy/Role for backup/export tasks.
-* Configured required access to S3, KMS, and RDS.
-* Exported snapshot and checked exported data in S3.
-* Performed Verification to review deployed components.
-* Cleaned up unused resources to reduce unnecessary charges.
-* Completed the CloudWatch Alarm, Load Testing, S3 Backup, Verification, and Cleanup task groups using Cloud Journey/AWS Study Group references.
+* Created an SNS Topic to support alert notifications during system monitoring.
+* Configured SNS notification receiver information to prepare for CloudWatch Alarm integration.
+* Reviewed and completed the worklog content from Week 1 to Week 12.
+* Adjusted the worklog tasks according to the parts completed by the team in the 5-Workshop file.
+* Checked the timeline, start date, completion date, and reference sources in each worklog table.
+* Wrote and revised the published blog posts on the report website.
+* Completed Blog 1 about GitHub Actions and Amazon ECS Express Mode.
+* Completed Blog 2 about Velero Backup and Restore on Amazon EKS.
+* Completed Blog 3 about EC2 Capacity Manager and Amazon Athena.
+* Wrote and completed the content for Event 1 and Event 2 attended during the internship.
+* Summarized the main content, lessons learned, and reflections after each event.
+* Wrote the self-evaluation section based on the learning, practice, and workshop completion process.
+* Wrote the feedback and reflection section after the internship process.
+* Checked the website layout, menu, navigation links, images, and bilingual content.
+* Built the Hugo site and deployed the internship report website to GitHub Pages.
+* Completed the final task group, including worklog revision, blog posts, events, self-evaluation, feedback, and report website completion.
