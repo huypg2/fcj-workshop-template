@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 Trong suốt thời gian chương trình Workforce Bootcamp – First Cloud AI Journey thực tập tạiCông ty TNHH Amazon Web Services Việt Nam từ 17/04/2026 đến 30/07/2026, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
 Tôi đã tham gia quá trình học tập, thực hành và xây dựng đề tài **“Triển khai Hệ thống Thanh toán hiệu năng cao trên AWS ECS Fargate với Private Subnets, RDS PostgreSQL và S3 Backup”**. Trong quá trình thực hiện, tôi đã tìm hiểu và áp dụng các dịch vụ AWS như IAM, VPC, Private Subnets, ECS Fargate, RDS PostgreSQL, S3, ElastiCache Redis, API Gateway, CloudWatch và các dịch vụ hỗ trợ bảo mật, giám sát, sao lưu và tối ưu chi phí.

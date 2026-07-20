@@ -5,10 +5,8 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+    
 Tại đây, em chia sẻ một số cảm nhận cá nhân sau khi tham gia chương trình First Cloud Journey. Những ý kiến này nhằm góp phần giúp chương trình ngày càng phù hợp và hỗ trợ thực tập sinh tốt hơn.
 
 ## Đánh giá chung

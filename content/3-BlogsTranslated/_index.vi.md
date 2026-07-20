@@ -5,10 +5,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+    
 ## [Blog 1 - Tự động hóa quy trình triển khai ứng dụng Container lên Amazon ECS Express Mode bằng GitHub Actions](3.1-Blog1/)
 
 Blog này giới thiệu cách tự động hóa quy trình triển khai ứng dụng container lên Amazon ECS Express Mode bằng GitHub Actions, kết hợp Amazon ECR, AWS Fargate, IAM OIDC và pipeline CI/CD để triển khai ứng dụng an toàn, nhanh chóng và tự động hơn.

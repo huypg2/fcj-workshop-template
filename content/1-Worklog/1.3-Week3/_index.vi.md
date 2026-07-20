@@ -5,9 +5,6 @@ weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Tuần 3: Mạng nâng cao, CloudFront, Lambda@Edge, Windows workload, Migration và Disaster Recovery

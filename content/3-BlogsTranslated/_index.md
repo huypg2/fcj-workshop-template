@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 ## [Blog 1 - Automating the Deployment Process of Container Applications to Amazon ECS Express Mode with GitHub Actions](3.1-Blog1/)
 

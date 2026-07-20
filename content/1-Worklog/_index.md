@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
 **On this page**, the worklog is presented according to the learning, practice, and project completion process throughout the **Workforce Bootcamp – First Cloud AI Journey** program.
 

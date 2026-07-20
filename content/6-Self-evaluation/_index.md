@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
 During the Workforce Bootcamp – First Cloud AI Journey internship program at Amazon Web Services Vietnam Co., Ltd. from 17/04/2026 to 30/07/2026, I had the opportunity to learn, practice, and apply the knowledge gained at university to a real working environment.
 

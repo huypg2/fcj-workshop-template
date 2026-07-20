@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 **Trong trang này**, nội dung worklog được trình bày theo quá trình học tập, thực hành và hoàn thiện đề tài trong suốt thời gian tham gia chương trình **Workforce Bootcamp – First Cloud AI Journey**.
 
