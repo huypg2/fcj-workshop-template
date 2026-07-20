@@ -17,6 +17,7 @@ pre: " <b> 1.5. </b> "
 * Get familiar with Service Quotas, Savings Plans, Reserved Instances, and cost optimization.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied AWS Single Sign-On, IAM Permission Boundaries, IAM Policies, and IAM Conditions for advanced access management. | 18/05/2026 | 18/05/2026 | https://000012.awsstudygroup.com/<br>https://000030.awsstudygroup.com/<br>https://000044.awsstudygroup.com/ |

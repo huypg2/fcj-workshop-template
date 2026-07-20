@@ -16,6 +16,7 @@ pre: " <b> 1.12. </b> "
 * Perform Verification and Cleanup to complete the deployment.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | - Review the overall internship report and website content<br>&emsp; + Check the main sections of the internship report website<br>&emsp; + Identify missing parts such as worklogs, blogs, events, self-evaluation, and feedback<br>&emsp; + Plan the final content completion tasks for the last week | 06/07/2026 | 06/07/2026 |  |

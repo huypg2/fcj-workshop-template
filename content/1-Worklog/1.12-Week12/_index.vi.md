@@ -16,6 +16,7 @@ pre: " <b> 1.12 </b> "
 * Thực hiện Verification và Cleanup để hoàn tất quá trình triển khai.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | - Rà soát tổng thể nội dung báo cáo và website thực tập<br>&emsp; + Kiểm tra lại các mục chính trên website báo cáo thực tập<br>&emsp; + Xác định các phần còn thiếu như worklog, blog, event, tự đánh giá và góp ý<br>&emsp; + Lập kế hoạch hoàn thiện nội dung trong tuần cuối | 06/07/2026 | 06/07/2026 |  |

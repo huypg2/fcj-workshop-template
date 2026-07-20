@@ -17,6 +17,7 @@ pre: " <b> 1.3. </b> "
 * Study migration strategies and disaster recovery planning on the cloud.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Practiced an AWS networking workshop and reviewed VPC, subnets, route tables, security groups, network ACLs, and network layer separation. | 04/05/2026 | 04/05/2026 | https://000092.awsstudygroup.com/ |

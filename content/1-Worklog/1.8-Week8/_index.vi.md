@@ -17,6 +17,7 @@ pre: " <b> 1.8. </b> "
 * Tổng hợp kiến thức về Serverless Web App, Elastic Beanstalk, WordPress và các mô hình HA trên AWS.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu Serverless Document Management System, xây dựng chức năng CRUD Serverless bằng Lambda và DynamoDB. | 08/06/2026 | 08/06/2026 | https://000133.awsstudygroup.com/vi/ |

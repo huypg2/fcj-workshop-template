@@ -17,6 +17,7 @@ pre: " <b> 1.1. </b> "
 * Practice basic operations to prepare the learning environment, resource management, and later labs.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied the overview of cloud computing, service models such as IaaS, PaaS, SaaS, and the role of AWS in modern system deployment. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |

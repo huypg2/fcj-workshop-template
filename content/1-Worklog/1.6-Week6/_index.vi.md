@@ -17,6 +17,7 @@ pre: " <b> 1.6. </b> "
 * Tìm hiểu thêm các dịch vụ hỗ trợ lưu trữ hybrid, giám sát mạng và điều phối workflow.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu Docker, image, container, Dockerfile và lợi ích của việc container hóa ứng dụng. | 25/05/2026 | 25/05/2026 | https://000015.awsstudygroup.com/vi/ |

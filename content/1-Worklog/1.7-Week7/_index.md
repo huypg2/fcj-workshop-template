@@ -17,6 +17,7 @@ pre: " <b> 1.7. </b> "
 * Get familiar with Cognito, SQS, SNS, AppSync, AWS SAM, and CI/CD for Serverless applications.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied Application Modernization on AWS and approaches for improving legacy systems. | 01/06/2026 | 01/06/2026 | https://cloudjourney.awsstudygroup.com/4-modernize/ |

@@ -16,6 +16,7 @@ pre: " <b> 1.10. </b> "
 * Create DB Subnet Group, RDS Instance, and initialize the database.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | - Create a VPC as the private network for the system<br>&emsp; + Select a suitable CIDR range<br>&emsp; + Create a new VPC for the deployment environment<br>&emsp; + Verify VPC ID, status, and required DNS settings | 22/06/2026 | 22/06/2026 | https://000003.awsstudygroup.com/ |

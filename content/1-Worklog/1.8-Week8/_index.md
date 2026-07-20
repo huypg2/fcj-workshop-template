@@ -17,6 +17,7 @@ pre: " <b> 1.8. </b> "
 * Summarize knowledge about Serverless Web Apps, Elastic Beanstalk, WordPress, and HA models on AWS.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied the Serverless Document Management System and built Serverless CRUD functions with Lambda and DynamoDB. | 08/06/2026 | 08/06/2026 | https://000133.awsstudygroup.com/ |

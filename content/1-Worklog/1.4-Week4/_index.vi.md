@@ -17,6 +17,7 @@ pre: " <b> 1.4. </b> "
 * Tìm hiểu Infrastructure as Code thông qua CloudFormation và AWS CDK.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu AWS Toolkit for VS Code và cách công cụ này hỗ trợ phát triển, kiểm thử, triển khai ứng dụng có tích hợp dịch vụ AWS. | 11/05/2026 | 11/05/2026 | https://000087.awsstudygroup.com/vi/ |

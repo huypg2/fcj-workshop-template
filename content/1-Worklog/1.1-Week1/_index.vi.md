@@ -17,6 +17,7 @@ pre: " <b> 1.1. </b> "
 * Thực hành các thao tác cơ bản để chuẩn bị môi trường học tập, quản lý tài nguyên và triển khai các bài lab tiếp theo.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu tổng quan về điện toán đám mây, các mô hình dịch vụ như IaaS, PaaS, SaaS và vai trò của AWS trong triển khai hệ thống hiện đại. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/vi/ |

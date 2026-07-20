@@ -17,6 +17,7 @@ pre: " <b> 1.7. </b> "
 * Làm quen với Cognito, SQS, SNS, AppSync, AWS SAM và CI/CD cho ứng dụng Serverless.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu Application Modernization trên AWS, lý do cần hiện đại hóa ứng dụng và các hướng cải tiến hệ thống cũ. | 01/06/2026 | 01/06/2026 | https://cloudjourney.awsstudygroup.com/vi/4-modernize/ |

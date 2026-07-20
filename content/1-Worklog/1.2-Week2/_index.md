@@ -17,6 +17,7 @@ pre: " <b> 1.2. </b> "
 * Connect knowledge between storage, database, cache, monitoring, and resource scaling.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied Amazon S3, buckets, objects, storage classes, access control, and static data storage on AWS. | 27/04/2026 | 27/04/2026 | https://000057.awsstudygroup.com/ |

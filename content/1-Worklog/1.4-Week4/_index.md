@@ -17,6 +17,7 @@ pre: " <b> 1.4. </b> "
 * Study Infrastructure as Code using CloudFormation and AWS CDK.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied AWS Toolkit for VS Code and how it supports developing, testing, and deploying AWS-integrated applications. | 11/05/2026 | 11/05/2026 | https://000087.awsstudygroup.com/ |

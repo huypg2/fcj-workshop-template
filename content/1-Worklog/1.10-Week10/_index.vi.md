@@ -16,6 +16,7 @@ pre: " <b> 1.10. </b> "
 * Tạo DB Subnet Group, RDS Instance và khởi tạo database ban đầu.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | - Tạo VPC làm mạng riêng cho hệ thống<br>&emsp; + Chọn dải CIDR phù hợp<br>&emsp; + Tạo VPC mới cho môi trường triển khai<br>&emsp; + Kiểm tra VPC ID, trạng thái và thiết lập DNS cần thiết | 22/06/2026 | 22/06/2026 | https://000003.awsstudygroup.com/ |

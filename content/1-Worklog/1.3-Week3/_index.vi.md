@@ -17,6 +17,7 @@ pre: " <b> 1.3. </b> "
 * Tìm hiểu các chiến lược migration và disaster recovery khi đưa hệ thống lên Cloud.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Thực hành workshop về networking trên AWS, ôn lại VPC, subnet, route table, security group, network ACL và cách phân tách tài nguyên theo lớp mạng. | 04/05/2026 | 04/05/2026 | https://000092.awsstudygroup.com/vi/ |

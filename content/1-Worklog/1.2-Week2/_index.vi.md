@@ -17,6 +17,7 @@ pre: " <b> 1.2. </b> "
 * Kết nối kiến thức giữa lưu trữ, database, cache, giám sát và mở rộng tài nguyên.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu Amazon S3, bucket, object, storage class, phân quyền truy cập và cách lưu trữ dữ liệu tĩnh trên AWS. | 27/04/2026 | 27/04/2026 | https://000057.awsstudygroup.com/vi/ |

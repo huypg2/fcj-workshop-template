@@ -17,6 +17,7 @@ pre: " <b> 1.5. </b> "
 * Làm quen với Service Quotas, Savings Plans, Reserved Instances và các phương pháp tối ưu chi phí.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ 2 | Tìm hiểu AWS Single Sign-On, IAM Permission Boundaries, IAM Policies và IAM Conditions để quản lý truy cập nâng cao. | 18/05/2026 | 18/05/2026 | https://000012.awsstudygroup.com/vi/<br>https://000030.awsstudygroup.com/vi/<br>https://000044.awsstudygroup.com/vi/ |

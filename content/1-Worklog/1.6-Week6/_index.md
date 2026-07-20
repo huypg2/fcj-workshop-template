@@ -17,6 +17,7 @@ pre: " <b> 1.6. </b> "
 * Study hybrid storage, network monitoring, and workflow orchestration services.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
 | Monday | Studied Docker, images, containers, Dockerfile, and the benefits of containerizing applications. | 25/05/2026 | 25/05/2026 | https://000015.awsstudygroup.com/ |
