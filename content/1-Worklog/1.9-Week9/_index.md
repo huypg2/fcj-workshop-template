@@ -7,34 +7,34 @@ pre: " <b> 1.9. </b> "
 ---
 
 
-### Week 9: Deployment Environment Preparation, AWS CLI, and Amazon ECR
+### Week 9: Building the Frontend Interface for the Test Result Monitoring System
 
 ### Week 9 Objectives:
 
-* Prepare the deployment environment following the opening workshop tasks.
-* Configure AWS CLI to operate AWS resources from the command line.
-* Build Docker images and push them to Amazon ECR for ECS Fargate deployment.
+* Build the Frontend interface to support system monitoring after load testing.
+* Design the layout for displaying the main system metrics.
+* Create screens to display test results, request status, and performance statistics.
+* Prepare the interface for Backend/API integration in the next steps.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+### Tasks to be implemented this week:
+
+| Day | Task | Start Date | Completion Date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | - Review deployment architecture and execution order<br>&emsp; + Identify AWS components required for deployment<br>&emsp; + Prepare the execution order from environment, image, network, database, to compute<br>&emsp; + Record required values such as Region, repository name, and resource names | 06/15/2026 | 06/15/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Tuesday | - Prepare prerequisites before creating resources<br>&emsp; + Check AWS account and deployment Region<br>&emsp; + Review IAM permissions required for deployment<br>&emsp; + Verify Docker and local tools before building images | 06/16/2026 | 06/16/2026 | https://000002.awsstudygroup.com/ |
-| Wednesday | - Configure AWS CLI on the practice machine<br>&emsp; + Set up AWS CLI access information<br>&emsp; + Verify configuration using account authentication commands<br>&emsp; + Ensure CLI can be used for later ECR and ECS steps | 06/17/2026 | 06/17/2026 | https://000011.awsstudygroup.com/ |
-| Thursday | - Build and standardize Docker images for ECR<br>&emsp; + Build image from the project source<br>&emsp; + Tag the image using the ECR repository format<br>&emsp; + Log Docker in to Amazon ECR using AWS CLI | 06/18/2026 | 06/18/2026 | https://000015.awsstudygroup.com/ |
-| Friday | - Push image to Amazon ECR and verify it<br>&emsp; + Push the tagged image to the ECR repository<br>&emsp; + Check image tag, digest, and update time<br>&emsp; + Save the image URI for ECS Task Definition | 06/19/2026 | 06/19/2026 | https://000067.awsstudygroup.com/ |
+| Monday | - Analyze Frontend interface requirements<br>&emsp; + Identify the information that needs to be displayed after load testing<br>&emsp; + Define data groups such as total requests, successful requests, failed requests, response time, and system status<br>&emsp; + Create the overall layout for the dashboard screen | 15/06/2026 | 15/06/2026 |  |
+| Tuesday | - Build the main dashboard interface<br>&emsp; + Create the layout for the test result display page<br>&emsp; + Design statistic cards such as Total Requests, Success Rate, Error Rate, and Response Time<br>&emsp; + Arrange the interface layout clearly and make it easy to monitor | 16/06/2026 | 16/06/2026 |  |
+| Wednesday | - Build the test history table<br>&emsp; + Create a table listing the completed test runs<br>&emsp; + Display information such as test time, number of requests, virtual users, error rate, and result<br>&emsp; + Add Passed/Failed status to make test evaluation easier | 17/06/2026 | 17/06/2026 |  |
+| Thursday | - Build the chart area and system metrics section<br>&emsp; + Create chart areas for response time, throughput, and error rate<br>&emsp; + Display information related to CPU, memory, task count, and service status<br>&emsp; + Prepare mock data structures to test the interface before connecting to the API | 18/06/2026 | 18/06/2026 |  |
+| Friday | - Complete the interface and check the display<br>&emsp; + Review colors, spacing, fonts, and overall layout<br>&emsp; + Test the display on different screen sizes<br>&emsp; + Prepare the interface for Backend/API integration in the next implementation steps | 19/06/2026 | 19/06/2026 |  |
 
-### Week 9 Results:
+### Week 9 Achievements:
 
-* Defined the infrastructure and application deployment order according to the workshop direction.
-* Prepared Region, resource names, and required components before working on AWS.
-* Checked AWS account and IAM permissions to reduce permission errors during resource creation.
-* Prepared the local environment with Docker and AWS CLI.
-* Configured AWS CLI and confirmed account access from the command line.
-* Understood how AWS CLI supports ECR login, image push, and later deployment operations.
-* Built Docker images from the project source.
-* Tagged images using the correct Amazon ECR repository format.
-* Logged Docker in to Amazon ECR using AWS CLI.
-* Pushed images to ECR and verified them after upload.
-* Recorded image URIs for ECS Task Definition.
-* Completed the preparation, AWS CLI, and ECR task group using Cloud Journey/AWS Study Group references.
+* Identified the information that needs to be displayed on the Frontend interface.
+* Designed the dashboard layout to support load test result monitoring.
+* Built overview statistic cards such as total requests, successful requests, failed requests, and response time.
+* Built the test history table.
+* Displayed information such as test time, number of requests, virtual users, error rate, and result status.
+* Built the chart area for monitoring response time, throughput, and error rate.
+* Prepared the section for displaying system metrics such as CPU, memory, task count, and service status.
+* Created mock data to test the interface before API integration.
+* Checked and adjusted the layout, colors, spacing, and display responsiveness of the interface.
+* Completed the basic Frontend interface to support test result monitoring and Backend integration in the next steps.

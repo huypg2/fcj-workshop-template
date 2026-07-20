@@ -7,34 +7,34 @@ pre: " <b> 1.9. </b> "
 ---
 
 
-### Tuần 9: Chuẩn bị môi trường triển khai, AWS CLI và Amazon ECR
+### Tuần 9: Xây dựng giao diện Frontend cho hệ thống theo dõi kết quả kiểm thử
 
 ### Mục tiêu tuần 9:
 
-* Chuẩn bị môi trường triển khai theo đúng nhóm công việc đầu của workshop.
-* Cấu hình AWS CLI để thao tác với tài nguyên AWS bằng dòng lệnh.
-* Build Docker image và đưa image lên Amazon ECR để phục vụ triển khai ECS Fargate.
+* Xây dựng giao diện Frontend phục vụ việc theo dõi hệ thống sau quá trình kiểm thử tải.
+* Thiết kế bố cục hiển thị các thông số chính của hệ thống.
+* Tạo các màn hình hiển thị kết quả test, trạng thái request và thống kê hiệu năng.
+* Chuẩn bị giao diện để tích hợp với Backend/API ở các bước tiếp theo.
 
 ### Các công việc cần triển khai trong tuần này:
+
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | - Rà soát kiến trúc triển khai và thứ tự thực hiện<br>&emsp; + Xác định các thành phần cần triển khai trên AWS<br>&emsp; + Chuẩn bị trình tự thao tác từ môi trường, image, network, database đến compute<br>&emsp; + Ghi nhận các thông tin cần dùng như Region, tên repository và tên tài nguyên | 15/06/2026 | 15/06/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
-| Thứ 3 | - Chuẩn bị điều kiện thực hành trước khi tạo tài nguyên<br>&emsp; + Kiểm tra tài khoản AWS và Region sử dụng<br>&emsp; + Rà soát quyền IAM cần thiết cho quá trình triển khai<br>&emsp; + Kiểm tra Docker và các công cụ local trước khi build image | 16/06/2026 | 16/06/2026 | https://000002.awsstudygroup.com/ |
-| Thứ 4 | - Cấu hình AWS CLI trên máy thực hành<br>&emsp; + Thiết lập thông tin truy cập cho AWS CLI<br>&emsp; + Kiểm tra cấu hình bằng lệnh xác thực tài khoản<br>&emsp; + Đảm bảo CLI có thể dùng cho các bước ECR và ECS phía sau | 17/06/2026 | 17/06/2026 | https://000011.awsstudygroup.com/ |
-| Thứ 5 | - Build và chuẩn hóa Docker image cho ECR<br>&emsp; + Build image từ source dự án<br>&emsp; + Gắn tag image theo định dạng repository ECR<br>&emsp; + Đăng nhập Docker vào Amazon ECR bằng AWS CLI | 18/06/2026 | 18/06/2026 | https://000015.awsstudygroup.com/ |
-| Thứ 6 | - Push image lên Amazon ECR và kiểm tra image<br>&emsp; + Đẩy image đã tag lên ECR repository<br>&emsp; + Kiểm tra image tag, digest và thời gian cập nhật<br>&emsp; + Lưu lại image URI để sử dụng khi tạo ECS Task Definition | 19/06/2026 | 19/06/2026 | https://000067.awsstudygroup.com/ |
+| Thứ 2 | - Phân tích yêu cầu giao diện Frontend<br>&emsp; + Xác định các thông tin cần hiển thị sau khi chạy kiểm thử tải<br>&emsp; + Xác định các nhóm dữ liệu như tổng request, request thành công, request lỗi, thời gian phản hồi và trạng thái hệ thống<br>&emsp; + Lên bố cục tổng quan cho màn hình dashboard | 15/06/2026 | 15/06/2026 |  |
+| Thứ 3 | - Xây dựng giao diện dashboard chính<br>&emsp; + Tạo layout cho trang hiển thị kết quả kiểm thử<br>&emsp; + Thiết kế các thẻ thống kê như Total Requests, Success Rate, Error Rate và Response Time<br>&emsp; + Sắp xếp bố cục giao diện rõ ràng, dễ theo dõi | 16/06/2026 | 16/06/2026 |  |
+| Thứ 4 | - Xây dựng bảng hiển thị lịch sử test<br>&emsp; + Tạo bảng danh sách các lần kiểm thử đã thực hiện<br>&emsp; + Hiển thị các thông tin như thời gian test, số lượng request, số user ảo, tỉ lệ lỗi và kết quả<br>&emsp; + Bổ sung trạng thái Passed/Failed để dễ đánh giá kết quả | 17/06/2026 | 17/06/2026 |  |
+| Thứ 5 | - Xây dựng khu vực hiển thị biểu đồ và thông số hệ thống<br>&emsp; + Tạo khu vực biểu đồ cho response time, throughput và error rate<br>&emsp; + Hiển thị thông tin liên quan đến CPU, memory, số lượng task và trạng thái service<br>&emsp; + Chuẩn bị cấu trúc dữ liệu giả lập để kiểm tra giao diện trước khi kết nối API | 18/06/2026 | 18/06/2026 |  |
+| Thứ 6 | - Hoàn thiện giao diện và kiểm tra hiển thị<br>&emsp; + Rà soát lại màu sắc, khoảng cách, font chữ và bố cục giao diện<br>&emsp; + Kiểm tra khả năng hiển thị trên nhiều kích thước màn hình<br>&emsp; + Chuẩn bị giao diện để tích hợp với Backend/API trong các bước triển khai tiếp theo | 19/06/2026 | 19/06/2026 |  |
 
 ### Kết quả đạt được tuần 9:
 
-* Xác định được trình tự triển khai hạ tầng và ứng dụng theo đúng hướng của workshop.
-* Chuẩn bị được thông tin Region, tên tài nguyên và các thành phần cần dùng trước khi thao tác trên AWS.
-* Kiểm tra được tài khoản AWS và các quyền IAM cần thiết để hạn chế lỗi thiếu quyền khi tạo tài nguyên.
-* Chuẩn bị được môi trường local gồm Docker và AWS CLI để hỗ trợ quá trình build image và thao tác AWS.
-* Cấu hình được AWS CLI và xác nhận tài khoản bằng dòng lệnh.
-* Hiểu được AWS CLI được dùng để đăng nhập ECR, push image và hỗ trợ các thao tác triển khai phía sau.
-* Build được Docker image từ source dự án theo đúng bước chuẩn bị triển khai container.
-* Gắn tag image theo đúng định dạng repository Amazon ECR.
-* Đăng nhập được Docker vào Amazon ECR bằng AWS CLI.
-* Push được image lên ECR repository và kiểm tra được image sau khi upload.
-* Ghi nhận được image URI để dùng cho phần đăng ký ECS Task Definition ở tuần tiếp theo.
-* Hoàn thành nhóm công việc chuẩn bị, AWS CLI và ECR đúng theo nội dung workshop; nguồn tham khảo dùng các tài liệu trong Cloud Journey/AWS Study Group.
+* Xác định được các thông tin cần hiển thị trên giao diện Frontend.
+* Thiết kế được bố cục dashboard phục vụ theo dõi kết quả kiểm thử tải.
+* Xây dựng được các thẻ thống kê tổng quan như tổng request, request thành công, request lỗi và thời gian phản hồi.
+* Xây dựng được bảng lịch sử các lần kiểm thử.
+* Hiển thị được các thông tin như thời gian test, số lượng request, số user ảo, tỉ lệ lỗi và trạng thái kết quả.
+* Xây dựng được khu vực biểu đồ phục vụ theo dõi response time, throughput và error rate.
+* Chuẩn bị được khu vực hiển thị thông số hệ thống như CPU, memory, task count và service status.
+* Tạo được dữ liệu giả lập để kiểm tra giao diện trước khi tích hợp API.
+* Kiểm tra và điều chỉnh lại bố cục, màu sắc, khoảng cách và khả năng hiển thị của giao diện.
+* Hoàn thiện giao diện Frontend cơ bản để phục vụ việc theo dõi kết quả kiểm thử và tích hợp với Backend ở các bước tiếp theo.
