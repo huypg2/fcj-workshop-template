@@ -19,13 +19,13 @@ pre: " <b> 1.4. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu AWS Toolkit for VS Code và cách công cụ này hỗ trợ phát triển, kiểm thử, triển khai ứng dụng có tích hợp dịch vụ AWS. | 11/05/2026 | 11/05/2026 | https://docs.aws.amazon.com/toolkit-for-vscode/ |
-| Thứ 3 | Tìm hiểu Tags và Resource Groups để phân loại tài nguyên theo dự án, môi trường, người phụ trách, chi phí và mục đích sử dụng. | 12/05/2026 | 12/05/2026 | https://docs.aws.amazon.com/resourcegroupstagging/ |
-| Thứ 4 | Tìm hiểu cách kiểm soát quyền truy cập bằng IAM kết hợp Resource Tags, từ đó giới hạn thao tác theo từng nhóm tài nguyên. | 13/05/2026 | 13/05/2026 | https://docs.aws.amazon.com/iam/ |
-| Thứ 5 | Tìm hiểu AWS Systems Manager, Session Manager và cách quản lý máy chủ an toàn hơn mà không cần mở SSH trực tiếp ra Internet. | 14/05/2026 | 14/05/2026 | https://docs.aws.amazon.com/systems-manager/ |
-| Thứ 6 | Tìm hiểu AWS Lambda, event source, runtime và cách sử dụng Lambda để tự động hóa một số tác vụ vận hành. | 15/05/2026 | 15/05/2026 | https://docs.aws.amazon.com/lambda/ |
-| Thứ 7 | Tìm hiểu AWS CloudFormation, template, stack và cách mô tả hạ tầng dưới dạng mã để triển khai tài nguyên nhất quán. | 16/05/2026 | 16/05/2026 | https://docs.aws.amazon.com/cloudformation/ |
-| Chủ nhật | Tìm hiểu AWS CDK cơ bản và nâng cao, thực hành tư duy Infrastructure as Code để tái sử dụng cấu trúc hạ tầng. | 17/05/2026 | 17/05/2026 | https://docs.aws.amazon.com/cdk/ |
+| Thứ 2 | Tìm hiểu AWS Toolkit for VS Code và cách công cụ này hỗ trợ phát triển, kiểm thử, triển khai ứng dụng có tích hợp dịch vụ AWS. | 11/05/2026 | 11/05/2026 | https://000087.awsstudygroup.com/vi/ |
+| Thứ 3 | Tìm hiểu Tags và Resource Groups để phân loại tài nguyên theo dự án, môi trường, người phụ trách, chi phí và mục đích sử dụng. | 12/05/2026 | 12/05/2026 | https://000027.awsstudygroup.com/vi/ |
+| Thứ 4 | Tìm hiểu cách kiểm soát quyền truy cập bằng IAM kết hợp Resource Tags, từ đó giới hạn thao tác theo từng nhóm tài nguyên. | 13/05/2026 | 13/05/2026 | https://000028.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu AWS Systems Manager, Session Manager và cách quản lý máy chủ an toàn hơn mà không cần mở SSH trực tiếp ra Internet. | 14/05/2026 | 14/05/2026 | https://000031.awsstudygroup.com/vi/<br>https://000058.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu AWS Lambda, event source, runtime và cách sử dụng Lambda để tự động hóa một số tác vụ vận hành. | 15/05/2026 | 15/05/2026 | https://000022.awsstudygroup.com/vi/ |
+| Thứ 7 | Tìm hiểu AWS CloudFormation, template, stack và cách mô tả hạ tầng dưới dạng mã để triển khai tài nguyên nhất quán. | 16/05/2026 | 16/05/2026 | https://000037.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu AWS CDK cơ bản và nâng cao, thực hành tư duy Infrastructure as Code để tái sử dụng cấu trúc hạ tầng. | 17/05/2026 | 17/05/2026 | https://000038.awsstudygroup.com/vi/<br>https://000076.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 4:
 

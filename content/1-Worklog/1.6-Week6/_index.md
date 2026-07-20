@@ -19,13 +19,13 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied Docker, images, containers, Dockerfile, and the benefits of containerizing applications. | 05/25/2026 | 05/25/2026 | https://docs.docker.com/ |
-| Tuesday | Practiced containerizing applications so they can run consistently across local, testing, and cloud environments. | 05/26/2026 | 05/26/2026 | https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html |
-| Wednesday | Studied Amazon ECS, cluster, task definition, task, service, and container deployment concepts. | 05/27/2026 | 05/27/2026 | https://docs.aws.amazon.com/ecs/ |
-| Thursday | Studied ECS infrastructure deployment using AWS CDK and infrastructure definition through code. | 05/28/2026 | 05/28/2026 | https://docs.aws.amazon.com/cdk/ |
-| Friday | Studied AWS CodePipeline and CI/CD workflow including source, build, test, deploy, and pipeline status tracking. | 05/29/2026 | 05/29/2026 | https://docs.aws.amazon.com/codepipeline/ |
-| Saturday | Studied AWS Storage Gateway, Amazon FSx, and VPC Flow Logs for hybrid storage, file storage, and network traffic monitoring. | 05/30/2026 | 05/30/2026 | https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html |
-| Sunday | Studied AWS Step Functions and practiced a storage performance workshop to understand multi-step workflow orchestration. | 05/31/2026 | 05/31/2026 | https://docs.aws.amazon.com/step-functions/ |
+| Monday | Studied Docker, images, containers, Dockerfile, and the benefits of containerizing applications. | 25/05/2026 | 25/05/2026 | https://000015.awsstudygroup.com/ |
+| Tuesday | Practiced containerizing applications so they can run consistently across local, testing, and cloud environments. | 26/05/2026 | 26/05/2026 | https://000015.awsstudygroup.com/<br>https://000067.awsstudygroup.com/ |
+| Wednesday | Studied Amazon ECS, cluster, task definition, task, service, and container deployment concepts. | 27/05/2026 | 27/05/2026 | https://000016.awsstudygroup.com/ |
+| Thursday | Studied ECS infrastructure deployment using AWS CDK and infrastructure definition through code. | 28/05/2026 | 28/05/2026 | https://000118.awsstudygroup.com/ |
+| Friday | Studied AWS CodePipeline and CI/CD workflow including source, build, test, deploy, and pipeline status tracking. | 29/05/2026 | 29/05/2026 | https://000017.awsstudygroup.com/<br>https://000023.awsstudygroup.com/<br>https://000152.awsstudygroup.com/ |
+| Saturday | Studied AWS Storage Gateway, Amazon FSx, and VPC Flow Logs for hybrid storage, file storage, and network traffic monitoring. | 30/05/2026 | 30/05/2026 | https://000024.awsstudygroup.com/<br>https://000025.awsstudygroup.com/<br>https://000074.awsstudygroup.com/ |
+| Sunday | Studied AWS Step Functions and practiced a storage performance workshop to understand multi-step workflow orchestration. | 31/05/2026 | 31/05/2026 | https://000047.awsstudygroup.com/<br>https://000068.awsstudygroup.com/ |
 
 ### Week 6 Results:
 

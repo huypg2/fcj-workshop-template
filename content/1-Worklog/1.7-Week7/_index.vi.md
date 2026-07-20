@@ -19,13 +19,13 @@ pre: " <b> 1.7. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu Application Modernization trên AWS, lý do cần hiện đại hóa ứng dụng và các hướng cải tiến hệ thống cũ. | 01/06/2026 | 01/06/2026 | https://aws.amazon.com/application-modernization/ |
-| Thứ 3 | Tìm hiểu quá trình chuyển đổi từ Monolith sang Microservices, cách tách service theo chức năng nghiệp vụ và quản lý dữ liệu sau khi tách service. | 02/06/2026 | 02/06/2026 | https://aws.amazon.com/microservices/ |
-| Thứ 4 | Tìm hiểu Serverless trong DevAx Series, event-driven architecture, xác thực ứng dụng đơn trang và tích hợp dịch vụ AI trên AWS. | 03/06/2026 | 03/06/2026 | https://aws.amazon.com/serverless/ |
-| Thứ 5 | Tìm hiểu DynamoDB nâng cao, thiết kế bảng, truy vấn dữ liệu và các lưu ý khi dùng DynamoDB cho ứng dụng Serverless. | 04/06/2026 | 04/06/2026 | https://docs.aws.amazon.com/dynamodb/ |
-| Thứ 6 | Thực hành dự án Serverless Book Store, xây dựng backend Serverless với Lambda, S3 và DynamoDB. | 05/06/2026 | 05/06/2026 | https://docs.aws.amazon.com/lambda/ |
-| Thứ 7 | Phát triển frontend kết nối với API Serverless, tìm hiểu AWS SAM để đóng gói và tự động hóa triển khai ứng dụng. | 06/06/2026 | 06/06/2026 | https://docs.aws.amazon.com/serverless-application-model/ |
-| Chủ nhật | Tìm hiểu Cognito, SQS, SNS, CI/CD Serverless và AWS AppSync để hoàn thiện các thành phần xác thực, xử lý bất đồng bộ và GraphQL API. | 07/06/2026 | 07/06/2026 | https://docs.aws.amazon.com/appsync/ |
+| Thứ 2 | Tìm hiểu Application Modernization trên AWS, lý do cần hiện đại hóa ứng dụng và các hướng cải tiến hệ thống cũ. | 01/06/2026 | 01/06/2026 | https://cloudjourney.awsstudygroup.com/vi/4-modernize/ |
+| Thứ 3 | Tìm hiểu quá trình chuyển đổi từ Monolith sang Microservices, cách tách service theo chức năng nghiệp vụ và quản lý dữ liệu sau khi tách service. | 02/06/2026 | 02/06/2026 | https://000050.awsstudygroup.com/vi/<br>https://000052.awsstudygroup.com/vi/<br>https://000053.awsstudygroup.com/vi/ |
+| Thứ 4 | Tìm hiểu Serverless trong DevAx Series, event-driven architecture, xác thực ứng dụng đơn trang và tích hợp dịch vụ AI trên AWS. | 03/06/2026 | 03/06/2026 | https://000054.awsstudygroup.com/vi/<br>https://000055.awsstudygroup.com/vi/<br>https://000056.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu DynamoDB nâng cao, thiết kế bảng, truy vấn dữ liệu và các lưu ý khi dùng DynamoDB cho ứng dụng Serverless. | 04/06/2026 | 04/06/2026 | https://000039.awsstudygroup.com/vi/ |
+| Thứ 6 | Thực hành dự án Serverless Book Store, xây dựng backend Serverless với Lambda, S3 và DynamoDB. | 05/06/2026 | 05/06/2026 | https://000078.awsstudygroup.com/vi/ |
+| Thứ 7 | Phát triển frontend kết nối với API Serverless, tìm hiểu AWS SAM để đóng gói và tự động hóa triển khai ứng dụng. | 06/06/2026 | 06/06/2026 | https://000079.awsstudygroup.com/vi/<br>https://000080.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu Cognito, SQS, SNS, CI/CD Serverless và AWS AppSync để hoàn thiện các thành phần xác thực, xử lý bất đồng bộ và GraphQL API. | 07/06/2026 | 07/06/2026 | https://000081.awsstudygroup.com/vi/<br>https://000083.awsstudygroup.com/vi/<br>https://000084.awsstudygroup.com/vi/<br>https://000086.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 7:
 

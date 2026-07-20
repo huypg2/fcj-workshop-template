@@ -18,17 +18,16 @@ pre: " <b> 1.12. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | - Create SNS Topic for alerting<br>&emsp; + Create a notification channel for monitoring alerts<br>&emsp; + Configure notification receiver information<br>&emsp; + Prepare SNS Topic for CloudWatch Alarm integration | 07/06/2026 | 07/06/2026 | https://000077.awsstudygroup.com/ |
-| Tuesday | - Write and revise the published blog posts<br>&emsp; + Complete Blog 1 about GitHub Actions and ECS Express Mode<br>&emsp; + Complete Blog 2 about Velero Backup and Restore on Amazon EKS<br>&emsp; + Complete Blog 3 about EC2 Capacity Manager and Amazon Athena | 08/07/2026 | 08/07/2026 |  |
-| Wednesday | - Write the Event content and Self-evaluation section<br>&emsp; + Complete the content for Event 1 and Event 2 attended during the internship<br>&emsp; + Summarize the content, lessons learned, and personal reflection after each event<br>&emsp; + Write the self-evaluation section based on the learning, practice, and workshop process | 09/07/2026 | 09/07/2026 |  |
-| Thursday | - Write and complete the worklog content<br>&emsp; + Review the worklog content from Week 1 to Week 12<br>&emsp; + Adjust the tasks according to what the team completed in the 5-Workshop file<br>&emsp; + Check the timeline, achieved results, and reference sources | 07/07/2026 | 07/07/2026 |  |
+| Monday | - Review the overall internship report and website content<br>&emsp; + Check the main sections of the internship report website<br>&emsp; + Identify missing parts such as worklogs, blogs, events, self-evaluation, and feedback<br>&emsp; + Plan the final content completion tasks for the last week | 06/07/2026 | 06/07/2026 |  |
+| Tuesday | - Write and revise the published blog posts<br>&emsp; + Complete Blog 1 about GitHub Actions and ECS Express Mode<br>&emsp; + Complete Blog 2 about Velero Backup and Restore on Amazon EKS<br>&emsp; + Complete Blog 3 about EC2 Capacity Manager and Amazon Athena | 07/07/2026 | 07/07/2026 |  |
+| Wednesday | - Write the Event content and Self-evaluation section<br>&emsp; + Complete the content for Event 1 and Event 2 attended during the internship<br>&emsp; + Summarize the content, lessons learned, and personal reflection after each event<br>&emsp; + Write the self-evaluation section based on the learning, practice, and workshop process | 08/07/2026 | 08/07/2026 |  |
+| Thursday | - Write and complete the worklog content<br>&emsp; + Review the worklog content from Week 1 to Week 12<br>&emsp; + Adjust the tasks according to what the team completed in the 5-Workshop file<br>&emsp; + Check the timeline, achieved results, and reference sources | 09/07/2026 | 09/07/2026 |  |
 | Friday | - Write the feedback section and complete the report website<br>&emsp; + Write the sharing, feedback, and reflection content after the internship process<br>&emsp; + Check the layout, menu, links, images, and bilingual content<br>&emsp; + Build Hugo and deploy the report website to GitHub Pages | 10/07/2026 | 10/07/2026 |  |
 
 ### Week 12 Results:
 
-* Created an SNS Topic to support alert notifications during system monitoring.
-* Configured SNS notification receiver information to prepare for CloudWatch Alarm integration.
-* Reviewed and completed the worklog content from Week 1 to Week 12.
+* Reviewed the overall internship report and website content.
+* Identified the sections that needed to be completed in the final week, including worklogs, blogs, events, self-evaluation, and feedback.
 * Adjusted the worklog tasks according to the parts completed by the team in the 5-Workshop file.
 * Checked the timeline, start date, completion date, and reference sources in each worklog table.
 * Wrote and revised the published blog posts on the report website.

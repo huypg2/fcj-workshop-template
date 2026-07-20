@@ -19,13 +19,13 @@ pre: " <b> 1.8. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu Serverless Document Management System, xây dựng chức năng CRUD Serverless bằng Lambda và DynamoDB. | 08/06/2026 | 08/06/2026 | https://docs.aws.amazon.com/lambda/ |
-| Thứ 3 | Tìm hiểu AWS Amplify cho lưu trữ, xác thực người dùng và tích hợp frontend với API Gateway. | 09/06/2026 | 09/06/2026 | https://docs.aws.amazon.com/amplify/ |
-| Thứ 4 | Triển khai hệ thống quản lý tài liệu bằng AWS SAM, thiết lập CloudFront để phân phối nội dung và tối ưu truy cập. | 10/06/2026 | 10/06/2026 | https://docs.aws.amazon.com/serverless-application-model/ |
-| Thứ 5 | Bổ sung chức năng tìm kiếm, tìm hiểu DevOps cho hệ thống quản lý tài liệu và cách tổ chức pipeline triển khai. | 11/06/2026 | 11/06/2026 | https://docs.aws.amazon.com/cloudfront/ |
-| Thứ 6 | Tìm hiểu AWS X-Ray, CloudWatch, Grafana và thực hành workshop CloudWatch nâng cao để theo dõi log, metric, alarm và tracing. | 12/06/2026 | 12/06/2026 | https://docs.aws.amazon.com/xray/ |
-| Thứ 7 | Tổng hợp kiến thức về Serverless Web App, Serverless API, ứng dụng chat Serverless và triển khai ứng dụng Node.js bằng Elastic Beanstalk. | 13/06/2026 | 13/06/2026 | https://docs.aws.amazon.com/elasticbeanstalk/ |
-| Chủ nhật | Tìm hiểu CI/CD với Elastic Beanstalk, CDK Pipelines, WordPress trên AWS, Web App High Availability, Windows Server HA và SQL Server HA. | 14/06/2026 | 14/06/2026 | https://docs.aws.amazon.com/ |
+| Thứ 2 | Tìm hiểu Serverless Document Management System, xây dựng chức năng CRUD Serverless bằng Lambda và DynamoDB. | 08/06/2026 | 08/06/2026 | https://000133.awsstudygroup.com/vi/ |
+| Thứ 3 | Tìm hiểu AWS Amplify cho lưu trữ, xác thực người dùng và tích hợp frontend với API Gateway. | 09/06/2026 | 09/06/2026 | https://000134.awsstudygroup.com/vi/<br>https://000135.awsstudygroup.com/vi/ |
+| Thứ 4 | Triển khai hệ thống quản lý tài liệu bằng AWS SAM, thiết lập CloudFront để phân phối nội dung và tối ưu truy cập. | 10/06/2026 | 10/06/2026 | https://000136.awsstudygroup.com/vi/<br>https://000137.awsstudygroup.com/vi/ |
+| Thứ 5 | Bổ sung chức năng tìm kiếm, tìm hiểu DevOps cho hệ thống quản lý tài liệu và cách tổ chức pipeline triển khai. | 11/06/2026 | 11/06/2026 | https://000138.awsstudygroup.com/vi/<br>https://000139.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu AWS X-Ray, CloudWatch, Grafana và thực hành workshop CloudWatch nâng cao để theo dõi log, metric, alarm và tracing. | 12/06/2026 | 12/06/2026 | https://000140.awsstudygroup.com/vi/<br>https://000029.awsstudygroup.com/vi/<br>https://000036.awsstudygroup.com/vi/ |
+| Thứ 7 | Tổng hợp kiến thức về Serverless Web App, Serverless API, ứng dụng chat Serverless và triển khai ứng dụng Node.js bằng Elastic Beanstalk. | 13/06/2026 | 13/06/2026 | https://000066.awsstudygroup.com/vi/<br>https://000117.awsstudygroup.com/vi/<br>https://000112.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu CI/CD với Elastic Beanstalk, CDK Pipelines, WordPress trên AWS, Web App High Availability, Windows Server HA và SQL Server HA. | 14/06/2026 | 14/06/2026 | https://000113.awsstudygroup.com/vi/<br>https://000021.awsstudygroup.com/vi/<br>https://000091.awsstudygroup.com/vi/<br>https://000101.awsstudygroup.com/vi/<br>https://100002.awsstudygroup.com/vi/<br>https://100003.awsstudygroup.com/vi/<br>https://100004.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 8:
 

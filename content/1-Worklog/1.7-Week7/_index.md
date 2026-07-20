@@ -19,13 +19,13 @@ pre: " <b> 1.7. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied Application Modernization on AWS and approaches for improving legacy systems. | 06/01/2026 | 06/01/2026 | https://aws.amazon.com/application-modernization/ |
-| Tuesday | Studied migration from Monolith to Microservices, service separation by business function, and data management after service separation. | 06/02/2026 | 06/02/2026 | https://aws.amazon.com/microservices/ |
-| Wednesday | Studied Serverless in the DevAx Series, event-driven architecture, single-page application authentication, and AI service integration. | 06/03/2026 | 06/03/2026 | https://aws.amazon.com/serverless/ |
-| Thursday | Studied advanced DynamoDB, table design, query patterns, and key considerations for Serverless applications. | 06/04/2026 | 06/04/2026 | https://docs.aws.amazon.com/dynamodb/ |
-| Friday | Practiced the Serverless Book Store project and built a Serverless backend with Lambda, S3, and DynamoDB. | 06/05/2026 | 06/05/2026 | https://docs.aws.amazon.com/lambda/ |
-| Saturday | Developed the frontend connected to Serverless APIs and studied AWS SAM for application packaging and deployment automation. | 06/06/2026 | 06/06/2026 | https://docs.aws.amazon.com/serverless-application-model/ |
-| Sunday | Studied Cognito, SQS, SNS, Serverless CI/CD, and AWS AppSync for authentication, asynchronous processing, and GraphQL APIs. | 06/07/2026 | 06/07/2026 | https://docs.aws.amazon.com/appsync/ |
+| Monday | Studied Application Modernization on AWS and approaches for improving legacy systems. | 01/06/2026 | 01/06/2026 | https://cloudjourney.awsstudygroup.com/4-modernize/ |
+| Tuesday | Studied migration from Monolith to Microservices, service separation by business function, and data management after service separation. | 02/06/2026 | 02/06/2026 | https://000050.awsstudygroup.com/<br>https://000052.awsstudygroup.com/<br>https://000053.awsstudygroup.com/ |
+| Wednesday | Studied Serverless in the DevAx Series, event-driven architecture, single-page application authentication, and AI service integration. | 03/06/2026 | 03/06/2026 | https://000054.awsstudygroup.com/<br>https://000055.awsstudygroup.com/<br>https://000056.awsstudygroup.com/ |
+| Thursday | Studied advanced DynamoDB, table design, query patterns, and key considerations for Serverless applications. | 04/06/2026 | 04/06/2026 | https://000039.awsstudygroup.com/ |
+| Friday | Practiced the Serverless Book Store project and built a Serverless backend with Lambda, S3, and DynamoDB. | 05/06/2026 | 05/06/2026 | https://000078.awsstudygroup.com/ |
+| Saturday | Developed the frontend connected to Serverless APIs and studied AWS SAM for application packaging and deployment automation. | 06/06/2026 | 06/06/2026 | https://000079.awsstudygroup.com/<br>https://000080.awsstudygroup.com/ |
+| Sunday | Studied Cognito, SQS, SNS, Serverless CI/CD, and AWS AppSync for authentication, asynchronous processing, and GraphQL APIs. | 07/06/2026 | 07/06/2026 | https://000081.awsstudygroup.com/<br>https://000083.awsstudygroup.com/<br>https://000084.awsstudygroup.com/<br>https://000086.awsstudygroup.com/ |
 
 ### Week 7 Results:
 

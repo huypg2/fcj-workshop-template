@@ -19,13 +19,13 @@ pre: " <b> 1.5. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied AWS Single Sign-On, IAM Permission Boundaries, IAM Policies, and IAM Conditions for advanced access management. | 05/18/2026 | 05/18/2026 | https://docs.aws.amazon.com/iam/ |
-| Tuesday | Studied AWS Security Hub, GuardDuty, VPC Endpoints, and S3 security best practices. | 05/19/2026 | 05/19/2026 | https://docs.aws.amazon.com/securityhub/ |
-| Wednesday | Studied AWS WAF, AWS KMS, Amazon Macie, and AWS Secrets Manager for application protection, encryption, and credential management. | 05/20/2026 | 05/20/2026 | https://docs.aws.amazon.com/kms/ |
-| Thursday | Studied Amazon Cognito, user authentication, and login management for web or mobile applications. | 05/21/2026 | 05/21/2026 | https://docs.aws.amazon.com/cognito/ |
-| Friday | Studied AWS Backup, EBS Data Lifecycle Manager, and EC2 Image Builder for backup and standard server images. | 05/22/2026 | 05/22/2026 | https://docs.aws.amazon.com/aws-backup/ |
-| Saturday | Studied VPC Peering, AWS Transit Gateway, Amazon SQS, and Amazon SNS for connectivity and asynchronous processing. | 05/23/2026 | 05/23/2026 | https://docs.aws.amazon.com/sns/ |
-| Sunday | Studied Service Quotas, Savings Plans, Reserved Instances, and AWS cost optimization principles. | 05/24/2026 | 05/24/2026 | https://docs.aws.amazon.com/servicequotas/ |
+| Monday | Studied AWS Single Sign-On, IAM Permission Boundaries, IAM Policies, and IAM Conditions for advanced access management. | 18/05/2026 | 18/05/2026 | https://000012.awsstudygroup.com/<br>https://000030.awsstudygroup.com/<br>https://000044.awsstudygroup.com/ |
+| Tuesday | Studied AWS Security Hub, GuardDuty, VPC Endpoints, and S3 security best practices. | 19/05/2026 | 19/05/2026 | https://000018.awsstudygroup.com/<br>https://000098.awsstudygroup.com/<br>https://000111.awsstudygroup.com/<br>https://000069.awsstudygroup.com/ |
+| Wednesday | Studied AWS WAF, AWS KMS, Amazon Macie, and AWS Secrets Manager for application protection, encryption, and credential management. | 20/05/2026 | 20/05/2026 | https://000026.awsstudygroup.com/<br>https://000033.awsstudygroup.com/<br>https://000090.awsstudygroup.com/<br>https://000096.awsstudygroup.com/ |
+| Thursday | Studied Amazon Cognito, user authentication, and login management for web or mobile applications. | 21/05/2026 | 21/05/2026 | https://000141.awsstudygroup.com/ |
+| Friday | Studied AWS Backup, EBS Data Lifecycle Manager, and EC2 Image Builder for backup and standard server images. | 22/05/2026 | 22/05/2026 | https://000013.awsstudygroup.com/<br>https://000088.awsstudygroup.com/<br>https://000099.awsstudygroup.com/ |
+| Saturday | Studied VPC Peering, AWS Transit Gateway, Amazon SQS, and Amazon SNS for connectivity and asynchronous processing. | 23/05/2026 | 23/05/2026 | https://000019.awsstudygroup.com/<br>https://000020.awsstudygroup.com/<br>https://000077.awsstudygroup.com/ |
+| Sunday | Studied Service Quotas, Savings Plans, Reserved Instances, and AWS cost optimization principles. | 24/05/2026 | 24/05/2026 | https://000063.awsstudygroup.com/<br>https://000042.awsstudygroup.com/<br>https://000034.awsstudygroup.com/ |
 
 ### Week 5 Results:
 

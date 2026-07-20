@@ -19,13 +19,13 @@ pre: " <b> 1.3. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Practiced an AWS networking workshop and reviewed VPC, subnets, route tables, security groups, network ACLs, and network layer separation. | 05/04/2026 | 05/04/2026 | https://docs.aws.amazon.com/vpc/ |
-| Tuesday | Studied Amazon CloudFront, CDN, edge locations, origins, cache behavior, and latency reduction for content delivery. | 05/05/2026 | 05/05/2026 | https://docs.aws.amazon.com/cloudfront/ |
-| Wednesday | Studied Lambda@Edge and how to process selected request/response logic closer to users. | 05/06/2026 | 05/06/2026 | https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html |
-| Thursday | Studied Windows applications on AWS, Windows Server environments, and AWS Managed Microsoft AD for enterprise systems. | 05/07/2026 | 05/07/2026 | https://docs.aws.amazon.com/directoryservice/ |
-| Friday | Studied migration strategies such as rehost, replatform, refactor, repurchase, retain, and retire. | 05/08/2026 | 05/08/2026 | https://aws.amazon.com/cloud-migration/ |
-| Saturday | Studied AWS VM Import/Export, AWS Database Migration Service, and Schema Conversion Tool for virtual machine and database migration. | 05/09/2026 | 05/09/2026 | https://docs.aws.amazon.com/dms/ |
-| Sunday | Studied AWS Elastic Disaster Recovery and how to build recovery plans for system incidents. | 05/10/2026 | 05/10/2026 | https://docs.aws.amazon.com/drs/ |
+| Monday | Practiced an AWS networking workshop and reviewed VPC, subnets, route tables, security groups, network ACLs, and network layer separation. | 04/05/2026 | 04/05/2026 | https://000092.awsstudygroup.com/ |
+| Tuesday | Studied Amazon CloudFront, CDN, edge locations, origins, cache behavior, and latency reduction for content delivery. | 05/05/2026 | 05/05/2026 | https://000094.awsstudygroup.com/ |
+| Wednesday | Studied Lambda@Edge and how to process selected request/response logic closer to users. | 06/05/2026 | 06/05/2026 | https://000130.awsstudygroup.com/ |
+| Thursday | Studied Windows applications on AWS, Windows Server environments, and AWS Managed Microsoft AD for enterprise systems. | 07/05/2026 | 07/05/2026 | https://000093.awsstudygroup.com/<br>https://000095.awsstudygroup.com/ |
+| Friday | Studied migration strategies such as rehost, replatform, refactor, repurchase, retain, and retire. | 08/05/2026 | 08/05/2026 | https://cloudjourney.awsstudygroup.com/2-migrate/ |
+| Saturday | Studied AWS VM Import/Export, AWS Database Migration Service, and Schema Conversion Tool for virtual machine and database migration. | 09/05/2026 | 09/05/2026 | https://000014.awsstudygroup.com/<br>https://000043.awsstudygroup.com/ |
+| Sunday | Studied AWS Elastic Disaster Recovery and how to build recovery plans for system incidents. | 10/05/2026 | 10/05/2026 | https://000100.awsstudygroup.com/ |
 
 ### Week 3 Results:
 

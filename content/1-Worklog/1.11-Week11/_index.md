@@ -7,35 +7,45 @@ pre: " <b> 1.11. </b> "
 ---
 
 
-### Week 11: Load Balancer Configuration and ECS Fargate Deployment
+### Week 11: AWS Infrastructure Deployment, ECS Fargate, Monitoring, and Data Backup
 
 ### Week 11 Objectives:
 
-* Create Target Group, Application Load Balancer, and Listener Rules.
-* Prepare CloudWatch Log Group and IAM Role for ECS.
-* Register ECS Task Definition and launch ECS Service with Fargate.
+* Package the Backend and Frontend applications with Docker for AWS deployment.
+* Set up VPC networking, Security Groups, RDS PostgreSQL, and Bastion Host.
+* Configure Load Balancer and deploy the application using Amazon ECS Fargate.
+* Set up CloudWatch Alarm, SNS, and data backup with S3 Backup and KMS.
 
 ### Tasks to be carried out this week:
+
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | - Create Target Group for the application<br>&emsp; + Select target type suitable for ECS Fargate<br>&emsp; + Configure request receiving port<br>&emsp; + Configure health check for task status verification | 06/29/2026 | 06/29/2026 | https://000016.awsstudygroup.com/ |
-| Tuesday | - Create Application Load Balancer<br>&emsp; + Select the prepared VPC and subnets<br>&emsp; + Attach Security Group to ALB<br>&emsp; + Verify Load Balancer status after creation | 06/30/2026 | 06/30/2026 | https://000067.awsstudygroup.com/ |
-| Wednesday | - Configure Listener Rules for ALB<br>&emsp; + Create listener to receive requests<br>&emsp; + Configure rule to forward requests to Target Group<br>&emsp; + Verify the relationship between listener, rule, and target group | 07/01/2026 | 07/01/2026 | https://000067.awsstudygroup.com/ |
-| Thursday | - Prepare Log Group and IAM Role for ECS Fargate<br>&emsp; + Create CloudWatch Log Group for container logs<br>&emsp; + Prepare ECS Task Execution Role<br>&emsp; + Verify permissions to pull images from ECR and write logs to CloudWatch | 07/02/2026 | 07/02/2026 | https://000008.awsstudygroup.com/ |
-| Friday | - Register Task Definition and launch ECS Service<br>&emsp; + Declare image URI from Amazon ECR<br>&emsp; + Configure CPU, memory, port mapping, and environment variables<br>&emsp; + Launch service on ECS Fargate and check task status | 07/03/2026 | 07/03/2026 | https://000067.awsstudygroup.com/ |
+| Monday | - Package the application and manage ECR Repository<br>&emsp; + Package Backend and Frontend source code with Docker<br>&emsp; + Create Amazon ECR Repositories for backend and frontend<br>&emsp; + Build and push Docker images from the development environment to Amazon ECR | 29/06/2026  | 29/06/2026  |  |
+| Tuesday | - Set up VPC networking and Security Groups<br>&emsp; + Create a 3-tier VPC across 2 Availability Zones with Public/Private Subnets<br>&emsp; + Configure Internet Gateway and NAT Gateway for outbound connectivity<br>&emsp; + Set up isolated Security Groups for ALB, ECS Fargate, RDS, and Bastion Host | 30/06/2026 | 30/06/2026 |  |
+| Wednesday | - Create RDS PostgreSQL database and Bastion Host<br>&emsp; + Create DB Subnet Group and launch Amazon RDS PostgreSQL in Private Subnet<br>&emsp; + Launch EC2 Bastion Host in Public Subnet<br>&emsp; + Connect securely through Bastion Host to import SQL Schema into RDS | 01/07/2026 | 0/07/2026 |  |
+| Thursday | - Configure Load Balancer and deploy ECS Fargate<br>&emsp; + Create Target Groups and a public Application Load Balancer<br>&emsp; + Create ECS Cluster and define Task Definitions for backend with Redis sidecar<br>&emsp; + Deploy ECS Services on Fargate and configure ECS Service Auto Scaling | 02/07/2026 | 02/07/2026 |  |
+| Friday | - Configure CloudWatch Alarm and S3 Backup with KMS<br>&emsp; + Configure Amazon SNS Topic to send email alerts when infrastructure is overloaded<br>&emsp; + Set up CloudWatch Alarms to monitor CPU utilization threshold<br>&emsp; + Create S3 Bucket, KMS Key, and export RDS Snapshot to Amazon S3 | 03/07/2026 | 03/07/2026 |  |
 
 ### Week 11 Results:
 
-* Created Target Group for the application running on ECS Fargate.
-* Configured port and health check so Load Balancer can check task health.
-* Created Application Load Balancer in the prepared VPC and subnets.
-* Attached the proper Security Group to the Load Balancer.
-* Configured listener to receive requests.
-* Created Listener Rule to forward requests to Target Group.
-* Created CloudWatch Log Group for container logs.
-* Prepared ECS Task Execution Role so tasks can pull images from ECR and write logs to CloudWatch.
-* Registered ECS Task Definition using the image URI from Amazon ECR.
-* Configured CPU, memory, port mapping, and environment variables for the container.
-* Launched ECS Service using Fargate.
-* Checked task and service status after launch.
-* Completed the Load Balancer and ECS Fargate task groups using Cloud Journey/AWS Study Group references.
+* Packaged Backend and Frontend source code with Docker.
+* Created Amazon ECR Repositories to store Docker images for backend and frontend.
+* Built and pushed Docker images from the development environment to Amazon ECR.
+* Set up a 3-tier VPC across 2 Availability Zones with Public and Private Subnets.
+* Configured Internet Gateway and NAT Gateway to support the required network connectivity.
+* Created separate Security Groups for ALB, ECS Fargate, RDS, and Bastion Host.
+* Created DB Subnet Group for deploying Amazon RDS inside the VPC.
+* Launched Amazon RDS PostgreSQL in Private Subnet.
+* Launched EC2 Bastion Host in Public Subnet for secure administrative access.
+* Connected to RDS through Bastion Host and imported the initial SQL Schema.
+* Created Target Groups for the application.
+* Created a public Application Load Balancer to receive requests.
+* Created ECS Cluster for container deployment.
+* Defined Task Definitions for backend with Redis sidecar integration.
+* Deployed ECS Services on AWS Fargate.
+* Configured ECS Service Auto Scaling to support application scaling.
+* Configured Amazon SNS Topic for email alert notifications.
+* Set up CloudWatch Alarm to monitor CPU utilization.
+* Created S3 Bucket and KMS Key for data backup.
+* Exported RDS Snapshot to Amazon S3.
+* Completed the infrastructure deployment, application deployment, monitoring, and backup tasks according to the workshop content.

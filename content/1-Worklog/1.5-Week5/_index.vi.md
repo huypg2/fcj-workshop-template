@@ -19,13 +19,13 @@ pre: " <b> 1.5. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu AWS Single Sign-On, IAM Permission Boundaries, IAM Policies và IAM Conditions để quản lý truy cập nâng cao. | 18/05/2026 | 18/05/2026 | https://docs.aws.amazon.com/iam/ |
-| Thứ 3 | Tìm hiểu AWS Security Hub, GuardDuty, VPC Endpoints và các phương pháp bảo mật tốt nhất cho Amazon S3. | 19/05/2026 | 19/05/2026 | https://docs.aws.amazon.com/securityhub/ |
-| Thứ 4 | Tìm hiểu AWS WAF, AWS KMS, Amazon Macie và AWS Secrets Manager trong bảo vệ ứng dụng, mã hóa dữ liệu và quản lý thông tin xác thực. | 20/05/2026 | 20/05/2026 | https://docs.aws.amazon.com/kms/ |
-| Thứ 5 | Tìm hiểu Amazon Cognito, cơ chế xác thực người dùng và cách quản lý đăng nhập cho ứng dụng web hoặc mobile. | 21/05/2026 | 21/05/2026 | https://docs.aws.amazon.com/cognito/ |
-| Thứ 6 | Tìm hiểu AWS Backup, EBS Data Lifecycle Manager và EC2 Image Builder để chuẩn bị phương án sao lưu và chuẩn hóa image máy chủ. | 22/05/2026 | 22/05/2026 | https://docs.aws.amazon.com/aws-backup/ |
-| Thứ 7 | Tìm hiểu VPC Peering, AWS Transit Gateway, Amazon SQS và Amazon SNS để tăng khả năng kết nối mạng và xử lý bất đồng bộ. | 23/05/2026 | 23/05/2026 | https://docs.aws.amazon.com/sns/ |
-| Chủ nhật | Tìm hiểu Service Quotas, Savings Plans, Reserved Instances và các nguyên tắc tối ưu chi phí khi vận hành tài nguyên AWS. | 24/05/2026 | 24/05/2026 | https://docs.aws.amazon.com/servicequotas/ |
+| Thứ 2 | Tìm hiểu AWS Single Sign-On, IAM Permission Boundaries, IAM Policies và IAM Conditions để quản lý truy cập nâng cao. | 18/05/2026 | 18/05/2026 | https://000012.awsstudygroup.com/vi/<br>https://000030.awsstudygroup.com/vi/<br>https://000044.awsstudygroup.com/vi/ |
+| Thứ 3 | Tìm hiểu AWS Security Hub, GuardDuty, VPC Endpoints và các phương pháp bảo mật tốt nhất cho Amazon S3. | 19/05/2026 | 19/05/2026 | https://000018.awsstudygroup.com/vi/<br>https://000098.awsstudygroup.com/vi/<br>https://000111.awsstudygroup.com/vi/<br>https://000069.awsstudygroup.com/vi/ |
+| Thứ 4 | Tìm hiểu AWS WAF, AWS KMS, Amazon Macie và AWS Secrets Manager trong bảo vệ ứng dụng, mã hóa dữ liệu và quản lý thông tin xác thực. | 20/05/2026 | 20/05/2026 | https://000026.awsstudygroup.com/vi/<br>https://000033.awsstudygroup.com/vi/<br>https://000090.awsstudygroup.com/vi/<br>https://000096.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu Amazon Cognito, cơ chế xác thực người dùng và cách quản lý đăng nhập cho ứng dụng web hoặc mobile. | 21/05/2026 | 21/05/2026 | https://000141.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu AWS Backup, EBS Data Lifecycle Manager và EC2 Image Builder để chuẩn bị phương án sao lưu và chuẩn hóa image máy chủ. | 22/05/2026 | 22/05/2026 | https://000013.awsstudygroup.com/vi/<br>https://000088.awsstudygroup.com/vi/<br>https://000099.awsstudygroup.com/vi/ |
+| Thứ 7 | Tìm hiểu VPC Peering, AWS Transit Gateway, Amazon SQS và Amazon SNS để tăng khả năng kết nối mạng và xử lý bất đồng bộ. | 23/05/2026 | 23/05/2026 | https://000019.awsstudygroup.com/vi/<br>https://000020.awsstudygroup.com/vi/<br>https://000077.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu Service Quotas, Savings Plans, Reserved Instances và các nguyên tắc tối ưu chi phí khi vận hành tài nguyên AWS. | 24/05/2026 | 24/05/2026 | https://000063.awsstudygroup.com/vi/<br>https://000042.awsstudygroup.com/vi/<br>https://000034.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 5:
 

@@ -19,13 +19,13 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied AWS Toolkit for VS Code and how it supports developing, testing, and deploying AWS-integrated applications. | 05/11/2026 | 05/11/2026 | https://docs.aws.amazon.com/toolkit-for-vscode/ |
-| Tuesday | Studied Tags and Resource Groups to classify resources by project, environment, owner, cost, and purpose. | 05/12/2026 | 05/12/2026 | https://docs.aws.amazon.com/resourcegroupstagging/ |
-| Wednesday | Studied access control using IAM together with Resource Tags to limit actions by resource groups. | 05/13/2026 | 05/13/2026 | https://docs.aws.amazon.com/iam/ |
-| Thursday | Studied AWS Systems Manager, Session Manager, and safer server management without opening SSH directly to the Internet. | 05/14/2026 | 05/14/2026 | https://docs.aws.amazon.com/systems-manager/ |
-| Friday | Studied AWS Lambda, event sources, runtimes, and how Lambda can automate operational tasks. | 05/15/2026 | 05/15/2026 | https://docs.aws.amazon.com/lambda/ |
-| Saturday | Studied AWS CloudFormation, templates, stacks, and infrastructure description through code. | 05/16/2026 | 05/16/2026 | https://docs.aws.amazon.com/cloudformation/ |
-| Sunday | Studied basic and advanced AWS CDK and practiced reusable Infrastructure as Code design. | 05/17/2026 | 05/17/2026 | https://docs.aws.amazon.com/cdk/ |
+| Monday | Studied AWS Toolkit for VS Code and how it supports developing, testing, and deploying AWS-integrated applications. | 11/05/2026 | 11/05/2026 | https://000087.awsstudygroup.com/ |
+| Tuesday | Studied Tags and Resource Groups to classify resources by project, environment, owner, cost, and purpose. | 12/05/2026 | 12/05/2026 | https://000027.awsstudygroup.com/ |
+| Wednesday | Studied access control using IAM together with Resource Tags to limit actions by resource groups. | 13/05/2026 | 13/05/2026 | https://000028.awsstudygroup.com/ |
+| Thursday | Studied AWS Systems Manager, Session Manager, and safer server management without opening SSH directly to the Internet. | 14/05/2026 | 14/05/2026 | https://000031.awsstudygroup.com/<br>https://000058.awsstudygroup.com/ |
+| Friday | Studied AWS Lambda, event sources, runtimes, and how Lambda can automate operational tasks. | 15/05/2026 | 15/05/2026 | https://000022.awsstudygroup.com/ |
+| Saturday | Studied AWS CloudFormation, templates, stacks, and infrastructure description through code. | 16/05/2026 | 16/05/2026 | https://000037.awsstudygroup.com/ |
+| Sunday | Studied basic and advanced AWS CDK and practiced reusable Infrastructure as Code design. | 17/05/2026 | 17/05/2026 | https://000038.awsstudygroup.com/<br>https://000076.awsstudygroup.com/ |
 
 ### Week 4 Results:
 

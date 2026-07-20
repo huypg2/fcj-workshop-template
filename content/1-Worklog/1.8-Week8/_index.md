@@ -19,13 +19,13 @@ pre: " <b> 1.8. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied the Serverless Document Management System and built Serverless CRUD functions with Lambda and DynamoDB. | 06/08/2026 | 06/08/2026 | https://docs.aws.amazon.com/lambda/ |
-| Tuesday | Studied AWS Amplify for storage, user authentication, and frontend integration with API Gateway. | 06/09/2026 | 06/09/2026 | https://docs.aws.amazon.com/amplify/ |
-| Wednesday | Deployed the document management system using AWS SAM and configured CloudFront for content delivery optimization. | 06/10/2026 | 06/10/2026 | https://docs.aws.amazon.com/serverless-application-model/ |
-| Thursday | Added search functionality and studied DevOps practices for the document management system and deployment pipeline organization. | 06/11/2026 | 06/11/2026 | https://docs.aws.amazon.com/cloudfront/ |
-| Friday | Studied AWS X-Ray, CloudWatch, Grafana, and practiced an advanced CloudWatch workshop for logs, metrics, alarms, and tracing. | 06/12/2026 | 06/12/2026 | https://docs.aws.amazon.com/xray/ |
-| Saturday | Summarized Serverless Web App, Serverless API, Serverless chat app, and Node.js deployment with Elastic Beanstalk. | 06/13/2026 | 06/13/2026 | https://docs.aws.amazon.com/elasticbeanstalk/ |
-| Sunday | Studied CI/CD with Elastic Beanstalk, CDK Pipelines, WordPress on AWS, Web App HA, Windows Server HA, and SQL Server HA. | 06/14/2026 | 06/14/2026 | https://docs.aws.amazon.com/ |
+| Monday | Studied the Serverless Document Management System and built Serverless CRUD functions with Lambda and DynamoDB. | 08/06/2026 | 08/06/2026 | https://000133.awsstudygroup.com/ |
+| Tuesday | Studied AWS Amplify for storage, user authentication, and frontend integration with API Gateway. | 09/06/2026 | 09/06/2026 | https://000134.awsstudygroup.com/<br>https://000135.awsstudygroup.com/ |
+| Wednesday | Deployed the document management system using AWS SAM and configured CloudFront for content delivery optimization. | 10/06/2026 | 10/06/2026 | https://000136.awsstudygroup.com/<br>https://000137.awsstudygroup.com/ |
+| Thursday | Added search functionality and studied DevOps practices for the document management system and deployment pipeline organization. | 11/06/2026 | 11/06/2026 | https://000138.awsstudygroup.com/<br>https://000139.awsstudygroup.com/ |
+| Friday | Studied AWS X-Ray, CloudWatch, Grafana, and practiced an advanced CloudWatch workshop for logs, metrics, alarms, and tracing. | 12/06/2026 | 12/06/2026 | https://000140.awsstudygroup.com/<br>https://000029.awsstudygroup.com/<br>https://000036.awsstudygroup.com/ |
+| Saturday | Summarized Serverless Web App, Serverless API, Serverless chat app, and Node.js deployment with Elastic Beanstalk. | 13/06/2026 | 13/06/2026 | https://000066.awsstudygroup.com/<br>https://000117.awsstudygroup.com/<br>https://000112.awsstudygroup.com/ |
+| Sunday | Studied CI/CD with Elastic Beanstalk, CDK Pipelines, WordPress on AWS, Web App HA, Windows Server HA, and SQL Server HA. | 14/06/2026 | 14/06/2026 | https://000113.awsstudygroup.com/<br>https://000021.awsstudygroup.com/<br>https://000091.awsstudygroup.com/<br>https://000101.awsstudygroup.com/<br>https://100002.awsstudygroup.com/<br>https://100003.awsstudygroup.com/<br>https://100004.awsstudygroup.com/ |
 
 ### Week 8 Results:
 

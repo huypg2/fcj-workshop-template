@@ -19,13 +19,13 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied Amazon S3, buckets, objects, storage classes, access control, and static data storage on AWS. | 04/27/2026 | 04/27/2026 | https://docs.aws.amazon.com/s3/ |
-| Tuesday | Practiced static website hosting with Amazon S3, checked bucket policy, static website endpoint, and browser access. | 04/28/2026 | 04/28/2026 | https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html |
-| Wednesday | Studied Amazon RDS, DB instances, engines, backup, Multi-AZ, connection endpoints, and managed relational databases. | 04/29/2026 | 04/29/2026 | https://docs.aws.amazon.com/rds/ |
-| Thursday | Studied Amazon DynamoDB, partition keys, sort keys, NoSQL tables, and the basic comparison between relational and NoSQL databases. | 04/30/2026 | 04/30/2026 | https://docs.aws.amazon.com/dynamodb/ |
-| Friday | Studied Amazon ElastiCache, Redis, Memcached, and the role of cache in reducing database query load and improving response time. | 05/01/2026 | 05/01/2026 | https://docs.aws.amazon.com/elasticache/ |
-| Saturday | Studied Amazon Route 53, DNS records, hosted zones, and Amazon CloudWatch for metrics, logs, and alarms. | 05/02/2026 | 05/02/2026 | https://docs.aws.amazon.com/route53/ |
-| Sunday | Studied EC2 Auto Scaling, Lightsail, and Lightsail Containers to understand small application deployment and scaling based on workload. | 05/03/2026 | 05/03/2026 | https://docs.aws.amazon.com/autoscaling/ |
+| Monday | Studied Amazon S3, buckets, objects, storage classes, access control, and static data storage on AWS. | 27/04/2026 | 27/04/2026 | https://000057.awsstudygroup.com/ |
+| Tuesday | Practiced static website hosting with Amazon S3, checked bucket policy, static website endpoint, and browser access. | 28/04/2026 | 28/04/2026 | https://000057.awsstudygroup.com/ |
+| Wednesday | Studied Amazon RDS, DB instances, engines, backup, Multi-AZ, connection endpoints, and managed relational databases. | 29/04/2026 | 29/04/2026 | https://000005.awsstudygroup.com/ |
+| Thursday | Studied Amazon DynamoDB, partition keys, sort keys, NoSQL tables, and the basic comparison between relational and NoSQL databases. | 30/04/2026 | 30/04/2026 | https://000060.awsstudygroup.com/ |
+| Friday | Studied Amazon ElastiCache, Redis, Memcached, and the role of cache in reducing database query load and improving response time. | 01/05/2026 | 01/05/2026 | https://000061.awsstudygroup.com/ |
+| Saturday | Studied Amazon Route 53, DNS records, hosted zones, and Amazon CloudWatch for metrics, logs, and alarms. | 02/05/2026 | 02/05/2026 | https://000010.awsstudygroup.com/<br>https://000008.awsstudygroup.com/ |
+| Sunday | Studied EC2 Auto Scaling, Lightsail, and Lightsail Containers to understand small application deployment and scaling based on workload. | 03/05/2026 | 03/05/2026 | https://000006.awsstudygroup.com/<br>https://000045.awsstudygroup.com/<br>https://000046.awsstudygroup.com/ |
 
 ### Week 2 Results:
 

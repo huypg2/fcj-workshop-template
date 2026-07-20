@@ -19,13 +19,13 @@ pre: " <b> 1.1. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Studied the overview of cloud computing, service models such as IaaS, PaaS, SaaS, and the role of AWS in modern system deployment. | 04/20/2026 | 04/20/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Tuesday | Created an AWS account, explored the AWS Management Console, checked Regions, Availability Zones, and the main AWS service groups. | 04/21/2026 | 04/21/2026 | https://docs.aws.amazon.com/ |
-| Wednesday | Configured AWS Budgets, studied cost alerts, AWS Support, and how to search AWS documentation when errors occur during practice. | 04/22/2026 | 04/22/2026 | https://aws.amazon.com/aws-cost-management/aws-budgets/ |
-| Thursday | Studied IAM, including Users, Groups, Policies, Roles, permissions, and the least privilege principle in AWS. | 04/23/2026 | 04/23/2026 | https://docs.aws.amazon.com/iam/ |
-| Friday | Studied Amazon VPC, subnets, route tables, internet gateways, security groups, and network ACLs in a basic networking model. | 04/24/2026 | 04/24/2026 | https://docs.aws.amazon.com/vpc/ |
-| Saturday | Studied Amazon EC2, AMI, instance types, key pairs, EBS volumes, and IAM Role for EC2 to grant secure permissions to virtual servers. | 04/25/2026 | 04/25/2026 | https://docs.aws.amazon.com/ec2/ |
-| Sunday | Got familiar with AWS Cloud9 and AWS CLI and practiced basic command-line operations for later labs. | 04/26/2026 | 04/26/2026 | https://docs.aws.amazon.com/cli/ |
+| Monday | Studied the overview of cloud computing, service models such as IaaS, PaaS, SaaS, and the role of AWS in modern system deployment. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | Created an AWS account, explored the AWS Management Console, checked Regions, Availability Zones, and the main AWS service groups. | 21/04/2026 | 21/04/2026 | https://000001.awsstudygroup.com/ |
+| Wednesday | Configured AWS Budgets, studied cost alerts, AWS Support, and how to search AWS documentation when errors occur during practice. | 22/04/2026 | 22/04/2026 | https://000007.awsstudygroup.com/<br>https://000009.awsstudygroup.com/ |
+| Thursday | Studied IAM, including Users, Groups, Policies, Roles, permissions, and the least privilege principle in AWS. | 23/04/2026 | 23/04/2026 | https://000002.awsstudygroup.com/ |
+| Friday | Studied Amazon VPC, subnets, route tables, internet gateways, security groups, and network ACLs in a basic networking model. | 24/04/2026 | 24/04/2026 | https://000003.awsstudygroup.com/ |
+| Saturday | Studied Amazon EC2, AMI, instance types, key pairs, EBS volumes, and IAM Role for EC2 to grant secure permissions to virtual servers. | 25/04/2026 | 25/04/2026 | https://000004.awsstudygroup.com/<br>https://000048.awsstudygroup.com/ |
+| Sunday | Got familiar with AWS Cloud9 and AWS CLI and practiced basic command-line operations for later labs. | 26/04/2026 | 26/04/2026 | https://000049.awsstudygroup.com/<br>https://000011.awsstudygroup.com/ |
 
 ### Week 1 Results:
 

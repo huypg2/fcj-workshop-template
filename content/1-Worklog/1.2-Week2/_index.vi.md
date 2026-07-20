@@ -19,13 +19,13 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu Amazon S3, bucket, object, storage class, phân quyền truy cập và cách lưu trữ dữ liệu tĩnh trên AWS. | 27/04/2026 | 27/04/2026 | https://docs.aws.amazon.com/s3/ |
-| Thứ 3 | Thực hành hosting website tĩnh bằng Amazon S3, kiểm tra cấu hình bucket policy, static website endpoint và truy cập nội dung qua trình duyệt. | 28/04/2026 | 28/04/2026 | https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html |
-| Thứ 4 | Tìm hiểu Amazon RDS, DB instance, engine, backup, Multi-AZ, connection endpoint và vai trò của cơ sở dữ liệu quan hệ được quản lý. | 29/04/2026 | 29/04/2026 | https://docs.aws.amazon.com/rds/ |
-| Thứ 5 | Tìm hiểu Amazon DynamoDB, partition key, sort key, bảng NoSQL và so sánh cơ bản giữa database quan hệ với NoSQL. | 30/04/2026 | 30/04/2026 | https://docs.aws.amazon.com/dynamodb/ |
-| Thứ 6 | Tìm hiểu Amazon ElastiCache, Redis, Memcached và vai trò của cache trong giảm tải truy vấn database, tăng tốc độ phản hồi hệ thống. | 01/05/2026 | 01/05/2026 | https://docs.aws.amazon.com/elasticache/ |
-| Thứ 7 | Tìm hiểu Amazon Route 53, DNS record, hosted zone, đồng thời tìm hiểu Amazon CloudWatch để theo dõi metric, log và alarm. | 02/05/2026 | 02/05/2026 | https://docs.aws.amazon.com/route53/ |
-| Chủ nhật | Tìm hiểu EC2 Auto Scaling, Lightsail và Lightsail Containers để nắm được cách triển khai ứng dụng nhỏ và tự mở rộng tài nguyên khi tải thay đổi. | 03/05/2026 | 03/05/2026 | https://docs.aws.amazon.com/autoscaling/ |
+| Thứ 2 | Tìm hiểu Amazon S3, bucket, object, storage class, phân quyền truy cập và cách lưu trữ dữ liệu tĩnh trên AWS. | 27/04/2026 | 27/04/2026 | https://000057.awsstudygroup.com/vi/ |
+| Thứ 3 | Thực hành hosting website tĩnh bằng Amazon S3, kiểm tra cấu hình bucket policy, static website endpoint và truy cập nội dung qua trình duyệt. | 28/04/2026 | 28/04/2026 | https://000057.awsstudygroup.com/vi/ |
+| Thứ 4 | Tìm hiểu Amazon RDS, DB instance, engine, backup, Multi-AZ, connection endpoint và vai trò của cơ sở dữ liệu quan hệ được quản lý. | 29/04/2026 | 29/04/2026 | https://000005.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu Amazon DynamoDB, partition key, sort key, bảng NoSQL và so sánh cơ bản giữa database quan hệ với NoSQL. | 30/04/2026 | 30/04/2026 | https://000060.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu Amazon ElastiCache, Redis, Memcached và vai trò của cache trong giảm tải truy vấn database, tăng tốc độ phản hồi hệ thống. | 01/05/2026 | 01/05/2026 | https://000061.awsstudygroup.com/vi/ |
+| Thứ 7 | Tìm hiểu Amazon Route 53, DNS record, hosted zone, đồng thời tìm hiểu Amazon CloudWatch để theo dõi metric, log và alarm. | 02/05/2026 | 02/05/2026 | https://000010.awsstudygroup.com/vi/<br>https://000008.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu EC2 Auto Scaling, Lightsail và Lightsail Containers để nắm được cách triển khai ứng dụng nhỏ và tự mở rộng tài nguyên khi tải thay đổi. | 03/05/2026 | 03/05/2026 | https://000006.awsstudygroup.com/vi/<br>https://000045.awsstudygroup.com/vi/<br>https://000046.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 2:
 

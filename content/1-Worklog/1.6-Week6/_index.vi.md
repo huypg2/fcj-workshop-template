@@ -19,13 +19,13 @@ pre: " <b> 1.6. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu Docker, image, container, Dockerfile và lợi ích của việc container hóa ứng dụng. | 25/05/2026 | 25/05/2026 | https://docs.docker.com/ |
-| Thứ 3 | Thực hành container hóa ứng dụng để ứng dụng có thể chạy ổn định giữa môi trường local, test và Cloud. | 26/05/2026 | 26/05/2026 | https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html |
-| Thứ 4 | Tìm hiểu Amazon ECS, cluster, task definition, task, service và các khái niệm liên quan đến triển khai container. | 27/05/2026 | 27/05/2026 | https://docs.aws.amazon.com/ecs/ |
-| Thứ 5 | Tìm hiểu triển khai hạ tầng ECS bằng AWS CDK, cách mô tả cluster, service, task definition bằng mã nguồn. | 28/05/2026 | 28/05/2026 | https://docs.aws.amazon.com/cdk/ |
-| Thứ 6 | Tìm hiểu AWS CodePipeline và quy trình CI/CD gồm lấy source code, build, test, deploy và theo dõi trạng thái pipeline. | 29/05/2026 | 29/05/2026 | https://docs.aws.amazon.com/codepipeline/ |
-| Thứ 7 | Tìm hiểu AWS Storage Gateway, Amazon FSx và VPC Flow Logs trong lưu trữ hybrid, lưu trữ file và giám sát lưu lượng mạng. | 30/05/2026 | 30/05/2026 | https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html |
-| Chủ nhật | Tìm hiểu AWS Step Functions và thực hành workshop hiệu suất lưu trữ để hiểu cách điều phối các workflow nhiều bước. | 31/05/2026 | 31/05/2026 | https://docs.aws.amazon.com/step-functions/ |
+| Thứ 2 | Tìm hiểu Docker, image, container, Dockerfile và lợi ích của việc container hóa ứng dụng. | 25/05/2026 | 25/05/2026 | https://000015.awsstudygroup.com/vi/ |
+| Thứ 3 | Thực hành container hóa ứng dụng để ứng dụng có thể chạy ổn định giữa môi trường local, test và Cloud. | 26/05/2026 | 26/05/2026 | https://000015.awsstudygroup.com/vi/<br>https://000067.awsstudygroup.com/vi/ |
+| Thứ 4 | Tìm hiểu Amazon ECS, cluster, task definition, task, service và các khái niệm liên quan đến triển khai container. | 27/05/2026 | 27/05/2026 | https://000016.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu triển khai hạ tầng ECS bằng AWS CDK, cách mô tả cluster, service, task definition bằng mã nguồn. | 28/05/2026 | 28/05/2026 | https://000118.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu AWS CodePipeline và quy trình CI/CD gồm lấy source code, build, test, deploy và theo dõi trạng thái pipeline. | 29/05/2026 | 29/05/2026 | https://000017.awsstudygroup.com/vi/<br>https://000023.awsstudygroup.com/vi/<br>https://000152.awsstudygroup.com/vi/ |
+| Thứ 7 | Tìm hiểu AWS Storage Gateway, Amazon FSx và VPC Flow Logs trong lưu trữ hybrid, lưu trữ file và giám sát lưu lượng mạng. | 30/05/2026 | 30/05/2026 | https://000024.awsstudygroup.com/vi/<br>https://000025.awsstudygroup.com/vi/<br>https://000074.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu AWS Step Functions và thực hành workshop hiệu suất lưu trữ để hiểu cách điều phối các workflow nhiều bước. | 31/05/2026 | 31/05/2026 | https://000047.awsstudygroup.com/vi/<br>https://000068.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 6:
 

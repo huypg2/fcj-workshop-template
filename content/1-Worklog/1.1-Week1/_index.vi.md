@@ -19,13 +19,13 @@ pre: " <b> 1.1. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tìm hiểu tổng quan về điện toán đám mây, các mô hình dịch vụ như IaaS, PaaS, SaaS và vai trò của AWS trong triển khai hệ thống hiện đại. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thứ 3 | Tạo tài khoản AWS, làm quen với AWS Management Console, kiểm tra các khu vực Region, Availability Zone và cách truy cập các nhóm dịch vụ chính. | 21/04/2026 | 21/04/2026 | https://docs.aws.amazon.com/ |
-| Thứ 4 | Thiết lập AWS Budgets, tìm hiểu cảnh báo chi phí, AWS Support và cách tra cứu tài liệu AWS khi gặp lỗi trong quá trình thực hành. | 22/04/2026 | 22/04/2026 | https://aws.amazon.com/aws-cost-management/aws-budgets/ |
-| Thứ 5 | Tìm hiểu IAM gồm User, Group, Policy, Role, quyền truy cập và nguyên tắc cấp quyền tối thiểu trong môi trường AWS. | 23/04/2026 | 23/04/2026 | https://docs.aws.amazon.com/iam/ |
-| Thứ 6 | Tìm hiểu Amazon VPC, subnet, route table, internet gateway, security group và network ACL trong mô hình mạng cơ bản. | 24/04/2026 | 24/04/2026 | https://docs.aws.amazon.com/vpc/ |
-| Thứ 7 | Tìm hiểu Amazon EC2, AMI, instance type, key pair, EBS volume và IAM Role for EC2 để cấp quyền an toàn cho máy chủ ảo. | 25/04/2026 | 25/04/2026 | https://docs.aws.amazon.com/ec2/ |
-| Chủ nhật | Làm quen với AWS Cloud9 và AWS CLI, thực hành một số thao tác dòng lệnh cơ bản để chuẩn bị cho các tuần thực hành tiếp theo. | 26/04/2026 | 26/04/2026 | https://docs.aws.amazon.com/cli/ |
+| Thứ 2 | Tìm hiểu tổng quan về điện toán đám mây, các mô hình dịch vụ như IaaS, PaaS, SaaS và vai trò của AWS trong triển khai hệ thống hiện đại. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/vi/ |
+| Thứ 3 | Tạo tài khoản AWS, làm quen với AWS Management Console, kiểm tra các khu vực Region, Availability Zone và cách truy cập các nhóm dịch vụ chính. | 21/04/2026 | 21/04/2026 | https://000001.awsstudygroup.com/vi/ |
+| Thứ 4 | Thiết lập AWS Budgets, tìm hiểu cảnh báo chi phí, AWS Support và cách tra cứu tài liệu AWS khi gặp lỗi trong quá trình thực hành. | 22/04/2026 | 22/04/2026 | https://000007.awsstudygroup.com/vi/<br>https://000009.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu IAM gồm User, Group, Policy, Role, quyền truy cập và nguyên tắc cấp quyền tối thiểu trong môi trường AWS. | 23/04/2026 | 23/04/2026 | https://000002.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu Amazon VPC, subnet, route table, internet gateway, security group và network ACL trong mô hình mạng cơ bản. | 24/04/2026 | 24/04/2026 | https://000003.awsstudygroup.com/vi/ |
+| Thứ 7 | Tìm hiểu Amazon EC2, AMI, instance type, key pair, EBS volume và IAM Role for EC2 để cấp quyền an toàn cho máy chủ ảo. | 25/04/2026 | 25/04/2026 | https://000004.awsstudygroup.com/vi/<br>https://000048.awsstudygroup.com/vi/ |
+| Chủ nhật | Làm quen với AWS Cloud9 và AWS CLI, thực hành một số thao tác dòng lệnh cơ bản để chuẩn bị cho các tuần thực hành tiếp theo. | 26/04/2026 | 26/04/2026 | https://000049.awsstudygroup.com/vi/<br>https://000011.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 1:
 

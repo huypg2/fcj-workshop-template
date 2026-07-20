@@ -19,13 +19,13 @@ pre: " <b> 1.3. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Thực hành workshop về networking trên AWS, ôn lại VPC, subnet, route table, security group, network ACL và cách phân tách tài nguyên theo lớp mạng. | 04/05/2026 | 04/05/2026 | https://docs.aws.amazon.com/vpc/ |
-| Thứ 3 | Tìm hiểu Amazon CloudFront, CDN, edge location, origin, cache behavior và cách giảm độ trễ khi phân phối nội dung đến người dùng. | 05/05/2026 | 05/05/2026 | https://docs.aws.amazon.com/cloudfront/ |
-| Thứ 4 | Tìm hiểu Lambda@Edge và cách xử lý một số logic gần người dùng hơn để tối ưu request, response và trải nghiệm truy cập. | 06/05/2026 | 06/05/2026 | https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html |
-| Thứ 5 | Tìm hiểu ứng dụng Windows trên AWS, môi trường Windows Server và AWS Managed Microsoft AD cho hệ thống doanh nghiệp. | 07/05/2026 | 07/05/2026 | https://docs.aws.amazon.com/directoryservice/ |
-| Thứ 6 | Tìm hiểu các chiến lược migration như rehost, replatform, refactor, repurchase, retain và retire khi dịch chuyển hệ thống lên AWS. | 08/05/2026 | 08/05/2026 | https://aws.amazon.com/cloud-migration/ |
-| Thứ 7 | Tìm hiểu AWS VM Import/Export, AWS Database Migration Service và Schema Conversion Tool trong quá trình di chuyển máy ảo và database. | 09/05/2026 | 09/05/2026 | https://docs.aws.amazon.com/dms/ |
-| Chủ nhật | Tìm hiểu AWS Elastic Disaster Recovery và cách xây dựng phương án phục hồi hệ thống khi xảy ra sự cố. | 10/05/2026 | 10/05/2026 | https://docs.aws.amazon.com/drs/ |
+| Thứ 2 | Thực hành workshop về networking trên AWS, ôn lại VPC, subnet, route table, security group, network ACL và cách phân tách tài nguyên theo lớp mạng. | 04/05/2026 | 04/05/2026 | https://000092.awsstudygroup.com/vi/ |
+| Thứ 3 | Tìm hiểu Amazon CloudFront, CDN, edge location, origin, cache behavior và cách giảm độ trễ khi phân phối nội dung đến người dùng. | 05/05/2026 | 05/05/2026 | https://000094.awsstudygroup.com/vi/ |
+| Thứ 4 | Tìm hiểu Lambda@Edge và cách xử lý một số logic gần người dùng hơn để tối ưu request, response và trải nghiệm truy cập. | 06/05/2026 | 06/05/2026 | https://000130.awsstudygroup.com/vi/ |
+| Thứ 5 | Tìm hiểu ứng dụng Windows trên AWS, môi trường Windows Server và AWS Managed Microsoft AD cho hệ thống doanh nghiệp. | 07/05/2026 | 07/05/2026 | https://000093.awsstudygroup.com/vi/<br>https://000095.awsstudygroup.com/vi/ |
+| Thứ 6 | Tìm hiểu các chiến lược migration như rehost, replatform, refactor, repurchase, retain và retire khi dịch chuyển hệ thống lên AWS. | 08/05/2026 | 08/05/2026 | https://cloudjourney.awsstudygroup.com/vi/2-migrate/ |
+| Thứ 7 | Tìm hiểu AWS VM Import/Export, AWS Database Migration Service và Schema Conversion Tool trong quá trình di chuyển máy ảo và database. | 09/05/2026 | 09/05/2026 | https://000014.awsstudygroup.com/vi/<br>https://000043.awsstudygroup.com/vi/ |
+| Chủ nhật | Tìm hiểu AWS Elastic Disaster Recovery và cách xây dựng phương án phục hồi hệ thống khi xảy ra sự cố. | 10/05/2026 | 10/05/2026 | https://000100.awsstudygroup.com/vi/ |
 
 ### Kết quả đạt được tuần 3:
 

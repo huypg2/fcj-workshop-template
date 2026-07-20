@@ -18,11 +18,11 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | - Create a VPC as the private network for the system<br>&emsp; + Select a suitable CIDR range<br>&emsp; + Create a new VPC for the deployment environment<br>&emsp; + Verify VPC ID, status, and required DNS settings | 06/22/2026 | 06/22/2026 | https://000003.awsstudygroup.com/ |
-| Tuesday | - Create subnets, route tables, and NAT based on the network structure<br>&emsp; + Create subnets across Availability Zones<br>&emsp; + Associate subnets with proper route tables<br>&emsp; + Configure NAT to support the required traffic flow | 06/23/2026 | 06/23/2026 | https://000092.awsstudygroup.com/ |
-| Wednesday | - Create and configure Security Groups<br>&emsp; + Create security groups for required resource layers<br>&emsp; + Configure inbound and outbound rules according to the traffic flow<br>&emsp; + Review rules before creating database and compute resources | 06/24/2026 | 06/24/2026 | https://000003.awsstudygroup.com/ |
-| Thursday | - Create DB Subnet Group for RDS<br>&emsp; + Select subnets for the database layer<br>&emsp; + Create DB Subnet Group so RDS can run inside the VPC<br>&emsp; + Verify subnet group before creating the RDS instance | 06/25/2026 | 06/25/2026 | https://000005.awsstudygroup.com/ |
-| Friday | - Create RDS PostgreSQL and initialize the database<br>&emsp; + Create the RDS instance using prepared settings<br>&emsp; + Check endpoint, port, and database status<br>&emsp; + Initialize the database/schema for application use | 06/26/2026 | 06/26/2026 | https://000005.awsstudygroup.com/ |
+| Monday | - Create a VPC as the private network for the system<br>&emsp; + Select a suitable CIDR range<br>&emsp; + Create a new VPC for the deployment environment<br>&emsp; + Verify VPC ID, status, and required DNS settings | 22/06/2026 | 22/06/2026 | https://000003.awsstudygroup.com/ |
+| Tuesday | - Create subnets, route tables, and NAT based on the network structure<br>&emsp; + Create subnets across Availability Zones<br>&emsp; + Associate subnets with proper route tables<br>&emsp; + Configure NAT to support the required traffic flow | 23/06/2026 | 23/06/2026 | https://000092.awsstudygroup.com/ |
+| Wednesday | - Create and configure Security Groups<br>&emsp; + Create security groups for required resource layers<br>&emsp; + Configure inbound and outbound rules according to the traffic flow<br>&emsp; + Review rules before creating database and compute resources | 24/06/2026 | 24/06/2026 | https://000003.awsstudygroup.com/ |
+| Thursday | - Create DB Subnet Group for RDS<br>&emsp; + Select subnets for the database layer<br>&emsp; + Create DB Subnet Group so RDS can run inside the VPC<br>&emsp; + Verify subnet group before creating the RDS instance | 25/06/2026 | 25/06/2026 | https://000005.awsstudygroup.com/ |
+| Friday | - Create RDS PostgreSQL and initialize the database<br>&emsp; + Create the RDS instance using prepared settings<br>&emsp; + Check endpoint, port, and database status<br>&emsp; + Initialize the database/schema for application use | 26/06/2026 | 26/06/2026 | https://000005.awsstudygroup.com/ |
 
 ### Week 10 Results:
 
