@@ -35,7 +35,7 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 
 
-### [Event 2](4.3-Event3/)
+### [Event 3](4.3-Event3/)
 &emsp;**Tên sự kiện:** FCJ Community Day - From Zero to Cloud Hero 
 
 &emsp;**Thời gian:**  09:00 ngày 06/06/2026
