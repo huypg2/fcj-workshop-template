@@ -10,7 +10,7 @@ pre: " <b> 4. </b> "
 Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
 ### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:**  First Cloud AI Journey (Sự kiện 2) 
+&emsp;**Tên sự kiện:**  FCJ Community Day - AI & Prompt Engineering 
 
 &emsp;**Thời gian:** 09:00 ngày 09/05/2026
 
@@ -23,7 +23,7 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** First Cloud AI Journey (Sự kiện 1) 
+&emsp;**Tên sự kiện:** FCJ Community Day - Stop Procrastinating, Start Building 
 
 &emsp;**Thời gian:**  09:00 ngày 30/05/2026
 
@@ -33,3 +33,15 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
+
+
+### [Event 2](4.3-Event3/)
+&emsp;**Tên sự kiện:** FCJ Community Day - From Zero to Cloud Hero 
+
+&emsp;**Thời gian:**  09:00 ngày 06/06/2026
+
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Mô tả:** Sự kiện chia sẻ về các chủ đề công nghệ thực tế như WebSocket trên AWS, Docker, GraphRAG với Amazon Bedrock và Amazon Neptune, phát hiện tấn công mạng bằng AWS WAF kết hợp Machine Learning, cùng lộ trình phát triển nghề nghiệp từ IT Helpdesk đến Senior Sysadmin. Nội dung giúp người tham dự hiểu thêm về cách xây dựng, triển khai, vận hành và bảo vệ hệ thống hiện đại trên nền tảng Cloud.
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự 

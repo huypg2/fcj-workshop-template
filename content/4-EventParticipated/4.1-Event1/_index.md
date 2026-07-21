@@ -6,10 +6,11 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
+# Summary Report “FCJ Community Day - AI & Prompt Engineering”
 
 ## 1. Event overview
 
-**First Cloud AI Journey - Event 1** is an event that shares knowledge about AI, Cloud, Prompt Engineering, and how AI can be applied in learning, work, and software development. The event helps participants better understand the role of AI in the current era and how to use AI more effectively.
+**FCJ Community Day - AI & Prompt Engineering** is an event that shares knowledge about AI, Cloud, Prompt Engineering, and how AI can be applied in learning, work, and software development. The event helps participants better understand the role of AI in the current era and how to use AI more effectively.
 
 In addition to technology knowledge, the event also discusses personal development mindset, professional attitude, and how people can adapt as AI becomes increasingly used in learning and work.
 
@@ -62,6 +63,9 @@ What impressed me the most was that AI does not completely replace humans. AI is
 Overall, the event helped me understand more about AI, Cloud, Prompt Engineering, and software development. After the event, I realized that using AI effectively requires knowing how to ask questions, verify results, and apply AI for the right purposes.
 
 #### Some event photos
-*Add your event photos here*  
+
+![Event 1](/images/b1.jpg)
+![Event 1](/images/b2.jpg)
+![Event 1](/images/b3.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

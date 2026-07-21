@@ -6,10 +6,11 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
+# Summary Report “FCJ Community Day - Stop Procrastinating, Start Building”
 
 ## 1. Event overview
 
-**First Cloud AI Journey - Event 2** is a knowledge-sharing event about AWS, Cloud, Hackathon, DevOps, GenAI, and personal development mindset. The event helps participants understand how to self-study AWS effectively, how to build practical products, and how to overcome psychological barriers in learning and work.
+**FCJ Community Day - Stop Procrastinating, Start Building** is a knowledge-sharing event about AWS, Cloud, Hackathon, DevOps, GenAI, and personal development mindset. The event helps participants understand how to self-study AWS effectively, how to build practical products, and how to overcome psychological barriers in learning and work.
 
 ## 2. Program content
 
@@ -64,6 +65,10 @@ The message that impressed me the most was not to be afraid of failure. In learn
 Overall, the event helped me understand more about AWS, DevOps, GenAI, Hackathons, and personal development mindset. After the event, I realized that to progress in the technology field, it is necessary to combine technical knowledge, teamwork skills, and a proactive learning attitude.
 
 #### Some event photos
-*Add your event photos here*  
+
+![Event 2](/images/b4.jpg)
+![Event 2](/images/b5.jpg)
+![Event 2](/images/b6.jpg)
+![Event 2](/images/b7.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
