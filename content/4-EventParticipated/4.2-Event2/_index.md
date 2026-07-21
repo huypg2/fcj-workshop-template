@@ -56,7 +56,7 @@ For personal improvement, I will try to reduce procrastination by starting with 
 
 ## 6. Personal reflection
 
-The **First Cloud AI Journey - Event 2** provided me with a great deal of practical and applicable knowledge. I liked the way the speakers shared real experiences from Hackathons, Startups, and project development.
+The **FCJ Community Day - Stop Procrastinating, Start Building** provided me with a great deal of practical and applicable knowledge. I liked the way the speakers shared real experiences from Hackathons, Startups, and project development.
 
 The message that impressed me the most was not to be afraid of failure. In learning and work, the important thing is to be willing to start, to try, and to learn from mistakes.
 

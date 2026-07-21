@@ -67,7 +67,7 @@ Ngoài ra, phần chia sẻ về lộ trình nghề nghiệp giúp tôi có kế
 
 ## 6. Cảm nhận cá nhân
 
-Sự kiện **FCJ Community Day - Event 3** mang lại nhiều kiến thức thực tế và có tính ứng dụng cao. Các chủ đề tuy thuộc nhiều mảng khác nhau nhưng đều liên quan đến việc xây dựng, triển khai, vận hành và bảo vệ hệ thống hiện đại.
+Sự kiện **FCJ Community Day - From Zero to Cloud Hero** mang lại nhiều kiến thức thực tế và có tính ứng dụng cao. Các chủ đề tuy thuộc nhiều mảng khác nhau nhưng đều liên quan đến việc xây dựng, triển khai, vận hành và bảo vệ hệ thống hiện đại.
 
 Tôi ấn tượng với cách các diễn giả trình bày từ góc nhìn thực tế, giúp nội dung dễ hiểu hơn và không bị quá lý thuyết. Đặc biệt, các phần về Docker, WebSocket, GraphRAG và bảo mật trên AWS giúp tôi có thêm nhiều ý tưởng để áp dụng vào dự án cá nhân cũng như quá trình học Cloud.
 

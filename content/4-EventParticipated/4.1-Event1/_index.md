@@ -54,7 +54,7 @@ In addition, I also want to learn more about AWS services such as Lambda, Bedroc
 
 ## 6. Personal reflection
 
-The **First Cloud AI Journey - Event 1** provided me with a great deal of useful and practical knowledge. I liked how the speakers not only discussed technology but also shared approaches to learning, working, and personal development in the AI era.
+The **FCJ Community Day - AI & Prompt Engineering** provided me with a great deal of useful and practical knowledge. I liked how the speakers not only discussed technology but also shared approaches to learning, working, and personal development in the AI era.
 
 What impressed me the most was that AI does not completely replace humans. AI is only a supporting tool, while humans still need critical thinking, result verification, and responsibility for the products they create.
 

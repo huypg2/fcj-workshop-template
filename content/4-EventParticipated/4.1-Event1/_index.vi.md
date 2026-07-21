@@ -54,7 +54,7 @@ Ngoài ra, tôi cũng muốn tìm hiểu thêm về các dịch vụ AWS như La
 
 ## 6. Cảm nhận cá nhân
 
-Sự kiện **First Cloud AI Journey - Event 1** mang lại cho tôi nhiều kiến thức hữu ích và dễ áp dụng. Tôi thích cách các diễn giả không chỉ nói về công nghệ, mà còn chia sẻ về cách học, cách làm việc và cách phát triển bản thân trong thời đại AI.
+Sự kiện **FCJ Community Day - AI & Prompt Engineering** mang lại cho tôi nhiều kiến thức hữu ích và dễ áp dụng. Tôi thích cách các diễn giả không chỉ nói về công nghệ, mà còn chia sẻ về cách học, cách làm việc và cách phát triển bản thân trong thời đại AI.
 
 Điều tôi ấn tượng nhất là AI không thay thế hoàn toàn con người. AI chỉ là công cụ hỗ trợ, còn con người vẫn cần tư duy phản biện, kiểm tra kết quả và chịu trách nhiệm với sản phẩm mình tạo ra.
 

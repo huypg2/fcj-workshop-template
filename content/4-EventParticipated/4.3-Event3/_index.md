@@ -66,7 +66,7 @@ In addition, the career sharing session helped me build a clearer learning plan,
 
 ## 6. Personal reflection
 
-The **FCJ Community Day - Event 3** provided me with many practical and applicable pieces of knowledge. Although the topics belonged to different areas, they were all related to building, deploying, operating, and protecting modern systems.
+The **FCJ Community Day - From Zero to Cloud Hero** provided me with many practical and applicable pieces of knowledge. Although the topics belonged to different areas, they were all related to building, deploying, operating, and protecting modern systems.
 
 I was impressed by the way the speakers presented from practical perspectives, making the content easier to understand and not too theoretical. In particular, the topics about Docker, WebSocket, GraphRAG, and security on AWS gave me many ideas to apply to my personal projects as well as my Cloud learning process.
 
