@@ -29,10 +29,10 @@ Các nội dung chính trong 12 tuần được tổng hợp như sau:
 
 **Tuần 8:** [Thực hành Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App và HA](1.8-Week8/)
 
-**Tuần 9:** [Chuẩn bị nội dung workshop, AWS CLI, Docker và Amazon ECR](1.9-Week9/)
+**Tuần 9:** [Xây dựng giao diện Frontend cho hệ thống theo dõi kết quả kiểm thử](1.9-Week9/)
 
 **Tuần 10:** [Biên soạn nội dung VPC Networking, Security Groups và Amazon RDS PostgreSQL](1.10-Week10/)
 
-**Tuần 11:** [Biên soạn nội dung Load Balancer, ECS Fargate và triển khai ứng dụng theo workshop](1.11-Week11/)
+**Tuần 11:** [Triển khai hạ tầng AWS, ECS Fargate, giám sát và sao lưu dữ liệu](1.11-Week11/)
 
 **Tuần 12:** [Hoàn thiện worklog, blog, event, tự đánh giá, góp ý và deploy website báo cáo](1.12-Week12/)

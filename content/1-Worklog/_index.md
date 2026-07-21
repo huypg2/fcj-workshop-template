@@ -29,10 +29,10 @@ The main contents of the 12 weeks are summarized as follows:
 
 **Week 8:** [Practicing Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App, and HA](1.8-Week8/)
 
-**Week 9:** [Preparing workshop content, AWS CLI, Docker, and Amazon ECR](1.9-Week9/)
+**Week 9:** [Building the Frontend Interface for the Test Result Monitoring System](1.9-Week9/)
 
 **Week 10:** [Writing VPC Networking, Security Groups, and Amazon RDS PostgreSQL content](1.10-Week10/)
 
-**Week 11:** [Writing Load Balancer, ECS Fargate, and application deployment content based on the workshop](1.11-Week11/)
+**Week 11:** [AWS Infrastructure Deployment, ECS Fargate, Monitoring, and Data Backup](1.11-Week11/)
 
 **Week 12:** [Completing worklogs, blogs, events, self-evaluation, feedback, and deploying the report website](1.12-Week12/)
