@@ -35,7 +35,7 @@ This AWS-based architecture resolves these challenges:
 
 ### 3. Solution Architecture
 The architecture implements a 3-tier networking layout (Public, Private App, Private DB) within a custom AWS VPC:
-![diagram](/images/diagram.jpg)
+![diagram](/images/diagram.png)
 
 #### AWS Services Used
 - **Amazon VPC**: Drives network virtualization (4 Subnets, Route Tables, Internet Gateway, and NAT Gateway).

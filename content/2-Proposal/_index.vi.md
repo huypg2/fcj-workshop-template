@@ -36,7 +36,7 @@ Hạ tầng mới thiết lập trên AWS giải quyết triệt để các vấ
 ### 3. Kiến trúc giải pháp  
 Hạ tầng Payment Gateway áp dụng kiến trúc mạng 3 lớp (Public, Private App, Private DB) chạy hoàn toàn trên AWS.
 
-![diagram](/images/diagram.jpg)
+![diagram](/images/diagram.png)
 
 *Dịch vụ AWS sử dụng*  
 - *Amazon VPC*: Quản lý hạ tầng mạng ảo gồm 4 Subnets, Route Tables, Internet Gateway và NAT Gateway.
