@@ -35,7 +35,7 @@ pre: " <b> 1.12. </b> "
 * Completed Blog 1 about GitHub Actions and Amazon ECS Express Mode.
 * Completed Blog 2 about Velero Backup and Restore on Amazon EKS.
 * Completed Blog 3 about EC2 Capacity Manager and Amazon Athena.
-* Wrote and completed the content for Event 1 and Event 2 attended during the internship.
+* Wrote and completed the content for Event 1, Event 2, Event 3 attended during the internship.
 * Summarized the main content, lessons learned, and reflections after each event.
 * Wrote the self-evaluation section based on the learning, practice, and workshop completion process.
 * Wrote the feedback and reflection section after the internship process.

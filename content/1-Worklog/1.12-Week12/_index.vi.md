@@ -34,7 +34,7 @@ pre: " <b> 1.12. </b> "
 * Hoàn thiện nội dung Blog 1 về GitHub Actions và Amazon ECS Express Mode.
 * Hoàn thiện nội dung Blog 2 về Velero Backup và Restore trên Amazon EKS.
 * Hoàn thiện nội dung Blog 3 về EC2 Capacity Manager và Amazon Athena.
-* Viết và hoàn thiện nội dung Event 1, Event 2 đã tham gia trong quá trình thực tập.
+* Viết và hoàn thiện nội dung Event 1, Event 2, Event 3 đã tham gia trong quá trình thực tập.
 * Tóm tắt được nội dung chính, kiến thức học được và cảm nhận sau mỗi sự kiện.
 * Viết được phần tự đánh giá dựa trên quá trình học tập, thực hành và hoàn thiện workshop.
 * Viết được phần chia sẻ góp ý kiến và cảm nhận sau quá trình thực tập.
