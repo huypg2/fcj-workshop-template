@@ -29,7 +29,7 @@ The main contents of the 12 weeks are summarized as follows:
 
 **Week 8:** [Practicing Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App, and HA](1.8-Week8/)
 
-**Week 9:** [Building the Frontend Interface for the Test Result Monitoring System](1.9-Week9/)
+**Week 9:** [Building the Frontend Interface for NextGenPay and Supporting API Load Testing](1.9-Week9/)
 
 **Week 10:** [Writing VPC Networking, Security Groups, and Amazon RDS PostgreSQL content](1.10-Week10/)
 

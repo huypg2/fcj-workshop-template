@@ -29,7 +29,7 @@ Các nội dung chính trong 12 tuần được tổng hợp như sau:
 
 **Tuần 8:** [Thực hành Serverless Document Management, API Gateway, CloudFront, X-Ray, CloudWatch, Grafana, Web App và HA](1.8-Week8/)
 
-**Tuần 9:** [Xây dựng giao diện Frontend cho hệ thống theo dõi kết quả kiểm thử](1.9-Week9/)
+**Tuần 9:** [Xây dựng giao diện Frontend cho hệ thống NextGenPay và hỗ trợ kiểm thử tải API](1.9-Week9/)
 
 **Tuần 10:** [Biên soạn nội dung VPC Networking, Security Groups và Amazon RDS PostgreSQL](1.10-Week10/)
 
