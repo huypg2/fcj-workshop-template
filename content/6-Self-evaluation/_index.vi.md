@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 
 Trong suốt thời gian chương trình Workforce Bootcamp – First Cloud AI Journey thực tập tạiCông ty TNHH Amazon Web Services Việt Nam từ 17/04/2026 đến 30/07/2026, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
-Tôi đã tham gia quá trình học tập, thực hành và xây dựng đề tài **“Triển khai Hệ thống Thanh toán hiệu năng cao trên AWS ECS Fargate với Private Subnets, RDS PostgreSQL và S3 Backup”**. Trong quá trình thực hiện, tôi đã tìm hiểu và áp dụng các dịch vụ AWS như IAM, VPC, Private Subnets, ECS Fargate, RDS PostgreSQL, S3, ElastiCache Redis, API Gateway, CloudWatch và các dịch vụ hỗ trợ bảo mật, giám sát, sao lưu và tối ưu chi phí.
+Tôi đã tham gia quá trình học tập, thực hành và xây dựng đề tài **“Triển khai High-Concurrency Payment Gateway trên AWS ECS Fargate với Private Subnets, RDS PostgreSQL và S3 Backup”**. Trong quá trình thực hiện, tôi đã tìm hiểu và áp dụng các dịch vụ AWS như IAM, VPC, Private Subnets, ECS Fargate, RDS PostgreSQL, S3, ElastiCache Redis, API Gateway, CloudWatch và các dịch vụ hỗ trợ bảo mật, giám sát, sao lưu và tối ưu chi phí.
 
 Thông qua quá trình thực tập, tôi đã cải thiện được nhiều kỹ năng quan trọng như lập trình backend, thiết kế API, phân tích kiến trúc hệ thống, xử lý lỗi khi các service giao tiếp với nhau, triển khai ứng dụng bằng Docker và AWS ECS Fargate, cấu hình cơ sở dữ liệu RDS PostgreSQL, sử dụng S3 cho mục đích backup, theo dõi log bằng CloudWatch, viết báo cáo kỹ thuật và trình bày kết quả thực hiện. Ngoài ra, quá trình làm việc cũng giúp tôi rèn luyện khả năng tự học, quản lý thời gian, đọc tài liệu kỹ thuật, tiếp nhận góp ý và hoàn thiện sản phẩm theo từng giai đoạn.
 
