@@ -65,7 +65,5 @@ Overall, the event helped me understand more about AI, Cloud, Prompt Engineering
 #### Some event photos
 
 ![Event 1](/images/b1.jpg)
-![Event 1](/images/b2.jpg)
-![Event 1](/images/b3.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

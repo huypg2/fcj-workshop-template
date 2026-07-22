@@ -76,8 +76,6 @@ Overall, the event helped me expand my knowledge of AWS, Docker, WebSocket, Grap
 
 #### Some event photos
 
-![Event 3](/images/b8.jpg)
-![Event 3](/images/b9.jpg)
-![Event 3](/images/b10.jpg)
+![Event 3](/images/b3.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and effective collaboration between teams.

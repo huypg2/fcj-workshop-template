@@ -77,8 +77,7 @@ Tổng thể, sự kiện giúp tôi mở rộng kiến thức về AWS, Docker,
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-![Event 3](/images/b8.jpg)
-![Event 3](/images/b9.jpg)
-![Event 3](/images/b10.jpg)
+![Event 3](/images/b3.jpg)
+
 
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

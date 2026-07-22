@@ -65,7 +65,5 @@ Tổng thể, sự kiện giúp tôi hiểu thêm về AI, Cloud, Prompt Enginee
 #### Một số hình ảnh khi tham gia sự kiện
 
 ![Event 1](/images/b1.jpg)
-![Event 1](/images/b2.jpg)
-![Event 1](/images/b3.jpg)
 
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

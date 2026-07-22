@@ -66,9 +66,6 @@ Overall, the event helped me understand more about AWS, DevOps, GenAI, Hackathon
 
 #### Some event photos
 
-![Event 2](/images/b4.jpg)
-![Event 2](/images/b5.jpg)
-![Event 2](/images/b6.jpg)
-![Event 2](/images/b7.jpg)
+![Event 2](/images/b2.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
