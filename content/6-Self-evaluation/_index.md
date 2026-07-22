@@ -20,17 +20,17 @@ To objectively reflect the internship process, I would like to self-evaluate bas
 | No. | Criteria | Description | Good | Fair | Average |
 | --- | --- | --- | --- | --- | --- |
 | 1 | **Professional knowledge and skills** | Understanding of the field, application of knowledge to practice, tool usage skills, and work quality | ✅ | □ | □ |
-| 2 | **Learning ability** | Ability to acquire new knowledge and learn quickly | ✅ | □ | □ |
+| 2 | **Learning ability** | Ability to acquire new knowledge and learn quickly | □ | ✅ | □ |
 | 3 | **Initiative** | Self-study and task acceptance without waiting for instructions | □ | ✅ | □ |
 | 4 | **Sense of responsibility** | Completing tasks on time and ensuring quality | ✅ | □ | □ |
 | 5 | **Discipline** | Following working hours, regulations, and work procedures | □ | ✅ | □ |
 | 6 | **Progressive attitude** | Willingness to receive feedback and improve oneself | □ | ✅ | □ |
-| 7 | **Communication** | Presenting ideas and reporting work clearly | ✅ | □ | □ |
+| 7 | **Communication** | Presenting ideas and reporting work clearly | □ | ✅ | □ |
 | 8 | **Teamwork** | Working effectively with colleagues and participating in team activities | ✅ | □ | □ |
 | 9 | **Professional behavior** | Respecting colleagues, partners, and the working environment | □ | ✅ | □ |
 | 10 | **Problem-solving mindset** | Identifying problems, proposing solutions, and being creative | □ | ✅ | □ |
 | 11 | **Contribution to the project/organization** | Work effectiveness, improvement initiatives, and recognition from the team | □ | ✅ | □ |
-| 12 | **Overall** | General evaluation of the entire internship process | ✅ | □ | □ |
+| 12 | **Overall** | General evaluation of the entire internship process | □ | ✅ | □ |
 
 ### Areas for Improvement
 
